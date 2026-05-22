@@ -4,3 +4,10 @@ INFO    : Since no target was supplied, we will use "web".
 INFO    : Staging latest build located in `/home/sk/Desktop/book25/thermodynamics/output/web` at `/home/sk/Desktop/book25/thermodynamics/output/stage`.
 INFO    : 
 INFO    : Initializing project with Git.
+INFO    : Successfully initialized new Git repository!
+INFO    : 
+INFO    : Preparing to deploy from active `main` git branch.
+
+INFO    : Changes to project source since last commit detected.
+INFO    : Committing these changes to local Git repository.
+
