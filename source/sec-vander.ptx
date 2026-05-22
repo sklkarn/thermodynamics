@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-vander" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Van der Waals Equation</title>
+  <introduction>
+   <p>
+    <alert>Limitations of the Ideal Gas Law </alert> The ideal gas law 
+    <me>
+      PV =nRT
+    </me>
+    assumes:
+    <ul>
+      <li>
+        <p>
+          Molecules have zero volume.
+        </p>
+      </li>
+      <li>
+        <p>
+          No intermolecular forces except during perfectly elastic collisions.
+        </p>
+      </li>
+    </ul>
+    </p>
+     <image source="z_factor.png" width="40%"/>
+    <p>
+      Real gases deviate significantly at high pressure (molecules are close together) 
+      and low temperature (kinetic energy is low, attractions dominate). The compressibility factor 
+      <me>
+        Z= \frac{PV}{nRT} \quad \text{ deviates from 1.}
+      </me>
+    </p>
+  <p> 
+    Van der Waals equation is a thermodynamic equation of state that describes the behavior of real gases. 
+    It is an improvement over the ideal gas law by accounting for the finite size of gas molecules and the 
+    intermolecular forces between them. The equation is given by: 
+    <me>
+      \left(P-\frac{an^2}{V^2}\right)\left(V-nb\right) = nRT
+    </me>
+    where <m>n, P, T, V, R </m> are number moles of gas, the observed pressure pressure, 
+    absolute temperature, total volume of the container, and universal gas constant, respectively. 
+    Also, <m>a</m> is van der Waals constant for attractive forces (units: <m>L^2\, atm \,mol^{-2} </m> or <m>Pa \, m^6 \,mol^{-2}</m>) 
+    and <m>b</m> is van der Waals constant for finite molecular volume (units: <m>L\, mol^{-1}</m> or <m>m^3\, mol^{-1}</m>)
+  </p>
+    
+  <p>
+    In kinetic theory of gases, we neglect the volume of the gas molecules and the intermolecular forces between them. 
+    As a result, the ideal gas law does not holds good for real gases, especially at high pressures and low temperatures. 
+    The van der Waals equation accounts for these factors by introducing two parameters, <m>a</m> and <m>b</m>, which represent 
+    the strength of the intermolecular forces and the volume occupied by the gas molecules, respectively.  
+  </p>
+   <image source="vanderf_cor.png" width="40%"/>
+  <p>
+    Correction for finite size: The term <m>nb</m> in the equation accounts for the finite size of gas molecules. 
+    It represents the volume occupied by the gas molecules themselves, which reduces the available volume 
+    for the gas to occupy. This correction is important at high pressures where the gas molecules are 
+    closely packed together. 
+  </p>
+  <p>
+    Evaluation of V: Let r be the radius of a molecule, then the volume occupied by a molecule is <m>\frac{4}{3}\pi r^3</m>. 
+    If there are n molecules, then the total volume occupied by the molecules is <m>\frac{4}{3}\pi r^3 n</m>. 
+    Hence, the available volume for the gas to occupy is given by <m>V - \frac{4}{3}\pi r^3 n</m>. 
+     The correction term <m>nb</m> in the van der Waals equation accounts for this reduction in available 
+     volume and allows us to calculate the actual volume of the gas using the equation.  Here, <m>b</m> is a 
+     constant that represents the effective volume occupied by each gas molecule 
+     (also called excluded volume or co-volume ), and it is determined experimentally for each gas.   
+  </p>
+  <p>
+    Correction for intermolecular forces: The term <m>an^2/V^2</m> in the equation accounts for the intermolecular forces between gas molecules. 
+    It represents the attractive forces between gas molecules, which reduce the pressure exerted by the gas on the walls of the container. 
+    This correction is important at low temperatures where the gas molecules are moving more slowly and are more likely to interact with each other.  
+  </p>
+  <image source="vanderp_cor.png" width="40%"/>
+  <p>
+    Evaluation of P: Inward pull reduces the momentum with which molecules strike the walls of the container, 
+    leading to a decrease in pressure compared to the ideal gas law. 
+    Hence, <me>
+      p_{ideal} - p_{inter}= P
+    </me>
+     where <m>p_{ideal}</m> is the pressure predicted by the ideal gas law and <m>P</m> is the actual pressure of the gas. 
+     The correction term <m>an^2/V^2</m> accounts for this difference and allows us to calculate the actual pressure of the gas 
+     using the van der Waals equation. 
+  </p>
+  <p>
+    Force on a molecule is <m>\propto</m> to the number of attracting molecules,  
+    and number of attracting molecules is <m>\propto</m> number density. 
+     Hence, force on a molecule
+      <m>
+       F  \propto \frac{n}{V}.
+     </m>
+     Molecules striking the unit surface area is <m>\propto</m> to the number density of molecules, which is <m>n/V</m>. 
+     Hence, pressure is <m>\propto</m> to the product of the force on a molecule and the number of 
+     molecules striking the unit surface area, which is <m>n^2/V^2</m>. 
+     The correction term <m>an^2/V^2</m> in the van der Waals equation accounts for the attractive forces between gas molecules, 
+     which reduces the pressure exerted by the gas on the walls of the container. 
+  </p>
+    <p>
+    The van der Waals equation is a more accurate representation of the behavior of real gases compared to the ideal gas law. 
+    It is particularly useful for describing the behavior of gases at high pressures and low temperatures, 
+    where the ideal gas law fails to provide accurate predictions. However, it is important to note that 
+    the van der Waals equation is still an approximation and may not accurately describe the behavior of all 
+    real gases under all conditions. 
+    </p>
+      
+  </introduction>
+
+
+    <subsection xml:id="subsec-crit_point">
+      <title>Critical Point</title>
+      <p>
+        Critical point is the point at which the liquid and gas phases of a substance become indistinguishable. 
+        At the critical point, the properties of the liquid and gas phases become identical, 
+        and the substance exists in a supercritical state. The critical point is characterized by a critical 
+        temperature (Tc), critical pressure (Pc), and critical volume (Vc).
+      </p>
+      <p>
+        The critical point can be determined using the van der Waals equation by setting the first and 
+        second derivatives of pressure with respect to volume to zero. 
+        This leads to the following equations:
+        <me>
+          \left(\frac{\partial P}{\partial V}\right)_T = 0
+        </me>
+        <me>
+          \left(\frac{\partial^2 P}{\partial V^2}\right)_T = 0
+        </me>
+        Solving these equations gives the critical temperature, critical pressure, and critical 
+        volume in terms of the van der Waals constants a and b. 
+      </p>  
+      <image source="critic_point.png" width="40%"/>
+      <p>
+        To plot the critical points for a van der Waals gas, we look for the point on a <m>P-V</m> diagram 
+        where the liquid and gas phases become indistinguishable. Mathematically, this is the inflection 
+        point of the critical isotherm (<m>T_c</m>), where both the first and second derivatives of pressure 
+        with respect to volume are zero.The van der Waals equation of state is:
+        <me>
+          P=\frac{RT}{V_m-b}-\frac{a}{V^2_m}
+        </me>
+        <ol>
+          <li>
+            <p>
+               Characteristics of the Plot: The critical point is represented by a specific point on the 
+               <m>P-V</m> diagram where the isotherm corresponding to the critical temperature (<m>T_c</m>) 
+               exhibits an inflection point. At this point, the curve changes from being concave to convex, 
+               indicating that the liquid and gas phases are indistinguishable. The critical point is 
+               marked on the diagram with a dot to highlight its significance.
+               <ul>
+                <li>
+                  <p>
+                    Below Critical Temperature (<m>T \lt T_c</m>): The isotherms show a "dip" and "hump" known as the van der Waals loops. 
+                    In a real system, these are replaced by a horizontal line (the tie-line) representing 
+                    the phase transition where gas and liquid coexist.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    At Critical Temperature (<m>T = T_c</m>): The isotherm has an inflection point, and the liquid and gas phases become indistinguishable. 
+                    The curve does not show a distinct phase transition, and the properties of the substance are the same in both phases.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Above Critical Temperature (<m>T \gt T_c</m>): The isotherms are smooth and do not show any phase transition. 
+                    The substance exists in a supercritical state where it exhibits properties of both liquids and gases.
+                  </p>
+                </li>
+               </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              The Compressibility Factor (<m>Z_c</m>): The compressibility factor at the critical point is defined as: 
+              <me>
+                Z_c = \frac{P_c V_c}{nR T_c}
+              </me>
+              Note: For an ideal gas, the compressibility factor is always equal to 1. 
+              However, for a van der Waals gas at the critical point, the compressibility factor is less than 1, 
+              indicating that the gas is more compressible than an ideal gas at the critical point. 
+            </p>
+          </li>
+        </ol>
+        </p>
+
+        <p>
+          Solving van der Waals equation at critical points yields:
+         <ul>
+          <li>
+            <p>
+              Critical volume: <m>V_c= 3nb</m> or <m>V_{m,c}= 3b</m>( for 1 mole)
+            </p>
+          </li>
+          <li>
+            <p>
+              Critical temperature: <m>T_c= \frac{8a}{27Rb}</m> 
+            </p>
+          </li>
+          <li>
+            <p>
+              Critical pressure: <m>P_c = \frac{a}{27b^2}</m>
+            </p>
+          </li>
+         </ul>
+          The Compressibility Factor (<m>Z_c</m>): 
+              <me>
+                Z_c = \frac{P_c V_c}{nR T_c} = \frac{3}{8} =0.375
+              </me>
+              (same for all van der Waals gases; real gases vary slightly around 0.27-0.3). 
+        </p>
+        <p>
+          Above <m>T_c</m>, no amount of pressure can liquefy the gas (supercritical fluid). 
+           </p>
+           <p>
+             Reduced Equation of State (Law of Corresponding States) 
+             Define reduced variables: <m>P_r= \frac{P}{P_c}</m>,  <m>V_r= \frac{V}{V_c}</m>,  <m>T_r= \frac{T}{T_c}</m>. 
+           </p>
+           <p>
+            The van der Waals equation becomes universal (independent of specific <m>a</m> and <m>b</m>): 
+            <me>
+              \left(P_r + \frac{3}{V^2_r}\right) (3V-r -1) = 8T_r
+            </me>
+            Gases at the same reduced conditions behave similarly (useful for scaling properties across different substances).
+           </p>
+    </subsection>
+
+    <subsection xml:id="subsec-intermol_force">
+      <title>Molecular (Intermolecular) Forces in Real Gases </title>
+      <p>
+        Real gases consist of molecules that occupy finite volume and exert attractive and repulsive forces on each other. 
+        These forces, collectively called van der Waals forces, become significant at high pressure (molecules close together) 
+        or low temperature (low kinetic energy).
+      </p>
+      <p>
+        <term>Types of Intermolecular Forces</term> 
+        <ul>
+          <li>
+            <p>
+              London Dispersion Forces (Induced Dipole-Induced Dipole): Present in all molecules. 
+              Arise from temporary fluctuations in electron distribution creating instantaneous dipoles, 
+              which induce dipoles in neighboring molecules. Strength increases with molecular size/polarizability (larger electron clouds).
+            </p>
+          </li>
+          <li>
+            <p>
+              Dipole-Dipole Forces: Between polar molecules with permanent dipoles.
+            </p>
+          </li>
+          <li>
+            <p>
+              Dipole-Induced Dipole Forces: A permanent dipole induces a dipole in a nonpolar molecule.
+            </p>
+          </li>
+          <li>
+            <p>
+              Hydrogen Bonding: A strong type of dipole-dipole interaction (e.g., in H₂O, NH₃), though less dominant in simple gases.
+            </p>
+          </li>
+        </ul>
+        At very short distances, repulsive forces (due to electron cloud overlap and Pauli exclusion principle) dominate, 
+        preventing molecules from collapsing.
+      </p>
+        <image source="intermol_force.png" width="40%"/>
+        <p>
+          <term>Lennard-Jones Potential</term> The net interaction is described by the Lennard-Jones potential:
+          <me>
+            U(r) = \left[4\epsilon \left(\frac{\sigma}{r} \right)^{12} - \left(\frac{\sigma}{r}\right)^6\right]
+          </me>
+          where <m>\epsilon : </m> Depth of the potential well (measure of attractive strength), 
+          <m>\sigma : </m> Finite distance at which <m>U(r)=0</m>(related to molecular diameter), 
+          Repulsive term (<m>r^{-12}</m>): Steep at short range, Attractive term (<m>r^{-6}</m>): Longer range (London dispersion).
+        </p>
+        <image source="lj_pot.png" width="40%"/>
+        <p>
+          The minimum of the curve occurs at equilibrium separation <m>r_o \approx 1.12\sigma </m>, with potential energy <m>-\epsilon</m>. 
+          These forces explain the corrections in the van der Waals equation:
+          <ul>
+            <li>
+              <p>
+                Parameter <m>a</m>: Accounts for attractive forces (reduces observed pressure).
+              </p>
+            </li>
+            <li>
+              <p>
+                Parameter <m>b</m>: Accounts for repulsive forces / finite molecular volume (reduces available volume).
+              </p>
+            </li>
+          </ul>
+        </p>
+        <image source="wall_effect.png" width="40%"/>
+    </subsection>
+</section>

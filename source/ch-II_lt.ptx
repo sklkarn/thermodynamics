@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-II_lt" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Laws of Thermodynamics</title>
+
+  <introduction>
+    <p> 
+   <alert> Heat and Work:</alert>
+     When a body undergoes a displacement <m>\,ds</m> 
+     by the action of a force <m>F</m>, the work done is <m>dW = F \cdot ds</m>. 
+     When a body undergoes a change in temperature <m>\,dT</m> by the action of a heat source, 
+     the heat absorbed is <m>dQ = C \cdot dT</m>, where <m>C</m> is the heat capacity of the 
+     body. Both work and heat are forms of energy transfer, but they are not properties 
+     of the system; rather, they are processes that occur during energy transfer. 
+     Joul's experiment demonstrated that a certain amount of work can be converted into an equivalent amount of heat, 
+     no matter what the process is. This led to the principle of conservation of energy. 
+     </p>
+    
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-I_law.ptx" />
+  <xi:include href="sec-II_law.ptx" />
+  <xi:include href="sec-III_law.ptx" />
+
+
+</chapter>

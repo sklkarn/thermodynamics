@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Basic Concepts (Zeroth Law)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Thermodynamics">
+<meta property="book:author" content="Sunil Karna">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.0.0';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="thermodynamics.html"><span class="title">Thermodynamics</span> <span class="subtitle">of Equilibrium Systems</span></a></h1>
+<p class="byline">Sunil Karna</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-I_tsv.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-I_tsv.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-heat.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+\newcommand{\Z}{\mathbb Z} 
+\newcommand{\Q}{\mathbb Q} 
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-I_tsv.html" class="internal"><span class="codenumber">1</span> <span class="title">Thermodynamic Systems</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-basics.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Basic Concepts (Zeroth Law)</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-basics.html#subsec-them_equil" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Thermodynamic Equilibrium</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-basics.html#subsec-process" class="internal"><span class="codenumber">1.1.2</span> <span class="title">process and Cycles</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-heat.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Heat and Temperature</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-heat.html#subsec-laws_thermdynamics" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Laws of Thermodynamics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-heat.html#subsec-gas_laws" class="internal"><span class="codenumber">1.2.2</span> <span class="title">The Gas Laws</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-vander.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Van der Waals Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vander.html#subsec-crit_point" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Critical Point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vander.html#subsec-intermol_force" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Molecular (Intermolecular) Forces in Real Gases</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mbvd.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Maxwell-Boltzmann Velocity Distribution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-mbvd.html#subsec-msd" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Maxwell Speed Distribution</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_first.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-II_lt.html" class="internal"><span class="codenumber">2</span> <span class="title">Laws of Thermodynamics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-I_law.html" class="internal"><span class="codenumber">2.1</span> <span class="title">First Law</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-I_law.html#subsec-sp_cap_rel" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Relation between <span class="process-math">\(C_{mp}\)</span> and <span class="process-math">\(C_{mv}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-I_law.html#subsec-adiab_proc" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Adiabatic Processes in Ideal Gas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-I_law.html#subsubsec-sound_prop" class="internal"><span class="codenumber">2.1.2.1</span> <span class="title">Sound Propagation</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-I_law.html#subsec-hess_law" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Hess’s law</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-II_law.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Second Law</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-III_law.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Third Law</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-III.html" class="internal"><span class="codenumber">3</span> <span class="title">Entropy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-III.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Chapter III</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-IV.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Chapter IV</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-basics"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Basic Concepts (Zeroth Law)</span>
+</h2>
+<section class="introduction" id="sec-basics-2"><div class="para" id="sec-basics-2-1">
+<em class="alert">Thermodynamic Properties</em> The properties of a substance are the characteristics that describe its physical and chemical behavior. It only depends on the state of the system and is independent of the history of the system. The <em class="alert">extensive</em> properties of a substance depend on the amount of substance present, while the <em class="alert">intensive</em> properties do not. Examples of extensive properties include mass, volume, energy, entropy S, and enthalpy H while examples of intensive properties include temperature, pressure, density, specific volume v, and molar concentration.<div class="autopermalink" data-description="Paragraph"><a href="#sec-basics-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-basics-2-2">
+<div class="para">
+<em class="alert">State Functions vs. Path Functions</em> The state of a substance is defined by its properties at a given instant. The state refers to the specific condition of a system at a given moment, uniquely defined by its thermodynamic properties. To define a state, a set of independent properties such as pressure (P), volume (V), temperature (T), and internal energy (U) must be defined. A system is in thermodynamic equilibrium in any perticular state.</div>
+<ul class="disc" id="sec-basics-2-2-2">
+<li id="sec-basics-2-2-2-1">
+<div class="para" id="sec-basics-2-2-2-1-1">State Functions (Point Functions): Depend only on the current state of the system, not on how the system reached that state. They are exact differentials. Examples: Internal energy U, enthalpy H, entropy S, temperature T, pressure P, volume V. Change: <span class="process-math">\(ΔU = U₂ - U₁\)</span> (independent of path).<div class="autopermalink" data-description="Paragraph"><a href="#sec-basics-2-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-basics-2-2-2-1" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-basics-2-2-2-2">
+<div class="para" id="sec-basics-2-2-2-2-1">Path Functions: Depend on the path or process followed between states. They are inexact differentials. Examples: Heat Q and Work W. The value of <span class="process-math">\(\int dW\)</span> or <span class="process-math">\(\int dQ\)</span> changes with the path taken on a P-V diagram.<div class="autopermalink" data-description="Paragraph"><a href="#sec-basics-2-2-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-basics-2-2-2-2" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">If even one property changes, the system moves to a different state. The phase of a substance is also an important aspect of its state, as it can exist in different phases (solid, liquid, gas) depending on the temperature and pressure conditions. A <em class="alert">phase</em> is a quantity of matter that is homogeneous throughout, and has a definite chemical composition and physically distinct properties.  An example of a single phase is a pure substance like ice, while an example of a multi-phase system is a mixture of ice and water. A <em class="alert">phase boundary</em> is the interface between two phases, and it can have unique properties that differ from those of the individual phases. For example, in a glass of ice water, the solid ice is one phase and the liquid water is another.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-basics-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-them_equil"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="space"> </span><span class="title">Thermodynamic Equilibrium</span>
+</h3>
+<div class="para logical" id="subsec-them_equil-2">
+<div class="para">A system is in <dfn class="terminology">thermodynamic equilibrium</dfn> when its macroscopic properties are unchanging in time and there are no net flows of matter or energy. In this state, the system is at its lowest possible energy and is stable. The properties of a system in thermodynamic equilibrium can be described by a set of state variables, such as temperature, pressure, and volume. These variables are related to each other through the equations of state, which describe the behavior of the system under different conditions. There are several types of thermodynamic equilibrium, including</div>
+<ul class="disc" id="subsec-them_equil-2-2">
+<li id="subsec-them_equil-2-2-1">
+<div class="para" id="subsec-them_equil-2-2-1-1">
+<dfn class="terminology">Thermal equilibrium:</dfn> No temperature gradient; temperature is uniform (T constant throughout). <em class="alert">Zeroth Law of Thermodynamics.</em>  (Temperature is uniform throughout the system or when it is in simultaneous mechanical, thermal, and chemical equilibrium (no net changes occur)),<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-2-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-them_equil-2-2-1" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-them_equil-2-2-2">
+<div class="para" id="subsec-them_equil-2-2-2-1">
+<dfn class="terminology">Mechanical equilibrium</dfn>  No unbalanced forces; pressure is uniform (no net force or acceleration), and<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-2-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-them_equil-2-2-2" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-them_equil-2-2-3">
+<div class="para" id="subsec-them_equil-2-2-3-1">
+<dfn class="terminology">Chemical equilibrium</dfn> No net chemical reactions or diffusion; composition remains constant. (where the chemical potentials of all species are equal throughout the system).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-2-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-them_equil-2-2-3" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">If any one is missing, the system is in a non-equilibrium state.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-them_equil-3">
+<ul class="disc" id="subsec-them_equil-3-1">
+<li id="subsec-them_equil-3-1-1">
+<div class="para" id="subsec-them_equil-3-1-1-1">Quasi-static (Reversible) Process: A process carried out infinitely slowly, so the system remains in equilibrium at every stage. Idealized for maximum efficiency calculations.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-them_equil-3-1-1" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="subsec-them_equil-3-1-2">
+<div class="para" id="subsec-them_equil-3-1-2-1">State Postulate: For a simple compressible system, two independent intensive properties fix the thermodynamic state (e.g., P and T fix the state of an ideal gas).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-3-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#subsec-them_equil-3-1-2" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-them_equil-4">
+<em class="alert">Equilibrium System:</em> A state in which a system is in balance and there are no net changes occurring with respect to time. <em class="alert">Non Equilibrium System:</em> A state in which a system is not in balance and there are net changes occurring with respect to time.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-them_equil-5">
+<div class="para">In the state of thermal equilibrium,</div>
+<div class="displaymath process-math" id="subsec-them_equil-5-1">
+\begin{align}
+U \amp =U(T,V,N_k) \tag{1.1.1}\\
+S \amp =S(T,V,N_k) \tag{1.1.2}
+\end{align}
+</div>
+<div class="para">where <span class="process-math">\(U\)</span> is the internal energy of the system, which is a function of temperature (T), volume (V), and the number of particles of each species (N_k). The values of extensive variables,</div>
+<div class="displaymath process-math" id="subsec-them_equil-5-3">
+\begin{align}
+U \amp =U(S,V,N_k) \tag{1.1.3}\\
+S \amp =S(U,V,N_k) \tag{1.1.4}
+\end{align}
+</div>
+<div class="para">where <span class="process-math">\(S\)</span> is the entropy of the system, which is also a function of temperature (T), volume (V), and the number of particles of each species (N_k). The state of thermodynamic equilibrium is characterized by the fact that the internal energy and entropy of the system are at their minimum values for a given set of conditions. In this state, the system is stable and there are no net changes occurring with respect to time.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-them_equil-6">
+<div class="para">Intensive variables can also be written as derivatives of one extensive variable with respect to another. For example, temperature can be written as the derivative of internal energy with respect to entropy, and pressure can be written as the derivative of enthalpy with respect to volume.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T= \left(\frac{\partial U}{\partial S}\right)_{V, N_k}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p= \left(\frac{\partial H}{\partial V}\right)_{S, N_k}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-them_equil-7">
+<div class="para">In non-equilibrium state, irreversible process takes place, which drives the system towards equilibrium state. For non-equilibrium systems, the internal energy and entropy can be expressed as functions of time (t) and is defined locally at every point at <span class="process-math">\(x\text{.}\)</span> Hence, the energy density at point <span class="process-math">\(x\)</span> is given by <span class="process-math">\(u(x,t)\)</span> and the entropy density at point <span class="process-math">\(x\)</span> is given by <span class="process-math">\(s(x,t)\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u(x,t)=u[T(x), n_k(x)] 
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U = \int u(x,t) dV = \int_{V} u[T(x), n_k(x)] dV 
+\end{equation*}
+</div>
+<div class="para">Also,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s(x,t) = s[T(x), n_k(x)]
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S = \int s(x,t) dV = \int_{V} s[T(x), n_k(x)] dV
+\end{equation*}
+</div>
+<div class="para">also,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+N_k = \int_{V} n_k(x) dV
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(U(t)\)</span> is the total internal energy of the system at time <span class="process-math">\(t\text{,}\)</span> <span class="process-math">\(S(t)\)</span> is the total entropy of the system at time <span class="process-math">\(t\text{,}\)</span> and the integrals are taken over the entire volume of the system. The internal energy and entropy of a non-equilibrium system can change with time as the system evolves towards equilibrium. The rate of change of internal energy and entropy can be described by the laws of thermodynamics, which govern the behavior of energy and entropy in non-equilibrium systems. The first law of thermodynamics states that the change in internal energy of a system is equal to the heat added to the system minus the work done by the system. The second law of thermodynamics states that the entropy of an isolated system will always increase over time, and it can be used to determine the direction of spontaneous processes in non-equilibrium systems.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-them_equil-8">In non-equilibrium system, total energy <span class="process-math">\(U\)</span> is no longer a function of other extensive variables such as <span class="process-math">\(S, N_k\)</span> as in equation <a href="sec-basics.html#subsec-them_equil-5-3" class="xref" data-knowl="./knowl/xref/therm_eq3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.1.3">(1.1.3)</a> and <a href="sec-basics.html#subsec-them_equil-5-3" class="xref" data-knowl="./knowl/xref/therm_eq4.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.1.4">(1.1.4)</a> and system can not have a single tempreture for the entire system. That is, <span class="process-math">\(U, S, N_k \)</span> and <span class="process-math">\(V\)</span> are no longer a function of the toher three variables as in <a href="sec-basics.html#subsec-them_equil-5-3" class="xref" data-knowl="./knowl/xref/therm_eq3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.1.3">(1.1.3)</a> and <a href="sec-basics.html#subsec-them_equil-5-3" class="xref" data-knowl="./knowl/xref/therm_eq4.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 1.1.4">(1.1.4)</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-them_equil-9">
+<div class="para">The term</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{d_i S}{dt}
+\end{equation*}
+</div>
+<div class="para">is the rate of change of entropy due to chemical reactions, diffusion, heat conduction, and other irreversible processes that occur within the system. Here</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{d_i S}{dt}
+\end{equation*}
+</div>
+<div class="para">is always positive, which means that the entropy of a non-equilibrium system will always increase over time as it evolves towards equilibrium. In an open system, the change in entropy can also be influenced by the exchange of matter and energy with the surroundings, which can lead to a decrease in entropy if the system is losing energy or matter to the surroundings.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{d_e S}{dt}
+\end{equation*}
+</div>
+<div class="para">can either be positive or negative, depending on the direction of energy and matter exchange between the system and its surroundings.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-them_equil-10">
+<div class="para">In non-equilibrium thermodynamics, the total entropy change of a system, <span class="process-math">\(dS\text{,}\)</span> is decomposed into two distinct parts: the entropy flow from the environment and the entropy production within the system itself. For any system, the rate of change of entropy is expressed as:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\, \frac{dS}{dt}= \frac{d_iS}{dt} +\frac{d_eS}{dt}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-10" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-them_equil-11">
+<ol class="decimal" id="subsec-them_equil-11-1">
+<li id="subsec-them_equil-11-1-1">
+<div class="para logical" id="subsec-them_equil-11-1-1-1">
+<div class="para">
+<dfn class="terminology">Entropy Flow from the Environment:</dfn> This term, denoted as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{d_e S}{dt}\text{,}
+\end{equation*}
+</div>
+<div class="para">represents the rate at which entropy is exchanged between the system and its surroundings. It can be positive or negative, depending on whether the system is gaining or losing entropy to the environment.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-11-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsec-them_equil-11-1-1" title="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-them_equil-11-1-2">
+<div class="para logical" id="subsec-them_equil-11-1-2-1">
+<div class="para">
+<dfn class="terminology">Entropy Production within the System:</dfn> This term, denoted as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{d_i S}{dt}\text{,}
+\end{equation*}
+</div>
+<div class="para">represents the rate at which entropy is produced within the system due to irreversible processes such as chemical reactions, diffusion, and heat conduction. It is always positive, indicating that the entropy of a non-equilibrium system will always increase over time as it evolves towards equilibrium.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-11-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsec-them_equil-11-1-2" title="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-11" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-them_equil-12">
+<div class="para">
+<dfn class="terminology">In a Non-Equilibrium Steady State:</dfn> In a steady state, the total entropy of the system remains constant (<span class="process-math">\(\frac{dS}{dt} = 0\)</span>), but the system is still active and irreversible. In this case, the entropy flow from the environment is exactly balanced by the entropy production within the system, such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{d_e S}{dt} = -\frac{d_i S}{dt}\text{.}
+\end{equation*}
+</div>
+<div class="para">This means that the system is continuously producing entropy due to irreversible processes, but it is also exchanging entropy with the environment in such a way that the total entropy remains constant. Non-equilibrium steady states are common in many natural and engineered systems, such as chemical reactors, biological systems, and atmospheric processes. They are characterized by a constant flow of energy and matter through the system, which allows it to maintain a steady state despite being out of equilibrium.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-them_equil-12" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 1.1.1: Thermodynamic Equilibrium"><a href="#subsec-them_equil" title="Copy heading and permalink for Subsection 1.1.1: Thermodynamic Equilibrium">🔗</a></div></section><section class="subsection" id="subsec-process"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.1.2</span><span class="space"> </span><span class="title">process and Cycles</span>
+</h3>
+<div class="para" id="subsec-process-2">
+<dfn class="terminology">Change of State:</dfn> implies one or more properties of the system has changed. <dfn class="terminology">Process:</dfn> a succession of changes of state. A process can be represented on a graph, such as a pressure-volume <span class="process-math">\(P-V\)</span> diagram, where the path of the process is shown as a curve connecting the initial and final states. The area under the curve on a P-V diagram represents the work done by or on the system during the process. The change in internal energy of the system during a process can be calculated using the first law of thermodynamics, which states that the change in internal energy is equal to the heat added to the system minus the work done by the system.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-process-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-process-3">
+<dfn class="terminology">Isothermal Process:</dfn> A process that occurs at constant temperature. In an isothermal process, the internal energy of the system remains constant, and the heat added to the system is equal to the work done by the system. <dfn class="terminology">Adiabatic Process:</dfn> A process that occurs without any heat exchange with the surroundings. In an adiabatic process, the change in internal energy of the system is equal to the work done by the system. <dfn class="terminology">Isobaric Process:</dfn> A process that occurs at constant pressure. In an isobaric process, the work done by the system is equal to the change in volume of the system multiplied by the constant pressure. <dfn class="terminology">Isochoric Process:</dfn> A process that occurs at constant volume. In an isochoric process, the work done by the system is zero, and the change in internal energy of the system is equal to the heat added to the system.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-process-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-process-4">
+<dfn class="terminology">Cycle:</dfn> a process that returns a system to its initial state. It is a thermodynamic “round trip.”<div class="autopermalink" data-description="Paragraph"><a href="#subsec-process-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-process-5">In a cycle, the system undergoes a series of processes that eventually return it to its original state. The net work done by the system over one complete cycle is equal to the net heat added to the system, as stated by the first law of thermodynamics. Cycles are important in thermodynamics because they can be used to analyze the performance of engines and other devices that convert heat into work. Examples of cycles include the Carnot cycle, which is an idealized cycle that represents the maximum efficiency of a heat engine, and the Rankine cycle, which is commonly used in power plants to generate electricity.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-process-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-process-6">A cycle can be represented on a graph, such as a pressure-volume (P-V) diagram, where the path of the cycle is shown as a closed curve. The area enclosed by the curve on a P-V diagram represents the net work done by the system during one complete cycle. The efficiency of a cycle can be calculated by dividing the net work done by the system by the heat added to the system during the cycle. The efficiency of a cycle is always less than 100% due to irreversibilities and losses in real systems.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-process-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-process-7">In summary, a process is a succession of changes of state, while a cycle is a process that returns a system to its initial state. Both processes and cycles are important concepts in thermodynamics, as they help us understand how energy is transferred and transformed in different systems.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-process-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside"><div class="sbsrow" style="margin-left:7.5%;margin-right:7.5%;">
+<div class="sbspanel top" style="width:47.0588235294118%;"><img src="generated/latex-image/isobaric_isochoric.svg" role="img" class="contained"></div>
+<div class="sbspanel top" style="width:35.2941176470588%;"><img src="generated/latex-image/isothermal_adiabatic.svg" role="img" class="contained"></div>
+</div></div>
+<div class="autopermalink" data-description="Subsection 1.1.2: process and Cycles"><a href="#subsec-process" title="Copy heading and permalink for Subsection 1.1.2: process and Cycles">🔗</a></div></section><div class="autopermalink" data-description="Section 1.1: Basic Concepts (Zeroth Law)"><a href="#sec-basics" title="Copy heading and permalink for Section 1.1: Basic Concepts (Zeroth Law)">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch-I_tsv.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-heat.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

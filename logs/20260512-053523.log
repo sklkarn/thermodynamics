@@ -1,0 +1,99 @@
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Building target web
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : converting latex-image pictures from /home/sk/Desktop/book25/thermodynamics/source/main.ptx to svg graphics for placement in /home/sk/Desktop/book25/thermodynamics/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /home/sk/Desktop/book25/thermodynamics/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'cli.version': '2.20', 'publisher': '/home/sk/Desktop/book25/thermodynamics/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /home/sk/Desktop/book25/thermodynamics/source
+INFO    : verifying and expanding input directory: /home/sk/Desktop/book25/thermodynamics/source/../generated-assets
+INFO    : input directory expanded to absolute path: /home/sk/Desktop/book25/thermodynamics/generated-assets
+INFO    : verifying and expanding input directory: /home/sk/Desktop/book25/thermodynamics/source/../assets
+INFO    : input directory expanded to absolute path: /home/sk/Desktop/book25/thermodynamics/assets
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/extract-latex-image.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/extract-latex-image.xsl
+INFO    : converting isothermal_adiabatic.tex to isothermal_adiabatic.pdf
+ERROR   : LaTeX compilation of isothermal_adiabatic.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of isothermal_adiabatic.tex failed
+INFO    : converting therm_system.tex to therm_system.pdf
+INFO    : cropping therm_system.pdf to cropped-therm_system.pdf
+INFO    : renaming cropped-therm_system.pdf to therm_system.pdf
+INFO    : converting therm_system.pdf to therm_system.svg
+INFO    : converting isobaric_isochoric.tex to isobaric_isochoric.pdf
+INFO    : cropping isobaric_isochoric.pdf to cropped-isobaric_isochoric.pdf
+INFO    : renaming cropped-isobaric_isochoric.pdf to isobaric_isochoric.pdf
+INFO    : converting isobaric_isochoric.pdf to isobaric_isochoric.svg
+ERROR   : Unable to generate some latex-image assets:
+ LaTeX compilation failed for 1 "latex-image"(s).
+Review the log for error messages, and LaTeX transcripts.
+Images are:
+  isothermal_adiabatic.tex
+INFO    : Removing temporary directory /tmp/ptx-sn9z_ikf
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /home/sk/Desktop/book25/thermodynamics/output/web.
+INFO    : discovering source file's directory name: /home/sk/Desktop/book25/thermodynamics/source
+INFO    : verifying and expanding input directory: /home/sk/Desktop/book25/thermodynamics/source/../generated-assets
+INFO    : input directory expanded to absolute path: /home/sk/Desktop/book25/thermodynamics/generated-assets
+INFO    : verifying and expanding input directory: /home/sk/Desktop/book25/thermodynamics/source/../assets
+INFO    : input directory expanded to absolute path: /home/sk/Desktop/book25/thermodynamics/assets
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 8.0.0
+INFO    : Downloading Runestone Services, version 8.0.0
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-default-modern
+INFO    : converting /home/sk/Desktop/book25/thermodynamics/source/main.ptx to HTML in /tmp/ptx-k_xb2dqr
+INFO    : XSL conversion of /home/sk/Desktop/book25/thermodynamics/source/main.ptx by /home/sk/.ptx/2.20.0/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /home/sk/.ptx/2.20.0/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /tmp/ptx-k_xb2dqr
+INFO    : Removing temporary directory /tmp/ptx-9wu15bnc
+INFO    : 
+Success! Run `pretext view web` to see the results.
+
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

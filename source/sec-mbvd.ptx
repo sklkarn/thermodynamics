@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-mbvd" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Maxwell-Boltzmann Velocity Distribution</title>
+  <introduction>
+   
+  <p> 
+    The Maxwell-Boltzmann distribution describes the distribution of speeds of particles in an ideal gas at a given temperature. 
+    It is based on the following assumptions:
+    <ul>
+      <li>
+        <p>
+          The gas consists of a large number of identical non-interacting particles, moving with a speed much less than the speed of light. 
+        </p>
+      </li>
+      <li>
+        <p>
+          The motion of the particles is random, and the system is in thermal equilibrium at temperature T. 
+        </p>
+      </li>
+      <li>
+        <p>
+          The gas is in a three- dimensional space. 
+        </p>
+          <image source="cube.png" width="40%"/>
+      </li>
+    </ul>
+        It tells us what fraction of molecules have velocities with a particular magnitude and direction. 
+        In classical statistical mechanics, the probability <m>P(E)</m> of a particle having a certain energy <m>E</m> 
+        in a system is given by the Boltzmann factor: 
+    <me>
+      P(E) \propto e^{-E / kT} 
+    </me> 
+      where <m>k</m> is the Boltzmann constant and <m>T</m> is the absolute temperature. 
+      For a single particle in an ideal gas, the only energy is kinetic: 
+      <me>
+        E = \frac{1}{2}mv^2 = \frac{1}{2} m (v_x^2 + v_y^2 + v_z^2)
+      </me>
+          where <m>m</m> is the mass of the particle and <m>v</m> is its velocity. So the joint probability density is: 
+    <me>
+      P(v_x, v_y, v_z) \propto e^{-\frac{m}{2kT} (v_x^2 + v_y^2 + v_z^2)}  
+    </me>
+      Because the exponent is a sum of independent terms, the joint distribution factors: 
+    <me>
+      P(v_x, v_y, v_z) = C. P(v_x)P(v_y)P(v_z) 
+    </me>
+    where <m>P(v_i) \propto exp(- \beta \frac{m}{2} v_i^2)</m>, with <m>\beta = \frac{1}{kT}</m>. 
+    To normalize one component (e.g., <m>v_x</m>):
+    <me>
+      \int_{-\infty}^{\infty} P(v_x) dv_x = 1 
+    </me>
+    gives us the normalization constant <m>C</m>. 
+    This is a standard Gaussian integral. Let a = m/(2kT): 
+    <me>
+      \int_{-\infty}^{\infty} e^{-a v_x^2} dv_x = \sqrt{\frac{\pi}{a}} 
+    </me>
+    So the normalized distribution for one component is:
+    <me>
+      P(v_x) = \sqrt{\frac{m}{2\pi kT}} e^{-\frac{m}{2kT} v_x^2} 
+    </me>
+    and the joint distribution is:
+    <me>
+      P(v_x, v_y, v_z) = \left( \frac{m}{2\pi kT} \right)^{3/2} e^{-\frac{m}{2kT} (v_x^2 + v_y^2 + v_z^2)} 
+    </me>
+     The speed distribution (the distribution of the magnitude of the velocity) can be found by converting to 
+     spherical coordinates in velocity space and integrating over the angles. 
+     The speed <m>v</m> is given by <m>v = \sqrt{v_x^2 + v_y^2 + v_z^2}</m>. The speed distribution is:
+    <me>
+      P(v) = 4\pi v^2 \left( \frac{m}{2\pi kT} \right)^{3/2} e^{-\frac{m}{2kT} v^2} 
+    </me>
+     This distribution is known as the Maxwell-Boltzmann speed distribution. 
+     It describes how the speeds of particles in an ideal gas are distributed at a given temperature. 
+     The most probable speed, mean speed, and root-mean-square speed can be derived from this distribution.  
+    </p>  
+     <p>
+      The shape of the Maxwell-Boltzmann distribution depends on the temperature and the mass of the particles. 
+      As the temperature increases, the distribution becomes broader and shifts to higher speeds. 
+      As the mass of the particles increases, the distribution becomes narrower and shifts to lower speeds. 
+     </p>
+        <image source="mbvd.png" width="60%"/>
+     <p>
+      With this probability distribution, we can calculate various properties of the gas, 
+      such as the average speed, the most probable speed, and the root-mean-square speed. 
+      The average speed is given by:
+    <me>
+      \langle v \rangle = \int_0^\infty v P(v) dv = \sqrt{\frac{8kT}{\pi m}} 
+    </me>
+      The most probable speed is given by:
+    <me>
+      v_{mp} = \sqrt{\frac{2kT}{m}} 
+    </me>
+      The root-mean-square speed is given by:
+    <me>
+      v_{rms} = \sqrt{\langle v^2 \rangle} = \sqrt{\frac{3kT}{m}} 
+    </me>
+     These speeds are related by the following inequalities:
+    <me>
+      v_{mp} \lt \langle v \rangle \lt v_{rms} 
+    </me>
+     The Maxwell-Boltzmann distribution is a fundamental result in statistical mechanics and provides a 
+     link between the microscopic properties of particles and the macroscopic properties of gases. 
+     It is used to derive the ideal gas law and to understand various phenomena in gases, such as diffusion, effusion, and viscosity. 
+     It also serves as a basis for more advanced theories of gases, such as quantum statistics and the kinetic theory of gases.   
+     </p>
+     <p>
+      Since molar mass <m>M=mN_a</m> and gas constant<m>R=kN_a</m>, we can also write the Maxwell-Boltzmann speed distribution 
+      in terms of the molar mass <m>M</m> and the gas constant <m>R</m>:
+    <me>
+      P(v) = 4\pi v^2 \left( \frac{M}{2\pi RT} \right)^{3/2} e^{-\frac{Mv^2}{2RT}} 
+    </me>
+     This form is often used in chemistry and engineering applications. 
+     </p>
+     <p>
+      The average speed can also be expressed in terms of the molar mass and the gas constant: 
+       <me>
+      \langle v \rangle = \sqrt{\frac{8RT}{\pi M}} 
+    </me> 
+     The average kinetic energy of a gas molecule depends only on the temperature and is independent of its mass. 
+     It is given by:
+    <me>
+      \langle E_k \rangle = \frac{3}{2} kT = \frac{3}{2} RT/N_a 
+     </me>
+      This is a consequence of the equipartition theorem, which states that each degree of freedom contributes an 
+     average energy of <m>\frac{1}{2} kT</m> to the total energy of the system. For a monatomic gas, there are three 
+     translational degrees of freedom, so the average kinetic energy is <m>\frac{3}{2} k T</m>. 
+     For a diatomic gas, there are additional rotational and vibrational degrees of freedom, 
+     which contribute to the total energy of the system, so the average kinetic energy per mole is 
+     <me>
+       \, dU = \frac{5}{2} R T
+     </me>. 
+      The Maxwell-Boltzmann distribution is a fundamental result in statistical mechanics and provides a link between 
+      the microscopic properties of particles and the macroscopic properties of gases. It is used to derive the ideal gas law 
+      and to understand various phenomena in gases, such as diffusion, effusion, and viscosity. It also serves as a basis 
+      for more advanced theories of gases, such as quantum statistics and the kinetic theory of gases.     
+     </p>
+
+  </introduction>
+
+  <subsection xml:id="subsec-msd">
+    <title>Maxwell Speed Distribution</title>
+
+      <image source="vol_element.png" width="40%"/>
+    <p>
+      The direction of velocity are equally probable hence the average velocity of a molecule is zero 
+      but the average of the square of the velocity is not zero. However, the average speed, which depends 
+      only on the magnitude of the velocity, is not zero. The probability of speed in the range <m>v, v + dv</m> 
+      of a molecule regardless of direction is given by 
+      <me>
+       \int_{\theta = 0}^{\pi} \int_{\phi = 0}^{2\pi} P(v) v^2 \sin\theta \, d\theta \, d\phi \, dv = 4\pi P(v)v^2\, dv
+      </me>
+      where the volume element is <m>v^2 \sin\theta \, d\theta \, d\phi \, dv</m> in spherical coordinates  
+      and the probability is written as <m>P(v) v^2 \sin\theta \, d\theta \, d\phi \, dv</m>. 
+      The quantity <m>4\pi P(v)v^2\, dv</m> is the probability density for the molecular speed. 
+      The probability distribution for molecular speeds can be written explicitly as
+       <me>
+      f(v)\, dv = 4\pi \left( \frac{M}{2\pi kT} \right)^{3/2} e^{\left(-\frac{Mv^2}{2kT}\right)} v^2 \, dv
+    </me>
+    This graphs show that there are a few molecules with very low speeds and a few with large speeds at any perticular temperature; 
+    we can also see that f(v) becomes broader as T increases. The speed <m>v</m> at which <m>f(v)</m> reaches its maximum is the most probable speed.
+    </p>
+     <image source="mbvd.png" width="60%"/>
+  </subsection>
+    
+</section>

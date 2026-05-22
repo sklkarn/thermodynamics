@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>First Law</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Thermodynamics">
+<meta property="book:author" content="Sunil Karna">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.0.0';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="thermodynamics.html"><span class="title">Thermodynamics</span> <span class="subtitle">of Equilibrium Systems</span></a></h1>
+<p class="byline">Sunil Karna</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-II_lt.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-II_lt.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-II_law.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
+\newcommand{\Z}{\mathbb Z} 
+\newcommand{\Q}{\mathbb Q} 
+\newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-I_tsv.html" class="internal"><span class="codenumber">1</span> <span class="title">Thermodynamic Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-basics.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Basic Concepts (Zeroth Law)</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-basics.html#subsec-them_equil" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Thermodynamic Equilibrium</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-basics.html#subsec-process" class="internal"><span class="codenumber">1.1.2</span> <span class="title">process and Cycles</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-heat.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Heat and Temperature</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-heat.html#subsec-laws_thermdynamics" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Laws of Thermodynamics</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-heat.html#subsec-gas_laws" class="internal"><span class="codenumber">1.2.2</span> <span class="title">The Gas Laws</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-vander.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Van der Waals Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vander.html#subsec-crit_point" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Critical Point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vander.html#subsec-intermol_force" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Molecular (Intermolecular) Forces in Real Gases</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-mbvd.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Maxwell-Boltzmann Velocity Distribution</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-mbvd.html#subsec-msd" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Maxwell Speed Distribution</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_first.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-II_lt.html" class="internal"><span class="codenumber">2</span> <span class="title">Laws of Thermodynamics</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-I_law.html" class="internal"><span class="codenumber">2.1</span> <span class="title">First Law</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-I_law.html#subsec-sp_cap_rel" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Relation between <span class="process-math">\(C_{mp}\)</span> and <span class="process-math">\(C_{mv}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec-I_law.html#subsec-adiab_proc" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Adiabatic Processes in Ideal Gas</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-I_law.html#subsubsec-sound_prop" class="internal"><span class="codenumber">2.1.2.1</span> <span class="title">Sound Propagation</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-I_law.html#subsec-hess_law" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Hess’s law</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-II_law.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Second Law</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-III_law.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Third Law</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-III.html" class="internal"><span class="codenumber">3</span> <span class="title">Entropy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-III.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Chapter III</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-IV.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Chapter IV</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-I_law"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">First Law</span>
+</h2>
+<section class="introduction" id="sec-I_law-2"><div class="para logical" id="sec-I_law-2-1">
+<div class="para">The first law of thermodynamics states that the change in internal energy of a system is equal to the heat added to the system minus the work done by the system on its surroundings. When a system undergoes a process, the change in internal energy <span class="process-math">\(\Delta U\)</span> is given by <span class="process-math">\(dU = dQ - dW\text{,}\)</span> where <span class="process-math">\(dQ\)</span> is the heat added to the system and <span class="process-math">\(dW\)</span> is the work done by the system. This law is a statement of the conservation of energy, which means that energy cannot be created or destroyed, only transferred or converted from one form to another. In another way, in every cyclic process, the net heat absorbed by the system is equal to the net work done by the system. Therefore, the internal energy of the system remains unchanged after a cyclic process, i.e.,</div>
+<div class="displaymath process-math" id="I_law_eq1">
+\begin{equation}
+\oint \,dU = 0\text{.}\tag{2.1.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-I_law-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-I_law-2-2">
+<div class="para">For any system if value of <span class="process-math">\(U\)</span> at initial state, O is <span class="process-math">\(U_o\text{,}\)</span> the <span class="process-math">\(U\)</span> is a fuction of the state, X as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+U=U(T, V,N_k) +U_o
+\end{equation*}
+</div>
+<div class="para">For an open system</div>
+<div class="displaymath process-math" id="heat_eq2">
+\begin{equation}
+\,dU =  \,dQ+ \,dW + \,dU_{matter}\tag{2.1.2}
+\end{equation}
+</div>
+<div class="para">here <span class="process-math">\(\,dU_{matter}\)</span> is additional flow of matter. The total change in internal energy of a system can be expressed as the sum of the changes in internal energy due to heat transfer, work done, and matter flow.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-I_law-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-I_law-2-3">
+<div class="para">If the system is open and going from state A to state B, the change in internal energy can be expressed as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int \,dU = U_B - U_A 
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(U\)</span> is a state function, the change in internal energy depends only on the initial and final states of the system, and not on the path taken to get from one state to the other. In general, the change in total internal energy can be written as the sum of the changes in internal energy due to heat transfer, work done, and matter flow,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\,dU = \,dQ - P \,dV + \phi \, dq +E\,dP -B\,dM+ +\gamma \,dA + \cdots
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\phi \,dq\)</span> is the energy due to transfer of charge <span class="process-math">\(\,dq\text{,}\)</span> and <span class="process-math">\(E\,dP\)</span> is the energy due to transfer of polarization <span class="process-math">\(dP\text{,}\)</span> <span class="process-math">\(-B\,dM\)</span> is the change in energy due to change in magnetic dipole moment, <span class="process-math">\(\,dM\text{,}\)</span> and <span class="process-math">\(\gamma \,dA\)</span> is the energy due to change in surface area <span class="process-math">\(\,dA\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-I_law-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-I_law-2-4">
+<div class="para">For a system undergoing chemical transformations, the total energy <span class="process-math">\(U=U(T,V, N_k)\)</span> can be expressed as</div>
+<div class="displaymath process-math" id="heat_eq_3">
+\begin{equation}
+\,dU = \left( \frac{\partial U}{\partial T} \right)_{V, N_k} \,dT + \left( \frac{\partial U}{\partial V} \right)_{T, N_k} \,dV + \sum_k \left( \frac{\partial U}{\partial N_k} \right)_{T, V, N_{j\neq k}} \,dN_k   \tag{2.1.3}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(dN_k\)</span> is the change in the number of moles of the <span class="process-math">\(k\)</span>-th component.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-I_law-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-I_law-2-5">
+<div class="para">Since no work is done at constant volume, <span class="process-math">\(\,dU=\,dQ\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+C_{mV} (T,V) = \left( \frac{\partial Q}{\partial T} \right)_{V} = \left( \frac{\partial U}{\partial T} \right)_{V,N=1}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-I_law-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-I_law-2-6">
+<em class="alert">Mechanical Work due to Change in Volume:</em> When a system undergoes a change in volume <span class="process-math">\(\,dV\)</span> under the action of a pressure <span class="process-math">\(P\text{,}\)</span> the work done by the system is given by <span class="process-math">\(dW = - P \cdot dV\text{.}\)</span> This is known as the mechanical work done by the system. The negative sign indicates, the volume increase as work is done by the system on its surroundings, and positive sign indicates the decrease of volume of the system when the work is done on the system by its surroundings.<div class="autopermalink" data-description="Paragraph"><a href="#sec-I_law-2-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-I_law-2-7">
+<div class="para">
+<em class="alert">Isothermal Volume Change:</em> When a system undergoes an isothermal process, the temperature remains constant.</div>
+<div class="displaymath process-math" id="I_law_eq2">
+\begin{equation}
+Work = \int_{V_i}^{V_f} - P \,dV = -NRT \ln \frac{V_f}{V_i}\tag{2.1.4}
+\end{equation}
+</div>
+<div class="para">The negative sign indicates that an expanding gas transfers energy to the surroundings, while a compressing gas absorbs energy from the surroundings.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-I_law-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsec-sp_cap_rel"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.1</span><span class="space"> </span><span class="title">Relation between <span class="process-math">\(C_{mp}\)</span> and <span class="process-math">\(C_{mv}\)</span></span>
+</h3>
+<div class="para logical" id="subsec-sp_cap_rel-2">
+<div class="para">The change in internal energy for one-component substance <a href="sec-I_law.html#sp_eq3" class="xref" data-knowl="./knowl/xref/sp_eq3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.7">(2.1.7)</a>:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sp_eq3.html" id="sp_eq1">
+\begin{equation}
+\,dU = \,dQ-p\,dV = \left( \frac{\partial U}{\partial T} \right)_{V} \,dT + \left( \frac{\partial U}{\partial V} \right)_{T} \,dV \tag{2.1.5}
+\end{equation}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sp_eq3.html" id="sp_eq2">
+\begin{equation}
+or, \quad \,dQ = \left( \frac{\partial U}{\partial T} \right)_{V} \,dT +\left[p+ \left( \frac{\partial U}{\partial V} \right)_{T} \right] \,dV\tag{2.1.6}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sp_cap_rel-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-sp_cap_rel-3">
+<div class="para">If the gas is heated at constant volume, then no work is done and the change in energy is due to heat supplied to the gas.</div>
+<div class="displaymath process-math" id="sp_eq3">
+\begin{equation}
+C_{V} = \left( \frac{\partial Q}{\partial T} \right)_{V} = \left( \frac{\partial U}{\partial T} \right)_{V}\tag{2.1.7}
+\end{equation}
+</div>
+<div class="para">However, if the gas is heated at constant pressure, then</div>
+<div class="displaymath process-math" id="sp_eq4">
+\begin{equation}
+C_{P} = \left( \frac{\partial Q}{\partial T} \right)_{p} = \left( \frac{\partial U}{\partial T} \right)_{V} + \left[p+ \left( \frac{\partial U}{\partial V} \right)_{T} \right] \left(\frac{\partial V}{\partial T}\right)_p\tag{2.1.8}
+\end{equation}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math" id="sp_eq5">
+\begin{equation}
+C_p-C_V = \left[p+ \left( \frac{\partial U}{\partial V} \right)_{T} \right] \left(\frac{\partial V}{\partial T}\right)_p\tag{2.1.9}
+\end{equation}
+</div>
+<div class="para">The right hand term is due to additional heat needed to raise the temperature of a gas at constant pressure to compentsate energy due to volume expansion.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sp_cap_rel-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-sp_cap_rel-4">
+<div class="para">For and ideal gas where <span class="process-math">\(U\)</span> is only a function of temperature and is independent of the volume, hence, <span class="process-math">\(\left(\frac{\partial U}{\partial V} \right)_{T} = 0\)</span> and for 1 mole of a gas, <span class="process-math">\(pV=RT\text{,}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p\left(\frac{\partial V}{\partial T}\right)_p = R.
+\end{equation*}
+</div>
+<div class="para">Therefore, molar heat capacities reduces to</div>
+<div class="displaymath process-math" id="sp_eq6">
+\begin{equation}
+C_{mp} - C_{mv} = R\tag{2.1.10}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-sp_cap_rel-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 2.1.1: Relation between C_{mp} and C_{mv}"><a href="#subsec-sp_cap_rel" title="Copy heading and permalink for Subsection 2.1.1: Relation between C_{mp} and C_{mv}">🔗</a></div></section><section class="subsection" id="subsec-adiab_proc"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="space"> </span><span class="title">Adiabatic Processes in Ideal Gas</span>
+</h3>
+<section class="introduction" id="subsec-adiab_proc-2"><div class="para logical" id="subsec-adiab_proc-2-1">
+<div class="para">In adiabatic process, the state of a system changes wihout any exchange of heat. Hence from <a href="sec-I_law.html#sp_eq1" class="xref" data-knowl="./knowl/xref/sp_eq1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 2.1.5">(2.1.5)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sp_eq1.html">
+\begin{equation*}
+\,dQ = \, dU +p\,dV 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sp_eq1.html" id="sp_eq7">
+\begin{equation}
+0  = \left( \frac{\partial U}{\partial T} \right)_{V} \,dT +\left( \frac{\partial U}{\partial V} \right)_{T} \,dV +p\, dV \tag{2.1.11}
+\end{equation}
+</div>
+<div class="para">For an ideal gas, since <span class="process-math">\(U\)</span> is a function of temperature only at constant volume, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sp_eq1.html">
+\begin{equation*}
+nC_{mv} \,dT + p\,dV = 0 
+\end{equation*}
+</div>
+<div class="para">If volume changes in ideal gas equation during the process of change, then we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sp_eq1.html">
+\begin{equation*}
+PV = nRT \Rightarrow \,  nC_{mv} \,dT + \frac{nRT}{V}\,dV =0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sp_eq1.html" id="subsec-adiab_proc-2-1-7">
+\begin{align*}
+C_{mv} \,dT + \frac{RT}{V}\,dV  \amp =0 \\
+or, \,    \frac{\,dT}{T} + \frac{R}{C_{mv} V}\,dV   \amp =0 \\
+or, \, \frac{\,dT}{T} + \frac{C_{mp}-C_{mv}}{C_{mv} V}\,dV \amp  =0 \\
+or, \, \frac{\,dT}{T} + \left(\frac{C_{mp}}{C_{mv}}-1\right)\frac{\,dV}{V} \amp =0\\
+or, \, \frac{\,dT}{T} + \left(\gamma - 1\right)\frac{\,dV}{V} \amp =0 \, \quad \left[\text { define} \frac{C_{mp}}{C_{mv}} =\gamma \right] \\
+or, \,  \frac{\,dT}{T}  \amp = - \left(\gamma - 1\right)\frac{\,dV}{V}\\
+or, \, \ln T \amp =-\left(\gamma -1\right)\ln V + \text{ constant} 
+\end{align*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sp_eq1.html" id="sp_eq8">
+\begin{equation}
+\therefore \, TV^{(\gamma-1)}  = \text{ constant} \tag{2.1.12}
+\end{equation}
+</div>
+<div class="para">Also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sp_eq1.html" id="sp_eq9">
+\begin{equation}
+or, \, pV^{\gamma}  = \text{ constant} \tag{2.1.13}
+\end{equation}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sp_eq1.html" id="sp_eq10">
+\begin{equation}
+or, \, T^\gamma p^{1-\gamma}  = \text{ constant} \tag{2.1.14}
+\end{equation}
+</div>
+<div class="para">can be derived from <span class="process-math">\(pV=nRT\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-adiab_proc-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsubsection" id="subsubsec-sound_prop"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.1.2.1</span><span class="space"> </span><span class="title">Sound Propagation</span>
+</h4>
+<div class="para logical" id="subsubsec-sound_prop-2">
+<div class="para">The propagation of sound in nature is also an adiabatic process because sound is pressure wave and propagate in the medium without generating heat. The loudness or internsity level of sound is given by <a class="external" href="https://sklkarn.github.io/calphysii/sec_fourth-sound.html" target="_blank"><code class="code-inline tex2jax_ignore">https://sklkarn.github.io/calphysii/sec_fourth-sound.html</code></a>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\beta = 10 \log_{10} \left(\frac{I}{I_o}\right) =  10 \log_{10} \left(\frac{p^2_{rms}}{p^2_o}\right)
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(p_o= 2\times 10^{-8} \)</span> kPa, <span class="process-math">\(p_{rms} = \sqrt{(p-p_{atm})^2}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-sound_prop-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsubsec-sound_prop-3">
+<div class="para">The velocity of sound is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v_s = \sqrt{\frac{B}{\rho}}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\rho \)</span> is density of the medium and <span class="process-math">\(B=\frac{stress}{\text{ vol. strain}} = -\frac{dp}{dV/V}\text{.}\)</span> Negative sign indicates volume is decreasing with the increase of pressure.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \, B= -V\frac{dp}{dV} = \gamma p
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="subsubsec-sound_prop-3-5">
+\begin{align*}
+pV^\gamma \amp = constant \\
+p\gamma V^{\gamma-1}\, dV  +V^\gamma \, dp \amp = 0 \\
+\frac{dp}{dV}   \amp = -\frac{p\gamma V^{\gamma -1}}{v^\gamma} = -\frac{\gamma p}{V} 
+\end{align*}
+</div>
+<div class="para">Now from,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+p=\frac{nRT}{V} = \frac{mRT}{MV} = \frac{\rho RT}{M}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \, B =\frac{ \gamma \rho RT}{M}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" id="sp_eq11">
+\begin{equation}
+v_s = \sqrt{\frac{ \gamma RT}{M}}\tag{2.1.15}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-sound_prop-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 2.1.2.1: Sound Propagation"><a href="#subsubsec-sound_prop" title="Copy heading and permalink for Subsubsection 2.1.2.1: Sound Propagation">🔗</a></div></section><section class="subsubsection" id="subsec-hess_law"><h4 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">2.1.2.2</span><span class="space"> </span><span class="title">Hess’s law</span>
+</h4>
+<div class="para" id="subsec-hess_law-2">Hess’s Law of Constant Heat Summation states that the total enthalpy change (<span class="process-math">\(\Delta H\)</span>) for a chemical reaction is the same whether the reaction occurs in one step or in a series of steps. This is a direct consequence of the conservation of energy (First Law of Thermodynamics) and the fact that enthalpy is a state function. Because enthalpy depends only on the initial and final states of a system and not the path taken between them. We can manipulate a series of chemical equations like algebraic equations to find the net enthalpy change of a target reaction.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-hess_law-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-hess_law-3">
+<div class="para">Hess’s law refers to the heat evolved in a chemical reaction under constant pressure. Under such conditions, a part of the energy released during the reaction may be converted to work <span class="process-math">\(W = -\int_{V_1}^{V_2} p \, dV\)</span> , if there is a change in volume from <span class="process-math">\(V_1\)</span> to <span class="process-math">\(V_2\text{.}\)</span> Using the basic equation of the First Law, <span class="process-math">\(dU = dQ - V\, dp\text{,}\)</span> the heat evolved <span class="process-math">\(\Delta Q_p\)</span> during a chemical transformation at a constant pressure can be written as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta Q_p = \int_{U_1}^{U_2} \, dU + \int_{V_1}^{V_2} p \, dV = \left(U_2-U_1\right)+p\left(V_2-V_1\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \, \Delta Q_p =  \left(U_2-pV_1\right) - \left(U_1+ pV_1\right)
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(U,p,V\)</span> are specified by the state of the system not by the path, we can say <span class="process-math">\(U+pV\)</span> is a state function. Hence, the state function, <span class="process-math">\(U+pV\)</span> is called the <dfn class="terminology">Enthalpy, <span class="process-math">\(H\)</span></dfn>. The heat released by a chemical reaction at constant pressure</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Delta Q_p =  H_f - H_i 
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H \equiv U+pV
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-hess_law-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-hess_law-4">
+<div class="para">Since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+dQ_p =\dp+p\,dV =dH_p
+\end{equation*}
+</div>
+<div class="para">If the system consists of one mole of a substance, and if the change in temperature due to the exchange of heat is <span class="process-math">\(dT\text{,}\)</span> then it follows that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(\frac{dQ}{dT}\right)_p = C_{mp} = \left(\frac{dH_m}{dT}\right)_p
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-hess_law-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsubsection 2.1.2.2: Hess’s law"><a href="#subsec-hess_law" title="Copy heading and permalink for Subsubsection 2.1.2.2: Hess’s law">🔗</a></div></section><div class="autopermalink" data-description="Subsection 2.1.2: Adiabatic Processes in Ideal Gas"><a href="#subsec-adiab_proc" title="Copy heading and permalink for Subsection 2.1.2: Adiabatic Processes in Ideal Gas">🔗</a></div></section><div class="autopermalink" data-description="Section 2.1: First Law"><a href="#sec-I_law" title="Copy heading and permalink for Section 2.1: First Law">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch-II_lt.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-II_law.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

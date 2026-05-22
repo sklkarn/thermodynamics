@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-I_tsv" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Thermodynamic Systems</title>
+
+  <introduction>
+    <p> A thermodynamic system is a region of space that is under study. The surroundings are everything outside the system. 
+      The boundary is the interface that separates the system from the surroundings. 
+       </p>
+          
+ <image width="50%" xml:id="therm_system">
+  
+  <latex-image >
+ \begin{tikzpicture}
+   % 1. Surroundings (Outer Solid Closed Curve)
+    \draw[thick, fill=gray!10] 
+        plot [smooth cycle, tension=0.8] 
+        coordinates {(-3.5,0) (-2,2.5) (2,2.2) (3.5,0) (2,-2.2) (-2,-2.5)};
+    \node at (0, 1.8) {\textbf{Surroundings}};
+
+    % 2. System (Inner Solid Closed Curve)
+    \draw[thick, fill=blue!15] 
+        plot [smooth cycle, tension=1] 
+        coordinates {(-1.5,0) (-0.8,1) (1,0.8) (1.8,0) (0.8,-1) (-0.8,-0.8)};
+    \node at (0,0) {\textbf{System}};
+
+    % 3. Boundary Label (Pointing to the inner line)
+    \draw[\lt -] (1.3, 0.6) -- (2.5, 1.2) node[right] {Boundary};
+
+\end{tikzpicture}
+
+  </latex-image>
+    </image>
+
+    <p> <alert>Classification of Thermodynamic Systems</alert>
+      A thermodynamic system can be classified as open, closed, or isolated based on the exchange of matter 
+      and energy with its surroundings. An open system can exchange both matter and energy, 
+      a closed system can exchange only energy, and an isolated system cannot exchange either matter or energy. 
+        </p>
+        <example>
+       <p>
+         Flow through a turbine, boiling water in an open pot, human body. 
+         Mass flow (<m>\frac{dm}{dt}|_{in}</m>, <m>\frac{dm}{dt}|_{out}</m>), heat (Q), and work (W) are possible.
+       </p>
+       <p>
+        Gas in a sealed piston-cylinder device, rigid container with heat transfer.
+       </p>
+       <p>
+        A perfectly insulated, sealed thermos (idealized); the universe itself is considered isolated.
+       </p>
+      </example>
+    <p>
+      The state of a thermodynamic system is described by a set of variables, such as pressure, volume, temperature, and composition. 
+      These variables are called state variables or thermodynamic variables. 
+      The relationships between these variables are governed by the laws of thermodynamics, 
+      which provide a framework for understanding the behavior of thermodynamic systems.  
+    </p>
+    <p>
+      In this chapter, we will explore the fundamental concepts of thermodynamic systems and variables, 
+      including the classification of systems, the definition of state variables, and the application of 
+      the laws of thermodynamics to analyze the behavior of these systems. 
+    </p>
+    <p>
+      By the end of this chapter, you should have a solid understanding of the basic principles that govern thermodynamic systems and the variables that describe their state. 
+      This knowledge will serve as a foundation for further study in thermodynamics and its applications in various fields such as physics, chemistry, and engineering. 
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-basics.ptx" />
+   <xi:include href="sec-heat.ptx" />
+    <xi:include href="sec-vander.ptx" />
+      <xi:include href="sec-mbvd.ptx" /> 
+      <xi:include href="ex_first.ptx" />
+</chapter>
