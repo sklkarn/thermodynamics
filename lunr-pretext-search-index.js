@@ -136,22 +136,76 @@ var ptx_lunr_docs = [
   "body": " Maxwell-Boltzmann Velocity Distribution   The Maxwell-Boltzmann distribution describes the distribution of speeds of particles in an ideal gas at a given temperature. It is based on the following assumptions:   The gas consists of a large number of identical non-interacting particles, moving with a speed much less than the speed of light.    The motion of the particles is random, and the system is in thermal equilibrium at temperature T.    The gas is in a three- dimensional space.    It tells us what fraction of molecules have velocities with a particular magnitude and direction. In classical statistical mechanics, the probability of a particle having a certain energy in a system is given by the Boltzmann factor: where is the Boltzmann constant and is the absolute temperature. For a single particle in an ideal gas, the only energy is kinetic: where is the mass of the particle and is its velocity. So the joint probability density is: Because the exponent is a sum of independent terms, the joint distribution factors: where , with . To normalize one component (e.g., ): gives us the normalization constant . This is a standard Gaussian integral. Let a = m\/(2kT): So the normalized distribution for one component is: and the joint distribution is: The speed distribution (the distribution of the magnitude of the velocity) can be found by converting to spherical coordinates in velocity space and integrating over the angles. The speed is given by . The speed distribution is: This distribution is known as the Maxwell-Boltzmann speed distribution. It describes how the speeds of particles in an ideal gas are distributed at a given temperature. The most probable speed, mean speed, and root-mean-square speed can be derived from this distribution.  The shape of the Maxwell-Boltzmann distribution depends on the temperature and the mass of the particles. As the temperature increases, the distribution becomes broader and shifts to higher speeds. As the mass of the particles increases, the distribution becomes narrower and shifts to lower speeds.   With this probability distribution, we can calculate various properties of the gas, such as the average speed, the most probable speed, and the root-mean-square speed. The average speed is given by: The most probable speed is given by: The root-mean-square speed is given by: These speeds are related by the following inequalities: The Maxwell-Boltzmann distribution is a fundamental result in statistical mechanics and provides a link between the microscopic properties of particles and the macroscopic properties of gases. It is used to derive the ideal gas law and to understand various phenomena in gases, such as diffusion, effusion, and viscosity. It also serves as a basis for more advanced theories of gases, such as quantum statistics and the kinetic theory of gases.  Since molar mass and gas constant , we can also write the Maxwell-Boltzmann speed distribution in terms of the molar mass and the gas constant : This form is often used in chemistry and engineering applications.  The average speed can also be expressed in terms of the molar mass and the gas constant: The average kinetic energy of a gas molecule depends only on the temperature and is independent of its mass. It is given by: This is a consequence of the equipartition theorem, which states that each degree of freedom contributes an average energy of to the total energy of the system. For a monatomic gas, there are three translational degrees of freedom, so the average kinetic energy is . For a diatomic gas, there are additional rotational and vibrational degrees of freedom, which contribute to the total energy of the system, so the average kinetic energy per mole is . The Maxwell-Boltzmann distribution is a fundamental result in statistical mechanics and provides a link between the microscopic properties of particles and the macroscopic properties of gases. It is used to derive the ideal gas law and to understand various phenomena in gases, such as diffusion, effusion, and viscosity. It also serves as a basis for more advanced theories of gases, such as quantum statistics and the kinetic theory of gases.    Maxwell Speed Distribution   The direction of velocity are equally probable hence the average velocity of a molecule is zero but the average of the square of the velocity is not zero. However, the average speed, which depends only on the magnitude of the velocity, is not zero. The probability of speed in the range of a molecule regardless of direction is given by where the volume element is in spherical coordinates and the probability is written as . The quantity is the probability density for the molecular speed. The probability distribution for molecular speeds can be written explicitly as This graphs show that there are a few molecules with very low speeds and a few with large speeds at any perticular temperature; we can also see that f(v) becomes broader as T increases. The speed at which reaches its maximum is the most probable speed.    "
 },
 {
+  "id": "sec_i-example",
+  "level": "1",
+  "url": "sec_i-example.html",
+  "type": "Section",
+  "number": "1.5",
+  "title": "Examples",
+  "body": " Examples    Estimate the total internal energy of of nitrogen ( ) gas at and if its temperature is increased by at constant pressure. What is the energy required to heat of nitrogen gas from to at constant pressure?    To estimate the total internal energy of 1.00 L of gas at and , we can use the ideal gas law to find the number of moles of nitrogen gas. we then calculate the internal energy by From Ideal gas equation, we can find the number of moles of nitrogen gas: or, The energy required to heat 1.00 mol of nitrogen gas from 0 K to 298 K at constant pressure can be calculated using the same formula:       At , of occupies a volume of . Calculate the pressures given by the ideal gas equation and the van der Waals equation. Given: and     Amount of gas ; Temperature , Volume , Ideal gas constant , van der Waals constant , and van der Waals constant . Ideal gas equation: van der Waal's equations        The density of dry air at and is . Assuming that it consists entirely of and and using the ideal gas law, determine the amount of each gas in moles in a volume of and their mole fractions.    Pressure , Temperature , Density , Total Volume , Molar Mass of ( Molar Mass of Gas Constant   From ideal gas equation, Total mass of the sample is simply: The mole fraction is the ratio of the number of moles of a specific component to the total number of moles:    on solving and , we get and    and       The molecule density of interstellar gas clouds is about molecules\/mL. The temperature is approximately . Calculate the pressure. Given: (or )    The number density of cloud is From ideal gas equation:           Calculate the amount of gas in moles per cubic meter of atmosphere at and using the ideal gas equation.    The atmospheric content of is about (parts per million by volume). Assuming a pressure of , estimate the amount of in a layer of the atmosphere at the surface of the Earth. The radius of the Earth is . (The actual amount of in the atmosphere is about .)     Given:        From ideal gas euqtion:     Since volume fraction equals mole fraction for ideal gases, mole fraction of , Now, the volume of atmosphere,   Also, total moles of the air in this layer,   Moles of .       "
+},
+{
+  "id": "sec_i-example-2",
+  "level": "2",
+  "url": "sec_i-example.html#sec_i-example-2",
+  "type": "Example",
+  "number": "1.5.1",
+  "title": "",
+  "body": "  Estimate the total internal energy of of nitrogen ( ) gas at and if its temperature is increased by at constant pressure. What is the energy required to heat of nitrogen gas from to at constant pressure?    To estimate the total internal energy of 1.00 L of gas at and , we can use the ideal gas law to find the number of moles of nitrogen gas. we then calculate the internal energy by From Ideal gas equation, we can find the number of moles of nitrogen gas: or, The energy required to heat 1.00 mol of nitrogen gas from 0 K to 298 K at constant pressure can be calculated using the same formula:    "
+},
+{
+  "id": "sec_i-example-3",
+  "level": "2",
+  "url": "sec_i-example.html#sec_i-example-3",
+  "type": "Example",
+  "number": "1.5.2",
+  "title": "",
+  "body": "  At , of occupies a volume of . Calculate the pressures given by the ideal gas equation and the van der Waals equation. Given: and     Amount of gas ; Temperature , Volume , Ideal gas constant , van der Waals constant , and van der Waals constant . Ideal gas equation: van der Waal's equations     "
+},
+{
+  "id": "sec_i-example-4",
+  "level": "2",
+  "url": "sec_i-example.html#sec_i-example-4",
+  "type": "Example",
+  "number": "1.5.3",
+  "title": "",
+  "body": "  The density of dry air at and is . Assuming that it consists entirely of and and using the ideal gas law, determine the amount of each gas in moles in a volume of and their mole fractions.    Pressure , Temperature , Density , Total Volume , Molar Mass of ( Molar Mass of Gas Constant   From ideal gas equation, Total mass of the sample is simply: The mole fraction is the ratio of the number of moles of a specific component to the total number of moles:    on solving and , we get and    and    "
+},
+{
+  "id": "sec_i-example-5",
+  "level": "2",
+  "url": "sec_i-example.html#sec_i-example-5",
+  "type": "Example",
+  "number": "1.5.4",
+  "title": "",
+  "body": "  The molecule density of interstellar gas clouds is about molecules\/mL. The temperature is approximately . Calculate the pressure. Given: (or )    The number density of cloud is From ideal gas equation:     "
+},
+{
+  "id": "sec_i-example-6",
+  "level": "2",
+  "url": "sec_i-example.html#sec_i-example-6",
+  "type": "Example",
+  "number": "1.5.5",
+  "title": "",
+  "body": "     Calculate the amount of gas in moles per cubic meter of atmosphere at and using the ideal gas equation.    The atmospheric content of is about (parts per million by volume). Assuming a pressure of , estimate the amount of in a layer of the atmosphere at the surface of the Earth. The radius of the Earth is . (The actual amount of in the atmosphere is about .)     Given:        From ideal gas euqtion:     Since volume fraction equals mole fraction for ideal gases, mole fraction of , Now, the volume of atmosphere,   Also, total moles of the air in this layer,   Moles of .      "
+},
+{
   "id": "ex_first",
   "level": "1",
   "url": "ex_first.html",
   "type": "Exercises",
-  "number": "1.5",
+  "number": "1.6",
   "title": "Exercise",
-  "body": " Exercise    Estimate the total internal energy of 1.00 L of nitrogen ( ) gas at 298K and 2 atm if its temperature is increased by 10K at constant pressure. What is the energy required to heat 1.00 mol of nitrogen gas from to at constant pressure?    To estimate the total internal energy of 1.00 L of gas at 298 K and 2 atm, we can use the ideal gas law to find the number of moles of nitrogen gas. we then calculate the internal energy by From Ideal gas equation, we can find the number of moles of nitrogen gas: or, The energy required to heat 1.00 mol of nitrogen gas from 0 K to 298 K at constant pressure can be calculated using the same formula:     "
+  "body": " Exercise   One mole of at has a volume of a) and b) . Calculate its pressure if it behaves as an ideal gas. Calculate its pressure using van der Waal's gas equation. Given: and    "
 },
 {
   "id": "ex_first-2",
   "level": "2",
   "url": "ex_first.html#ex_first-2",
-  "type": "Example",
-  "number": "1.5.1",
+  "type": "Exercise",
+  "number": "1.6.1",
   "title": "",
-  "body": "  Estimate the total internal energy of 1.00 L of nitrogen ( ) gas at 298K and 2 atm if its temperature is increased by 10K at constant pressure. What is the energy required to heat 1.00 mol of nitrogen gas from to at constant pressure?    To estimate the total internal energy of 1.00 L of gas at 298 K and 2 atm, we can use the ideal gas law to find the number of moles of nitrogen gas. we then calculate the internal energy by From Ideal gas equation, we can find the number of moles of nitrogen gas: or, The energy required to heat 1.00 mol of nitrogen gas from 0 K to 298 K at constant pressure can be calculated using the same formula:    "
+  "body": " One mole of at has a volume of a) and b) . Calculate its pressure if it behaves as an ideal gas. Calculate its pressure using van der Waal's gas equation. Given: and   "
 },
 {
   "id": "sec-I_law",
@@ -178,7 +232,79 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Second Law",
-  "body": " Second Law  Text of section.  "
+  "body": " Second Law   While the First Law is an incredibly powerful tool for tracking energy conservation, it is fundamentally blind to directionality and quality. It tells us that energy cannot be created or destroyed, but it permits countless physical phenomena that never actually happen in the real world. The First Law states that the change in internal energy of a closed system is equal to the heat added minus the work done: This is a strict conservation law. However, it treats heat ( ) and work ( ) as algebraic equivalents in a balancing ledger. It creates several major physical paradoxes that it cannot solve on its own:      The Directionality Problem (Asymmetry of Nature) If a hot cup of coffee sits in a cool room, heat spontaneously transfers from the cup to the air until thermal equilibrium is reached.   The First Law Perspective: If the coffee cup spontaneously absorbed heat from the cool room and became boiling hot while the room grew slightly colder, the First Law would be perfectly satisfied. Energy is still conserved.   The Reality: This reverse process never happens spontaneously. The First Law offers no physical reason why heat must flow from hot to cold rather than cold to hot.     The Conversion Asymmetry (Work vs. Heat) We can easily convert ordered macroscopic work completely into disordered microscopic thermal energy. For example, slamming on a car's brakes converts of the vehicle's kinetic energy into heat within the brake pads.   The First Law Perspective: The First Law implies this process is fully reversible. If the hot brake pads spontaneously cooled down and pushed the car forward, converting that thermal energy back into kinetic energy, the energy ledger would balance perfectly.   The Reality: You can never completely convert random thermal energy back into organized work on a macroscopic scale without leaving permanent changes in the surroundings.      Why We Need the Second Law The Second Law was formulated to patch these exact blind spots. It introduces a brand new state function Entropy, ( ) to establish a rigorous mathematical framework for tracking the arrow of time and the degradation of energy. The Second Law dictates the allowed direction of physical processes. By stating that the total entropy of an isolated system must always increase or remain constant ( ), it provides the definitive criteria for whether a process is spontaneous, reversible, or physically impossible.  The First Law treats all energy equally (1 J of work = 1 J of heat). The Second Law introduces the concept of energy degradation.   High-Quality Energy: Work (mechanical, electrical) is highly ordered and can be converted into other forms with nearly 100% efficiency.    Low-Quality Energy: Heat is the chaotic, random kinetic energy of trillions of microscopic particles.   The Second Law mathematically proves that whenever energy changes form, its overall usefulness degrades. Without the Second Law, engineers might waste lifetimes trying to build a perpetual motion machine of the second kind a device that runs at 100% thermal efficiency by extracting heat from a single reservoir (like the ocean) and converting it entirely into work. The Second Law sets the absolute thermodynamic ceiling for performance via the Clausius inequality and the Carnot limit: The Second Law of Thermodynamics establishes the direction of physical processes and asserts that macroscopic thermal energy exchanges are inherently irreversible.      Classical Statements     Kelvin-Planck Statement: It is impossible to construct a device that operates in a cycle and produces no other effect than the extraction of heat from a single reservoir and the performance of an equivalent amount of work.   Implication: A 100% efficient heat engine cannot exist.     Clausius Statement: It is impossible to construct a device that operates in a cycle and whose sole effect is to transfer heat from a cooler body to a hotter body. ◦   Implication: Heat flows spontaneously from high temperature to low temperature; active refrigeration requires external work input.        Thermodynamic Definition (The State Function, )    Clausius theorem states that for any closed cyclic process, the cyclic integral of the heat transfer divided by the temperature at the boundary is less than or equal to zero:     For a reversible cycle, this inequality becomes an equality implying that the integrand is an exact differential of a state function, Entropy (S):   For an irreversible process in an isolated system, the entropy must increase. This leads to the overarching differential statement of the Second Law: For a completely isolated system ( ), the global entropy change satisfies:         Statistical Formulation (Boltzmann Perspective) In statistical mechanics, entropy quantifies the number of accessible microstates ( ) corresponding to a given macroscopic thermodynamic state (macrostate): Where is the Boltzmann constant ( ). The Second Law Statistically: An isolated system will spontaneously evolve toward the macrostate with the largest multiplicity ( ). Because scales exponentially with particle number ( ), the probability of a macroscopic fluctuations decreasing entropy is vanishingly small, converting a statistical certainty into a deterministic law at the macroscopic scale.      Fundamental Consequences The Fundamental Thermodynamic Relation:  By combining the First Law ( ) with the reversible definitions and , we obtain the fundamental relation for a simple compressible system: This explicitly shows that entropy and volume are the natural variables of the internal energy .  Carnot Efficiency Limit: No heat engine operating between two thermal reservoirs ( and ) can be more efficient than a reversible Carnot engine operating between those same reservoirs:     Entropy   What is Entropy? At its core, entropy is a measure of how spread out or dispersed energy becomes at a specific temperature. It is often described casually as \"disorder,but it is much more accurate to think of it as a measure of probabilistic microstate multiplicity.   The Statistical Reality: Boltzmann's Perspective Every macroscopic system (a macrostate defined by pressure, volume, and temperature) has a specific number of unique quantum and positional arrangements its individual atoms can take (microstates, denoted by ).  Low Entropy: Energy is concentrated, localized, or highly organized. There are relatively few ways (small ) to arrange particles to keep energy trapped in one small spot. High Entropy: Energy is widely distributed and shared among as many particles and spatial locations as possible. There are an astronomical number of ways (large ) to arrange particles into a dispersed state.   The Ink Drop Analogy: When you drop purple ink into water, it starts as a concentrated spot (low entropy). Over time, random molecular collisions cause the ink molecules to spread out evenly through the glass (high entropy). The ink spreads not because of a physical force pushing it apart, but because there are trillions of times more ways for the molecules to be mixed than for them to stay packed tightly together in a neat little sphere. It is pure probability. Because the universe is composed of roughly particles, the probability of energy spontaneously un-spreading itself is so close to zero that it becomes a deterministic macroscopic impossibility.   What is \"Heat Death\"? Heat Death (also known as the Big Freeze) is the ultimate thermodynamic conclusion of our universe, directly dictated by the Second Law of Thermodynamics. If the universe is treated as a massive, isolated system, its total entropy must strictly increase over time. Energy naturally and irreversibly flows from highly concentrated regions (like stars and galaxies) out into the cold, empty expanse of space.   The Lifecycle of Cosmic Degradation Currently, our universe is in a state of relatively low entropy. Energy is highly localized. Gravitational potential energy collapses matter into stars, where nuclear fusion converts mass into high-energy photons, which are then radiated into cold space. This massive temperature gradient ( ) is exactly what allows work to be done, planets to form, and life to exist. However, this cannot last forever. The universe is projected to transition through distinct phases over trillions of years:    The Stelliferous Era ends: Galaxies run out of hydrogen gas. Star formation ceases, and existing stars slowly burn out, leaving behind white dwarfs, neutron stars, and black holes.     The Degenerate Era: Matter itself begins to degrade. If grand unified theories hold true, protons will slowly decay over a timescale of roughly to years, dissolving dead stars into fundamental particles.     The Black Hole Era: The only macro-structures left will be supermassive black holes. Over incomprehensibly long timescales ( to years), even these will slowly leak mass-energy back into the universe via Hawking Radiation.      Once the final black holes evaporate, the universe reaches its state of maximum possible entropy:    Thermal Equilibrium: The temperature of the entire universe becomes completely uniform, hovering just a tiny fraction above absolute zero ( ).     Zero Thermodynamic Work: Because there are no longer any temperature differences ( ) or density gradients anywhere in existence, no heat engine can operate, and no work can be performed.     The Death of Time: At this point, no macroscopic changes can ever occur. The universe becomes a thin, homogeneous soup of ultra-low-energy photons and leptons expanding infinitely into the dark.     The name \"Heat Death\" is often confusing because the universe will be incredibly cold. It is called heat death because all energy will have degraded into completely random, disordered thermal energy (heat) from which no useful work can ever be extracted again.   "
+},
+{
+  "id": "sec-II_law-2-2",
+  "level": "2",
+  "url": "sec-II_law.html#sec-II_law-2-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Directionality Problem (Asymmetry of Nature) The Conversion Asymmetry (Work vs. Heat) "
+},
+{
+  "id": "sec-II_law-2-3",
+  "level": "2",
+  "url": "sec-II_law.html#sec-II_law-2-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Why We Need the Second Law "
+},
+{
+  "id": "sec-II_law-2-5",
+  "level": "2",
+  "url": "sec-II_law.html#sec-II_law-2-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Classical Statements Thermodynamic Definition (The State Function, ) Statistical Formulation (Boltzmann Perspective) "
+},
+{
+  "id": "sec-II_law-2-6",
+  "level": "2",
+  "url": "sec-II_law.html#sec-II_law-2-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Fundamental Consequences "
+},
+{
+  "id": "subsec-entropy-2",
+  "level": "2",
+  "url": "sec-II_law.html#subsec-entropy-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "What is Entropy? "
+},
+{
+  "id": "subsec-entropy-3",
+  "level": "2",
+  "url": "sec-II_law.html#subsec-entropy-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Statistical Reality: Boltzmann's Perspective "
+},
+{
+  "id": "subsec-entropy-5",
+  "level": "2",
+  "url": "sec-II_law.html#subsec-entropy-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "What is \"Heat Death\"? "
+},
+{
+  "id": "subsec-entropy-6",
+  "level": "2",
+  "url": "sec-II_law.html#subsec-entropy-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The Lifecycle of Cosmic Degradation "
 },
 {
   "id": "sec-III_law",
