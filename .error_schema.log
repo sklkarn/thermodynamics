@@ -1,5 +1,4 @@
-/home/sk/Desktop/book25/thermodynamics/source/main.ptx:143:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element nbsp, got nothing
-/home/sk/Desktop/book25/thermodynamics/source/main.ptx:143:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element blockquote, got p
-/home/sk/Desktop/book25/thermodynamics/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element chapter has extra content: section
-/home/sk/Desktop/book25/thermodynamics/source/main.ptx:9:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element subtitle there
-/home/sk/Desktop/book25/thermodynamics/source/main.ptx:7:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
+/home/sk/Desktop/book25/thermodynamics/source/main.ptx:8:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element chapter, got backmatter
+/home/sk/Desktop/book25/thermodynamics/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext
+/home/sk/Desktop/book25/thermodynamics/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element pretext there
+/home/sk/Desktop/book25/thermodynamics/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element webwork, got pretext

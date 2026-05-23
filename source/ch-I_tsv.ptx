@@ -71,5 +71,6 @@
    <xi:include href="sec-heat.ptx" />
     <xi:include href="sec-vander.ptx" />
       <xi:include href="sec-mbvd.ptx" /> 
+      <xi:include href="sec_i-example.ptx" />
       <xi:include href="ex_first.ptx" />
 </chapter>

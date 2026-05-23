@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_i-example" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples</title>
+  
+  <example>
+      <statement>
+        <p>
+          Estimate the total internal energy of <m>1.00 \,L</m> of nitrogen (<m>N_2</m>) gas at <m>298 \,K</m> and <m>2 \,atm</m> 
+          if its temperature is increased  by <m>10 \,K</m> at constant pressure. What is the energy required to heat <m>1.00 \,mol</m> of nitrogen gas 
+          from <m>0 K</m> to <m>298 K</m> at constant pressure?
+        </p>
+      </statement>
+      <solution>
+         
+        <p>
+           To estimate the total internal energy of 1.00 L of <m>N_2</m> gas at <m>298 \,K</m> and <m>2 \,atm</m> , 
+           we can use the ideal gas law to find the number of moles of nitrogen gas.   we then calculate the internal energy by
+          <me>
+            dU = n\frac{5}{2} R(T_2-T_1) 
+          </me>
+          From Ideal gas equation, we can find the number of moles of nitrogen gas: 
+          <me>
+            n= \frac{PV}{RT} = \frac{(2 \, \text{atm})(1.00 \, \text{L})}{(0.0821 \, \text{L atm/mol K})(298 \, \text{K})} \approx 0.0816 \, \text{mol} 
+          </me>
+          or, 
+            <me>
+            \Delta U = 0.0816 \, \text{mol} \times \frac{5}{2} (8.314 \, \text{J/mol K}) (10.0 \, \text{K}) \approx 17.0 \, \text{J} 
+          </me>  
+          The energy required to heat 1.00 mol of nitrogen gas from 0 K to 298 K at constant pressure can be calculated using the same formula:
+          <me>
+            \Delta U = 1.00 \, \text{mol} \times \frac{5}{2} (8.314 \, \text{J/mol K}) (298 \, \text{K} - 0 \, \text{K}) \approx 6200 \, \text{J} 
+          </me>  
+        </p>
+      </solution>
+     </example>
+
+  
+
+     <example>
+      <statement>
+        <p>
+          At <m>T = 300 \, K</m>, <m>1.00 \, mol </m> of <m>CO_2</m> occupies a volume of <m>1.50 \, L</m>. Calculate 
+          the pressures given by the ideal gas equation and the van der Waals equation. 
+          Given: <m>a = 3.59 L^2 \,atm\,mol^{-2} </m> and <m>b=0.04 /,L mol^{-1} </m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Amount of gas <m>n = 1.00 \, mol</m>; Temperature <m>T = 300 K</m>, Volume <m>V = 1.50 L</m>, 
+          Ideal gas constant <m>R = 0.08206 L\cdot atm \cdot mol^{-1}\cdot K^{-1}</m>, van der Waals constant <m>a = 3.59 L^2\cdot atm\cdot mol^{-2} </m>, and
+          van der Waals constant <m>b = 0.0427 L\cdot mol^{-1}</m>. Ideal gas equation:
+          <me>
+            p_{ideal} = \frac{nRT}{V} = \frac{1\cdot 0.08206 \cdot 300}{1.5} =  16.41 \, atm
+          </me>
+          van der Waal's equations 
+          <me>
+            \left(p_{vdw}+\frac{an^2}{V^2}\right) \left(V-nb\right) = nRT
+          </me>
+          <md>
+            <mrow>  or, \, p_{vdw}  \amp  =  \left(\frac{nRT}{V-nb}\right) -\left( \frac{an^2}{V^2}\right) </mrow>
+            <mrow>  \amp =  \left(\frac{1\cdot 0.08206 \cdot 300}{1.5-1\cdot 0.0427}\right)-\left(\frac{3.59 \cdot 1^2}{1.5^2}\right) =15.3 atm.</mrow>
+          </md>
+        
+        </p>
+      </solution>
+     </example>
+      
+
+     <example>
+      <statement>
+        <p>
+          The density of dry air at <m>p = 1.0 \, bar</m> and <m>T = 300 \, K</m> is <m>1.161 \,kg m^{-3}</m>. Assuming 
+          that it consists entirely of <m>N_2</m> and <m>O_2</m> and using the ideal gas law, determine 
+          the amount of each gas in moles in a volume of <m>1 \, m^3</m> and their mole fractions.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Pressure <m>p = 1.0 \, bar  = 1.0 \times 10^5 \, Pa  </m>, Temperature  <m>T = 300 \, K</m>, 
+          Density <m>\rho = 1.161 \,kg m^{-3}</m>, Total Volume <m>V= 1 \, m^3</m>, Molar Mass of <m>N_2</m> (<m>M_{N_2}) = 0.028013 \,kg \cdot\, mol^{-1} </m>
+          Molar Mass of <m>O_2 \, (M_{O_2}) = 0.031999 \, kg \cdot\, mol^{-1} </m> Gas Constant <m>R = 8.314  J\cdot mol^{-1}\cdot K^{-1}</m>
+        </p>
+        <p>
+          From ideal gas equation, <me>
+            n_{total} =\frac{pV}{RT} =  \frac{1.0 \times 10^5 \times 1}{8.314 \cdot 300} =40.091 \,mol.
+          </me>
+           Total mass of the sample is simply: <me>
+            m_{total} = \rho\times V = 1.161 \times 1 = 1.161\, kg.
+           </me>
+           The mole fraction is the ratio of the number of moles of a specific component to the total number of moles:
+           <men xml:id="molefr_eq1">
+            x_a = \frac{n_a}{n_a+n_b} 
+           </men>
+          
+           <me>
+            m_{total} = M_{N_2}\cdot n_{N_2} + M_{O_2}\cdot n_{O_2} \qquad [\because n=\frac{\text{ mass of substance} }{\text{ Molar Mass}}]
+           </me>
+           <men xml:id="molefr_eq2">
+            1.161  = 0.028013 \times n_{N_2} + 0.031999\times n_{O_2} 
+           </men>
+            <men xml:id="molefr_eq3">
+             n_{total} =40.091 = n_{N_2} +  n_{O_2} 
+           </men>
+           on solving <xref ref="molefr_eq2"/> and <xref ref="molefr_eq3"/>, we get 
+           <m>n_{N_2} = 30.583\, mol </m> and <m> n_{O_2} = 9.508 \, mol</m>
+        </p>
+        <p>
+          <me>
+            \therefore \, x_{N_2}= \frac{n_{N_2}}{n_{total}} =  \frac{30.583}{40.091} = 0.763
+          </me>
+          and 
+            <me>
+            \therefore \, x_{O_2}= \frac{n_{O_2}}{n_{total}} =  \frac{9.508}{40.091} = 0.237
+          </me>
+        </p>
+       
+      </solution>
+     </example>
+
+
+     <example>
+      <statement>
+        <p>
+          The molecule density of interstellar gas clouds is about <m>10^4</m> molecules/mL. 
+          The temperature is approximately <m>10 K</m>. Calculate the pressure. 
+          Given: <m>k = 1.3806 \times 10^{-23} J \cdot K^{-1} </m> (or <m>Pa\cdot m^3 \cdot K^{-1}</m>)
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The number density of cloud is 
+          <me>
+            \frac{N}{V} = \frac{10^4 \, molecules}{1\, ml}  \frac{10^4 \, molecules}{10^{-6}\, m^3} = 10^{10} \, molecule/m^3
+          </me>
+          From ideal gas equation: 
+          <me>
+            pV = nRT \, \Rightarrow \, pV = NkT \qquad [\because nR=Nk]
+          </me>
+           <me>
+            or, \, p = \frac{N}{V} kT = 10^{10}\times 1.3806 \times 10^{-23} \times 10 = 1.386\times 10^{-12} \, Pa.
+          </me>
+        </p>
+      </solution>
+     </example>
+
+     <example>
+      <statement>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+                Calculate the amount of gas in moles per cubic meter of atmosphere at <m>p = 1 \, atm</m> 
+                and <m>T = 298 \,K</m> using the ideal gas equation.
+              </p>
+            </li>
+            <li>
+              <p>
+                The atmospheric  content of <m>CO_2</m> is about <m>360 \, ppmv</m> (parts per million by volume). 
+          Assuming a pressure of <m>1.00 \, atm</m>, estimate the amount of <m>CO_2</m> in a <m>10.0 \, km</m> 
+          layer of the atmosphere at the surface of the Earth. The radius of the Earth is <m>6370 \,km</m>. 
+          (The actual amount of <m>CO_2</m> in the atmosphere is about <m>6.0 \times 10^{16} mol</m>.) 
+              </p>
+            </li>
+            </ol>
+        </p>
+        <p>
+           Given: <m>R =8.314 Pa·m^3/(mol·K) </m>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <ol marker="a.">
+            <li>
+              <p>
+               From ideal gas euqtion: 
+                <me>
+                  \frac{n}{V} =\frac{p}{RT} = \frac{1.013\times 10^{5}}{8.314 \times 298} = 40.90 mol/m^3.
+                </me>
+              </p>
+            </li>
+            <li>
+              <p>
+                Since volume fraction equals mole fraction for ideal gases, 
+                mole fraction of <m>CO_2</m>, <m>x_{CO_2} = 360 \, ppm \, \text{ (by volume)} = 360 mol/(10^{-6} m^3) = 3.6\times 10^{-4}</m>
+                Now, the volume of atmosphere, 
+                <me>
+                  V=4\pi \times r^2 \times h =  4\pi \times (6.37\times 10^6)^2 \times 10\times 10^3 = 5.10\times 10^{18}
+                </me>
+                 </p>
+                 <p>
+                  Also, total moles of the air in this layer, 
+                  <me>
+                    n_{total} =  \frac{n}{V}\times V = 40.90\times 5.10\times 10^{18} = 2.086 \times 10^{20} \, \text{ moles of air}.
+                  </me>
+                 </p>
+                 <p>
+                  Moles of <m>n_{CO_2} = x_{CO_2} \times  n_{total} = 3.6\times 10^{-4}\times 2.086 \times 10^{20} = 7.21\times 10^{16}</m>. 
+                 </p>
+            </li>
+              </ol>
+        </p>
+      </solution>
+     </example>
+
+</section>
+

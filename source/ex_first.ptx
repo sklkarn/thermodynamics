@@ -3,39 +3,14 @@
 <exercises xml:id="ex_first" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Exercise</title>
 
-   <example>
-      <statement>
-        <p>
-          Estimate the total internal energy of 1.00 L of nitrogen (<m>N_2</m>) gas at 298K and 2 atm if its temperature is increased 
-          by 10K at constant pressure. What is the energy required to heat 1.00 mol of nitrogen gas 
-          from <m>0 K</m> to <m>298 K</m> at constant pressure?
-        </p>
-      </statement>
-      <solution>
-         
-        <p>
-           To estimate the total internal energy of 1.00 L of <m>N_2</m> gas at 298 K and 2 atm, 
-           we can use the ideal gas law to find the number of moles of nitrogen gas. 
-          we then calculate the internal energy by
-          <me>
-            dU = n\frac{5}{2} R(T_2-T_1) 
-          </me>
-          From Ideal gas equation, we can find the number of moles of nitrogen gas: 
-          <me>
-            n= \frac{PV}{RT} = \frac{(2 \, \text{atm})(1.00 \, \text{L})}{(0.0821 \, \text{L atm/mol K})(298 \, \text{K})} \approx 0.0816 \, \text{mol} 
-          </me>
-          or, 
-            <me>
-            \Delta U = 0.0816 \, \text{mol} \times \frac{5}{2} (8.314 \, \text{J/mol K}) (10.0 \, \text{K}) \approx 17.0 \, \text{J} 
-          </me>  
-          The energy required to heat 1.00 mol of nitrogen gas from 0 K to 298 K at constant pressure can be calculated using the same formula:
-          <me>
-            \Delta U = 1.00 \, \text{mol} \times \frac{5}{2} (8.314 \, \text{J/mol K}) (298 \, \text{K} - 0 \, \text{K}) \approx 6200 \, \text{J} 
-          </me>  
-        </p>
-      </solution>
-     </example>
-      
+ <exercise>
+  <p>
+          One mole of <m>CH_4</m> at <m>100\,K</m> has a volume of a) <m>8.2 \,L</m> and b) <m>0.5 \,L</m>. 
+          Calculate its pressure if it behaves as an ideal gas. Calculate its pressure using van der Waal's gas equation.
+          Given: <m>a = 2.25 \, atm\,L^2 /mol^2</m> and <m>b= 0.0428\, L/mol</m>
+  </p>
+ </exercise>
+
 </exercises>
 
 
