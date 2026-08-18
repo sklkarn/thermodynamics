@@ -237,7 +237,7 @@
             </p>
             <p>
               Since <me>
-                dQ_p =\dp+p\,dV =dH_p
+                dQ_p =\,dp+p\,dV =dH_p
               </me>
               If the system consists of one mole of a substance, and if the change in temperature due to the exchange of heat is <m>dT</m>, 
               then it follows that  
