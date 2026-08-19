@@ -4,7 +4,7 @@
   <title>Van der Waals Equation</title>
   <introduction>
    <p>
-    <alert>Limitations of the Ideal Gas Law </alert> The ideal gas law 
+    <alert>Limitations of the Ideal Gas Law </alert> The ideal gas law
     <me>
       PV =nRT
     </me>
@@ -35,7 +35,7 @@
     It is an improvement over the ideal gas law by accounting for the finite size of gas molecules and the 
     intermolecular forces between them. The equation is given by: 
     <me>
-      \left(P-\frac{an^2}{V^2}\right)\left(V-nb\right) = nRT
+      \left(P+\frac{an^2}{V^2}\right)\left(V-nb\right) = nRT
     </me>
     where <m>n, P, T, V, R </m> are number moles of gas, the observed pressure pressure, 
     absolute temperature, total volume of the container, and universal gas constant, respectively. 
@@ -107,21 +107,27 @@
 
     <subsection xml:id="subsec-crit_point">
       <title>Critical Point</title>
+      <introduction>
+      
       <p>
         Critical point is the point at which the liquid and gas phases of a substance become indistinguishable. 
         At the critical point, the properties of the liquid and gas phases become identical, 
         and the substance exists in a supercritical state. The critical point is characterized by a critical 
-        temperature (Tc), critical pressure (Pc), and critical volume (Vc).
+        temperature (<m>T_c</m>), critical pressure (<m>P_c</m>), and critical volume (<m>V_c</m>). 
+        At this point the system is in equilibrium between liquid and gaseous phases, i,e., density of 
+        liquid is equal to the density of gas. Van der Waals showed that this is a saddle point of his equation. 
+        For one mole of a real gas 
+        <me>\left(P+\frac{a}{V^2}\right)\left(V-b\right) = RT</me>
       </p>
       <p>
         The critical point can be determined using the van der Waals equation by setting the first and 
         second derivatives of pressure with respect to volume to zero. 
         This leads to the following equations:
         <me>
-          \left(\frac{\partial P}{\partial V}\right)_T = 0
+          \left(\frac{\partial P}{\partial V}\right)_T = 0, \quad \, \text{ maximum or minimum point}
         </me>
         <me>
-          \left(\frac{\partial^2 P}{\partial V^2}\right)_T = 0
+          \left(\frac{\partial^2 P}{\partial V^2}\right)_T = 0, \quad  \, \text{ saddle (or, inflection) point}
         </me>
         Solving these equations gives the critical temperature, critical pressure, and critical 
         volume in terms of the van der Waals constants a and b. 
@@ -132,10 +138,36 @@
         where the liquid and gas phases become indistinguishable. Mathematically, this is the inflection 
         point of the critical isotherm (<m>T_c</m>), where both the first and second derivatives of pressure 
         with respect to volume are zero.The van der Waals equation of state is:
-        <me>
-          P=\frac{RT}{V_m-b}-\frac{a}{V^2_m}
-        </me>
-        <ol>
+        <md>
+          <mrow> P \amp =\frac{RT}{V-b}-\frac{a}{V^2}</mrow>
+          <mrow> or, \, \frac{dP}{dV}  \amp =- RT\frac{1}{(V-b)^2}+\frac{2a}{V^3}</mrow>
+        </md>
+        Setting this equal to zero to get the critical point.
+        <mdn>
+          <mrow> 0 \amp = -RT_c \frac{1}{(V_c-b)^2}+2a \frac{1}{V_c^3}</mrow>
+            <mrow> RT_c \amp = 2a \left[\frac{(V_c-b)^2}{V_c^3} \right]</mrow>
+        </mdn>
+        Now, 
+        <mdn>
+          <mrow>  \left(\frac{\partial^2 P}{\partial V^2}\right)_T \amp =2RT\frac{1}{(V-b)^3}-\frac{6a}{V^4}</mrow>
+          <mrow> or, \, 0 \amp =2RT_c\frac{1}{(V_c-b)^3}-\frac{6a}{V_c^4}</mrow>
+           <mrow> or, \, 0 \amp =4a \frac{(V_c-b)^2}{(V_c)^3}\frac{1}{(V_c-b)^3}-\frac{6a}{V_c^4}</mrow>
+            <mrow> or, \, 0 \amp =4a \frac{1}{(V_c)^3(V_c-b)}-\frac{6a}{V_c^4}</mrow>
+             <mrow> or, \, \frac{6a}{V_c^4} \amp =4a \frac{1}{(V_c)^3(V_c-b)}</mrow>
+              <mrow> or, \, \frac{6}{V_c} \amp = \frac{4}{(V_c-b)}</mrow>
+              <mrow> or, \, V_c \amp = 3b </mrow>
+        </mdn>
+        Now from equation 
+        <me>RT_c = 2a \left[\frac{(V_c-b)^2}{V_c^3} \right]</me>
+        we have - 
+         <me>RT_c = 2a \frac{(2b)^2}{(3b)^3} = \frac{8a}{27b}</me>
+          <me>\therefore \, T_c = \frac{8a}{27bR}</me>
+          Again from Van der Waal's equation, 
+        <me>\left[ P_c + \frac{a}{(3b)^2}\right] (3b-b) = R\cdot \frac{8a}{27bR}</me>
+         <me>\therefore \, P_c = \frac{4a}{27b^2} - \frac{a}{9b^2} = \frac{a}{27b^2}</me>
+          <me>\therefore \, \frac{P_c V_c}{T_c} = \frac{a}{27b^2} \cdot \frac{3b}{\frac{8a}{27bR}} = \frac{3}{8}R</me>
+          This theoretical isotherm values of the points and constants do not actually agree completely with experimental values (Andrew's curve). 
+           <ol>
           <li>
             <p>
                Characteristics of the Plot: The critical point is represented by a specific point on the 
@@ -215,11 +247,25 @@
            <p>
             The van der Waals equation becomes universal (independent of specific <m>a</m> and <m>b</m>): 
             <me>
-              \left(P_r + \frac{3}{V^2_r}\right) (3V-r -1) = 8T_r
+              \left(P_r + \frac{3}{V^2_r}\right) (3V_r -1) = 8T_r
             </me>
             Gases at the same reduced conditions behave similarly (useful for scaling properties across different substances).
            </p>
+         
+      </introduction>
+
+           <subsubsection xml:id="subsubsec-det_a_b">
+            <title>Determination of <m>a</m> and <m>b</m></title>
+            <p>
+              <m>a</m> and <m>b</m> can be determined in terms of critical constants <m>P_c, V_c, T_c</m> as follows:
+              <me>\frac{T_c^2}{P_c} = \frac{64a^2\times 27b^2}{(27)^2 b^2R^2\times a} = \frac{64 a}{27R^2}</me>
+                <me>\therefore \, a = \frac{27R^2}{64}\cdot \frac{T_c^2}{P_c}</me>
+              <me>\text{ also} \, \frac{T_c}{P_c} = \frac{8a}{27Rb}\times \frac{27b^2}{a} = \frac{8b}{R}</me>
+              <me>\therefore \, b = \frac{R T_c}{8 P_c}</me>
+            </p>
+           </subsubsection>
     </subsection>
+
 
     <subsection xml:id="subsec-intermol_force">
       <title>Molecular (Intermolecular) Forces in Real Gases </title>

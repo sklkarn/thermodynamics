@@ -3,21 +3,26 @@
 <section xml:id="sec-basics" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Basic Concepts (Zeroth Law)</title>
 <introduction>
- 
   <p> <alert>Thermodynamic Properties</alert>
-    The properties of a substance are the characteristics that describe its physical and chemical behavior.  
-    It only depends on the state of the system and is independent of the history of the system.
-   The <alert>extensive</alert> properties of a substance depend on the amount of substance present, 
-   while the <alert>intensive</alert> properties do not. 
-    Examples of extensive properties include mass, volume, energy, entropy S, and enthalpy H while examples of intensive 
-    properties include temperature, pressure, density, specific volume v, and molar concentration. 
+       The properties of a substance are the characteristics that describe its physical and chemical behavior. 
+       In general, two types of thermodynamical variables are needed to specity a system completely: 
+      extensive variables and intensive variables. <alert>Extensive variables</alert> depend on the size or extent of the system, 
+      such as mass <m>m</m>, volume <m>V</m>, amount of substance (moles, <m>n_k</m>), entropy <m>S</m>, enthalpy <m>H</m>, 
+      Gibbs free energy, and total energy. <alert>Intensive variables</alert> do not depend on the size of the system, 
+      such as temperature <m>T</m>, pressure <m>P</m>, and density <m>\rho</m>.
     </p>
-    <p>
-     <alert>State Functions vs. Path Functions</alert> 
-     The state of a substance is defined by its properties at a given instant. 
-    The state refers to the specific condition of a system at a given moment, uniquely defined by its thermodynamic properties. 
-    To define a state, a set of independent properties such as pressure (P), volume (V), temperature (T), 
-    and internal energy (U) must be defined. A system is in thermodynamic equilibrium in any perticular state. 
+ <p>
+      Since fundamental quantities in thermodynamic system are functions of many variables, 
+      hence, thermodynamics makes extensive use of calculus of many variables. The functino of varibales that only depends on the current 
+      state of the system is called a <term>state function</term>. The change in a state function between two states is independent of the path taken to 
+      reach that state. e.g. internal energy <m>U</m>, enthalpy, entropy, and Gibbs free energy are state functions. 
+      The function that depends on the path taken to reach a particular state is called a <term>path function</term>. 
+      The change in a path function between two states depends on the specific process or path taken. e.g. 
+      heat <m>Q</m> and work <m>W</m> are path functions.
+    </p>
+
+     <p>
+    A system is in thermodynamic equilibrium in any perticular state. 
     <ul>
       <li>
         <p>
@@ -99,33 +104,47 @@
   <p>
     In the state of thermal equilibrium,
     <mdn>
-      <mrow xml:id="therm_eq1"> U \amp =U(T,V,N_k) </mrow>
-      <mrow xml:id="therm_eq2"> S \amp =S(T,V,N_k) </mrow>
+      <mrow xml:id="therm_eq1"> U \amp =U(T,V,n_k) </mrow>
+      <mrow xml:id="therm_eq2"> S \amp =S(T,V,n_k) </mrow>
     </mdn>
    
     where <m>U</m> is the internal energy of the system, which is a function of temperature (T), volume (V), 
-    and the number of particles of each species (N_k). 
+    and the number of particles of each species (n_k). 
     The values of extensive variables, 
      <mdn>
-      <mrow xml:id="therm_eq3"> U \amp =U(S,V,N_k) </mrow>
-      <mrow xml:id="therm_eq4"> S \amp =S(U,V,N_k) </mrow>
+      <mrow xml:id="therm_eq3"> U \amp =U(S,V,n_k) </mrow>
+      <mrow xml:id="therm_eq4"> S \amp =S(U,V,n_k) </mrow>
     </mdn>
   
     where <m>S</m> is the entropy of the system, which is also a function of temperature (T), volume (V), 
-    and the number of particles of each species (N_k). The state of thermodynamic equilibrium is 
+    and the number of particles of each species (n_k). The state of thermodynamic equilibrium is 
     characterized by the fact that the internal energy and entropy of the system are at their minimum 
     values for a given set of conditions. In this state, the system is stable and there are no net 
     changes occurring with respect to time.  
   </p>
   <p>
     Intensive variables can also be written as derivatives of one extensive variable with respect to another. 
-    For example, temperature can be written as the derivative of internal energy with respect to entropy, 
-    and pressure can be written as the derivative of enthalpy with respect to volume.
-    <me>
-      T= \left(\frac{\partial U}{\partial S}\right)_{V, N_k}
+    
+    For example, 
+    <mdn>
+      <mrow xml:id="therm_eq5"> dQ \amp = dU +P\, dV </mrow>
+      <mrow xml:id="therm_eq6"> dQ  \amp = T \, ds </mrow>
+      <mrow xml:id="therm_eq7"> \therefore \, dU  \amp = dQ - P\, dV  = T \, ds - P\, dV </mrow>
+    </mdn>
+    Differentiating [xref ref="therm_eq5"] w.r.t. "S" at constant V, we get -
+    <men>
+      \left(\frac{\partial U}{\partial S}\right)_V = T
+    </men>
+    Differentiating [xref ref="therm_eq5"] w.r.t. "V" at constant S, we get -
+    <men>
+      \left(\frac{\partial U}{\partial V}\right)_S = -P
+    </men>
+or, 
+       <me>
+      T= \left(\frac{\partial U}{\partial S}\right)_{V, n_k}
     </me>
     <me>
-      p= \left(\frac{\partial H}{\partial V}\right)_{S, N_k}
+      p= -\left(\frac{\partial U}{\partial V}\right)_{S, n_k}
     </me>
   </p>
   <p>
@@ -166,7 +185,7 @@
     <p>
       In non-equilibrium system, total energy <m>U</m> is no longer a function of other extensive variables such as 
       <m>S, N_k</m> as in equation <xref ref="therm_eq3"/> and <xref ref="therm_eq4"/> 
-      and system can not have a single tempreture for the entire system. That is, <m>U, S, N_k </m> and <m>V</m>  
+      and system can not have a single tempreture for the entire system. That is, <m>U, S, n_k </m> and <m>V</m>  
       are no longer a function of the toher three variables as in <xref ref="therm_eq3"/> and <xref ref="therm_eq4"/>.
      </p>
      <p>

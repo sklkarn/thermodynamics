@@ -3,11 +3,20 @@
 <section xml:id="sec-heat" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Heat and Temperature</title>
   <introduction>
-   
+   <p>
+    Nature obeyed simple and universal laws that can be expressed in mathematical form. 
+    The laws of thermodynamics are a set of fundamental principles that govern the behavior of energy and matter in the universe.
+   </p>
   <p> 
-    Heat is a form of energy that is transferred between systems due to a temperature difference. 
+    A scientific study of the nature of heat began with advent of thermometer. A clear distinction 
+    between temperature or degree of hotness, and the quantity of heat is that temperature is an intensive property, 
+    while heat is an extensive property. Heat is a form of energy that could be transformed to other forms.
+    Heat is transferred between systems due to a temperature difference. 
     Temperature is a measure of the average kinetic energy of the particles in a substance. 
-    Temperature is an intensive property, while heat is an extensive property. 
+    Temperature can be measured by noting the change of a physical property of a substance, 
+    such as the expansion of a liquid (volume change), pressure of a gas, or the change in electrical resistance of a material.
+    </p>
+    <p>
     Heat can be transferred through three main mechanisms: conduction, convection, and radiation. 
     Conduction is the transfer of heat through direct contact between particles, where energy is 
     transferred from the hotter region to the cooler region. 
@@ -76,33 +85,35 @@
       or destroyed, only transferred or converted from one form to another. This means that the total energy of 
       an isolated system remains constant over time. The <term>second law</term> of thermodynamics states that the total entropy 
       of an isolated system can never decrease over time, and it can only increase or remain constant. This means 
-      that natural processes tend to move towards a state of greater disorder or randomness. 
+      that natural processes tend to move towards a state of greater disorder or randomness. The second law gives rise 
+      to the concept of absolute temperature, which is independent of the materialproperties. 
       The <term>third law</term> of thermodynamics states that as the temperature of a system approaches absolute zero, 
       the entropy of the system approaches a minimum value. This means that it is impossible to reach absolute 
       zero in a finite number of steps.  <term>zeroth law</term> of thermodynamics states that if two systems are in thermal 
       equilibrium with a third system, then they are in thermal equilibrium with each other. 
       This means that if two systems have the same temperature, they are in thermal equilibrium with each other. 
       That is temperatures of all the substances in contact with each other will evantually reach a state of equilibrium.
+       Thermodynamics is developed in terms of absolute temperature. 
     </p>
-  </subsection>
-  <subsection xml:id="subsec-gas_laws">
-    <title>The Gas Laws</title>
     <p>
-      The gas laws are a set of mathematical relationships that describe the behavior of gases under different conditions. 
-      The <term>Boyle's law</term> states that the pressure of a gas is inversely proportional to its volume at constant 
-      temperature. This means that if the volume of a gas decreases, the pressure increases, and vice versa. 
-      The <term>Charles's law</term> states that the volume of a gas is directly proportional to its 
-      temperature at constant pressure. This means that if the temperature of a gas increases, the volume 
-      increases, and vice versa. The <term>Gay-Lussac's law</term> states that the pressure of a gas is 
-      directly proportional to its temperature at constant volume. This means that if the temperature of a 
-      gas increases, the pressure increases, and vice versa. The <term>ideal gas law</term> combines 
-      these three laws into a single equation, <m>PV = NRT</m>, where <m>P</m> is the pressure of the gas, 
-      <m>V</m> is the volume of the gas, <m>N</m> is the number of moles of the gas, <m>R</m> is the ideal gas 
-      constant, and <m>T</m> is the temperature of the gas. The ideal gas law is a useful tool for predicting 
-      the behavior of gases under a wide range of conditions, although it is important to note that it is an 
-      approximation and may not accurately describe the behavior of real gases under certain conditions, 
-      such as high pressure or low temperature. 
+     We can obtain an infinite amount of heat out of the material  by performing continuous mechanical work as 
+     in Joule's experiment without changing the condition of water. 
+     This means that heat is not a substance, but rather a form of energy transfer. Work is also an energy that is 
+     transferred from one system to another in such a way that difference of temperature does not play any role.
     </p>
-    
+    <p>
+      <term>External and Internal Work:</term> If the system as a whole exerts a force on its surroundings and a 
+      displacement takes place, then work done by the system or on the system is called external work. 
+      (e.g. piston pushes out of the cylinder due to gas molecules: which is external work done by the gas on its surroundings). 
+      On the other hand, if the system is made up of many particles and the particles exert forces on each other, 
+      then work done by the particles on each other is called internal work. (e.g. intermolecular attractions between gas molecules: 
+      which is internal work done by the gas on itself). The internal work is responsible for the change in internal energy 
+      of the system, while the external work is responsible for the change in the energy of the surroundings. 
+      External work is macroscopic concept which involves an interaction between a system and its surroundings. 
+      It plays a very inportant role in thermodynamics. Internal work is a microscopic concept which involves an interaction 
+      between the particles of the system. Hence, it plays no role in thermodynamics.
+    </p>
+
   </subsection>
+
 </section>

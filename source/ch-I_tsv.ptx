@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-I_tsv" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Thermodynamic Systems</title>
+  <title>Thermodynamics</title>
 
   <introduction>
-    <p> A thermodynamic system is a region of space that is under study. The surroundings are everything outside the system. 
-      The boundary is the interface that separates the system from the surroundings. 
+    <p>
+      The branch of physics that deals with heat and temperature and transportation of heat is called thermodynamics. 
+      It describes the macroscopic variables of matter and radiation, hence also known as physics of average.
+    </p>
+    <p> <term>thermodynamic system:</term> It is a quantity of matter or a region of space that is under study. 
+      The surroundings are everything outside the system. The boundary is the interface that separates the system from the surroundings. 
        </p>
-          
+          <p>
+            In order to understand thermodynamical behaviour of a system, it is very important to know how system exchange energy and matter 
+            with its surroundings. The exchange of energy and matter between the system and its surroundings can occur in the form of heat, 
+            work, and mass transfer. 
+          </p>
+           <p> <alert>Classification of Thermodynamic Systems</alert>
+      A thermodynamic system can be classified as open, closed, or isolated based on the exchange of matter 
+      and energy with its surroundings. An open system can exchange both matter and energy, 
+      a closed system can exchange only energy, and an isolated system cannot exchange either matter or energy. 
+        </p>
+
  <image width="50%" xml:id="therm_system">
   
   <latex-image >
@@ -32,11 +46,7 @@
   </latex-image>
     </image>
 
-    <p> <alert>Classification of Thermodynamic Systems</alert>
-      A thermodynamic system can be classified as open, closed, or isolated based on the exchange of matter 
-      and energy with its surroundings. An open system can exchange both matter and energy, 
-      a closed system can exchange only energy, and an isolated system cannot exchange either matter or energy. 
-        </p>
+   
         <example>
        <p>
          Flow through a turbine, boiling water in an open pot, human body. 
@@ -49,26 +59,29 @@
         A perfectly insulated, sealed thermos (idealized); the universe itself is considered isolated.
        </p>
       </example>
-    <p>
-      The state of a thermodynamic system is described by a set of variables, such as pressure, volume, temperature, and composition. 
+
+       <p> <alert>Thermodynamic Variables</alert>
+      The state of a thermodynamic system is described by a set of macroscopic statevariables, 
+      such as pressure, volume, temperature, and composition. 
       These variables are called state variables or thermodynamic variables. 
       The relationships between these variables are governed by the laws of thermodynamics, 
-      which provide a framework for understanding the behavior of thermodynamic systems.  
+      which provide a framework for understanding the behavior of thermodynamic systems. 
+      These variables are adequate for the description of equilibrium systems. When the system is not in 
+      equilibrium, additional variables may be required to describe its state such as rate of convective flow or of metabolism.
     </p>
+    
     <p>
       In this chapter, we will explore the fundamental concepts of thermodynamic systems and variables, 
       including the classification of systems, the definition of state variables, and the application of 
       the laws of thermodynamics to analyze the behavior of these systems. 
     </p>
-    <p>
-      By the end of this chapter, you should have a solid understanding of the basic principles that govern thermodynamic systems and the variables that describe their state. 
-      This knowledge will serve as a foundation for further study in thermodynamics and its applications in various fields such as physics, chemistry, and engineering. 
-    </p>
+    
   </introduction>
 
   <!-- include sections -->
   <xi:include href="sec-basics.ptx" />
    <xi:include href="sec-heat.ptx" />
+   <xi:include href="sec-ktg.ptx" />
     <xi:include href="sec-vander.ptx" />
       <xi:include href="sec-mbvd.ptx" /> 
       <xi:include href="sec_i-example.ptx" />
