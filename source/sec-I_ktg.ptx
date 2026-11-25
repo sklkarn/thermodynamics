@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-ktg" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Gas Laws</title>
+  <introduction>
+  
+    <p>
+      The gas laws are a set of mathematical relationships that describe the behavior of gases under different conditions. 
+      The <term>Boyle's law</term> states that the pressure of a gas is inversely proportional to its volume at constant 
+      temperature. This means that if the volume of a gas decreases, the pressure increases, and vice versa. 
+      The <term>Charles's law</term> states that the volume of a gas is directly proportional to its 
+      temperature at constant pressure. This means that if the temperature of a gas increases, the volume 
+      increases, and vice versa. The <term>Gay-Lussac's law</term> states that the pressure of a gas is 
+      directly proportional to its temperature at constant volume. This means that if the temperature of a 
+      gas increases, the pressure increases, and vice versa. The <term>ideal gas law</term> combines 
+      these three laws into a single equation, <m>PV = NRT</m>, where <m>P</m> is the pressure of the gas, 
+      <m>V</m> is the volume of the gas, <m>N</m> is the number of moles of the gas, <m>R</m> is the ideal gas 
+      constant, and <m>T</m> is the temperature of the gas. The ideal gas law is a useful tool for predicting 
+      the behavior of gases under a wide range of conditions, although it is important to note that it is an 
+      approximation and may not accurately describe the behavior of real gases under certain conditions, 
+      such as high pressure or low temperature. 
+    </p>
+    <p>
+      From kinetic theory of gases, we know energy is proportional to temperature. 
+     <md>E \propto T</md>
+
+      <md>or, \, PV \propto T</md>
+    </p>
+    <p>
+      <term> Boyle's Law: </term> 
+      <md>
+        V = \frac{f_1(T)}{P}, \, f_1(T) \, \quad \text{ is a function of temperature, T.}
+      </md>
+       <term> Charles's Law: </term> 
+      <md>
+        \frac{V}{T} = f_2(P), \, f_2(P) \,\quad  \text{ is a function of pressure, P.}
+      </md>
+     <term>Avogadro's law:</term> states that equal volumes of gases at the same temperature and pressure contain 
+     the same number of molecules. This means that the volume of a gas is directly proportional to the number of molecules. 
+     <md>
+      V=n \frac{f_1(T)}{P}
+     </md>
+     At constant temperature and pressure, the volume of a gas is directly proportional to the amount of the gas.
+    </p>
+    <p>
+      By comparing these laws, we get -
+      <md number="yes">
+        PV = nRT
+      </md>
+      This is the ideal gas law, where <m>P</m> is the pressure of the gas, <m>V</m> is the volume of the gas,
+      <m>n</m> is the number of moles of the gas, <m>R=8.314 \, \text{J/mol/K} </m> <m>(or, \, Pa m^3 K^{-1} mol^{-1}) 
+        = \, 0.0821 </m> <m> \, \text{L·atm/mol/K} = 0.08314 bar L K^{-1} mol^{-1}</m> is the ideal gas constant, and <m>T</m> is the temperature of the gas. 
+      The ideal gas law is a useful tool for predicting the behavior of gases under a wide range of conditions, 
+      although it is important to note that it is an approximation and may not accurately describe the behavior of real 
+      gases under certain conditions, such as high pressure or low temperature. Hence, modification is 
+      needed in an ideal gas equation to account for the behavior of real gases. 
+      The <term>van der Waals equation</term> is a modified version of the ideal gas law that takes into account 
+      the volume occupied by gas molecules and the attractive forces between them. 
+    </p>
+
+    <p>
+      For ideal gas,. internal energy is just the function of absolute temperatrue.
+    </p>
+    <proof>
+      <p>
+        From I law of Thermodynamics
+        <md>
+          \,dQ =\,dU + P\,dV
+        </md>
+        
+        <md number="yes">
+            <mrow xml:id="ieq_1"> or, \,dU =\,dQ - P\,dV </mrow>
+           </md>
+           From II law of thermodynamics 
+           <md>
+            \,dS = \frac{\,dQ}{T}
+           </md>
+           
+         <md number="yes">
+           <mrow xml:id="ieq_2"> or, \,dU =T\,dS - P\,dV </mrow>
+           </md>
+        Take <m>U =U(V, T) </m> then
+        <md number="yes">
+          <mrow xml:id="ieq_3">  
+            \,dU = \left(\frac{\partial U}{\partial V} \right)_T \,dV + \left(\frac{\partial U}{\partial T} \right)_V \,dT 
+           </mrow>
+        </md>
+        Also <m>S = S(V, T)</m>
+        <md number="yes">
+          <mrow xml:id="ieq_4">  
+            \,dS = \left(\frac{\partial S}{\partial V} \right)_T \,dV + \left(\frac{\partial S}{\partial T} \right)_V \,dT 
+           </mrow>
+        </md>
+        Hence, from <xref ref="ieq_2"/> and <xref ref="ieq_4"/>, we have -
+        <md number="yes">
+          <mrow xml:id="ieq_5"> 
+              \,dU = T\left(\frac{\partial S}{\partial T} \right)_V \,dT + \left[T\left(\frac{\partial S}{\partial V} \right)_T - P \right] \,dV 
+          </mrow>
+        </md>
+         Also, from <xref ref="ieq_3"/> and <xref ref="ieq_5"/>, we have -
+        <md number="yes">
+          <mrow xml:id="ieq_6"> 
+              \left(\frac{\partial U}{\partial T} \right)_V  = T\left(\frac{\partial S}{\partial T} \right)_V 
+          </mrow>
+         
+            <mrow xml:id="ieq_7"> 
+              \text { and }\quad  \left(\frac{\partial U}{\partial V} \right)_T  = \left[T\left(\frac{\partial S}{\partial V} \right)_T - P \right] 
+          </mrow>
+        </md>
+        Now, Take <m>F = U - TS</m>
+        <md>
+           dA = dU - T\, dS - S\, dT = T\,dS - P\,dV - T\, dS -S\, dT  
+        </md>
+        using <xref ref="ieq_2"/>, Hence, 
+        <md number="yes">
+          <mrow xml:id="ieq_8">  
+           or, \,  \,dF = -S\,dT -P\,dV  
+          </mrow>
+        </md>
+        But, <m>F = F(V, T)</m>
+         <md number="yes">
+          <mrow xml:id="ieq_9">  
+           or, \,  \,dF = \left(\frac{\partial F}{\partial V} \right)_T \,dV  + \left(\frac{\partial F}{\partial T} \right)_V \,dT 
+          </mrow>
+        </md>
+        Compare <xref ref="ieq_8"/> and <xref ref="ieq_9"/>, we have -
+         <md number="yes">
+          <mrow xml:id="ieq_10">  
+          \left(\frac{\partial F}{\partial V} \right)_T = -P  
+          </mrow>
+        </md>
+        and, 
+          <md number="yes">
+          <mrow xml:id="ieq_11">  
+         \left(\frac{\partial F}{\partial T} \right)_V  = -S 
+          </mrow>
+        </md>
+        Differential <xref ref="ieq_10"/> with respect to <m>T</m> and <xref ref="ieq_11"/> with respect to <m>V</m>, we get -
+         <md>
+             \left(\frac{\partial^2 F}{\partial V\partial T} \right)_V  =  \left(\frac{\partial S}{\partial V} \right)_T = \left(\frac{\partial P}{\partial T} \right)_V
+           </md>
+            <md number="yes">
+              <mrow xml:id="ieq_12"> 
+         \left(\frac{\partial S}{\partial V} \right)_T = \left(\frac{\partial P}{\partial T} \right)_V
+         </mrow>
+           </md>
+           From <xref ref="ieq_7"/>
+           <md number="yes">
+              <mrow xml:id="ieq_13"> 
+         \left(\frac{\partial U}{\partial V} \right)_T = \left[T\left(\frac{\partial P}{\partial T} \right)_V - P\right]
+         </mrow>
+           </md>
+           Simce, for an ideal gas, 
+           <md>
+            P=\frac{nRT}{V}
+           </md>
+         Differentiating it w. r. t. 'T', at constant <m>V</m> we get -
+           <md>
+            \left(\frac{\partial P}{\partial T} \right)_V  = \frac{nR}{V}
+           </md>
+           Therefore from <xref ref="ieq_13"/>
+           <md>
+             \left(\frac{\partial U}{\partial V} \right)_T = \left[\frac{nRT}{V}- P\right] = P-P =0
+           </md>
+           That is, internal energy is not a function of volume, it only depends on temperature.
+      </p>
+      
+    </proof>
+    <p>
+       If the volume of an enclosed ideal gas doubles at constant temperature its internal energy does not change.
+    </p>
+   
+  </introduction>
+  
+  <subsection xml:id="subsec-ktg">
+    <title>Kinetic Theory of Gases</title>
+    <p>
+      Bernoulli showed that using the basic concepts of force and randomness, we can relate the pressure of a gas to the molecular motion.   </p>
+      <p>
+        Suppose the properties of molecules moving in one direction will be the same as the properties of molecules moving in anyother direction, then we can assume 
+        the average speed of the gas molecules is <m>v_{ave}</m>. Where 
+        <md number="yes">
+          v^2_{ave} =\bar{v}_{x}^2 +\bar{v}_{y}^2 +\bar{v}_{z}^2=\bar{v}^2
+        </md>
+        Therefore all directions are equivalent, we must write 
+         <md number="yes">
+          \bar{v}_{x}^2 =\bar{v}_{y}^2 =\bar{v}_{z}^2=\frac{\bar{v}^2}{3}
+        </md>
+        Note: We squared it because we take magnitude of velocity.
+      </p>
+      <p>
+        Consider N mole of gas in a cube, where 
+        <m>n=</m> number of mole of gas, <m>V=</m> gas volume, <m>M=</m> molar mass of the gas, <m>m=\frac{M}{N_A}</m> = mass of one molecule, 
+        <m>\frac{N}{V}=\frac{nN_A}{V}</m> = number of molecules per unit volume, <m>N_A=</m> Avagadro's number.
+      </p>
+      <p>
+        Let <m>F_x</m> be the force exerts on the wall of the container of volume <m>V=A\Delta x</m> when a molecule hits the wall along x-axis.
+        <md>
+          \therefore \, F_x= \frac{\Delta p_x}{\Delta t} = \frac{m\bar{v}_x-(-m\bar{v}_x )}{\Delta t}\times \frac{N}{2}A\Delta x
+        </md>
+        The factor <m>\frac{1}{2}</m> is taken because half of the molecules are moving along x-axis and half of them are moving opposite way. Now,
+        <md number="yes"> 
+          P_x=\frac{F_x}{A} = 2m\bar{v}^2_x \frac{N}{2} = mN\bar{v}^2_x 
+        </md>
+        Since, direction x is arbitrary, it is better to write, 
+        <md>
+          P=\frac{1}{3}mN\bar{v}^2 = \frac{1}{3}\frac{M}{N_A}\frac{nN_A}{V}\bar{v}^2 = \frac{1}{3}\frac{Mn}{V}\bar{v}^2 
+        </md>
+         <md number="yes">
+          or, \, PV = \frac{1}{3}Mn\bar{v}^2 
+        </md>
+        <md>
+          But, \, PV = nRT =  \frac{1}{3}Mn\bar{v}^2 
+        </md>
+          <md number="yes">
+          or, \, RT =  \frac{1}{3}M\bar{v}^2 
+        </md>
+        Using Boltzmann constant, 
+        <md>
+          k_B = \frac{R}{N_A} = 1.3807\times 10^{-23} JK^{-1}
+        </md>
+         <md>
+          k_B N_A T =  \frac{1}{3}mN_A\bar{v}^2 
+        </md>
+          <md>
+         or, \,  k_B T =  \frac{1}{3}m\bar{v}^2 
+        </md>
+         <md number="yes">
+         or, \,  \frac{1}{2}m\bar{v}^2  =  \frac{3}{2}k_B T  
+        </md>
+        This equation relates temperature to molecular motion. From equation of RT, 
+        we can also see that the total kinetic energy of 1 mole of gas equals <m>\frac{3}{2}RT</m>
+      </p>
+
+
+ <image width="40%" xml:id="particle_box">
+  
+  <latex-image >
+ \begin{tikzpicture}
+     \filldraw (0.4,-0.5)  circle (1pt);
+    \node at (0.5, -2.2) {$\Delta x$};
+    \draw (-0.5,0) rectangle (2,-2); 
+    \draw [-latex,dashed] (0.4,-0.5) -- (1.95,-0.95) -- (1.4,-1.3); 
+    \node at (2.2,-1) {$A$};
+  \end{tikzpicture}
+
+  </latex-image>
+    </image>
+
+  </subsection>
+
+<subsection xml:id="subsec-eqpt">
+  <title>Equipartition Theorem</title>
+  
+  <p>
+    The energy associated with each independent mode of vibration (motion) is <m>k_BT/2</m>. 
+    For example: For a point particle, there are three independent mode of motion, i.e., translational motion (monoatomic gas, <m>He, \, Ar</m>), 
+    so degrees of freeedom <m>f=3</m>, The K.E. for this particle is <m>\frac{3}{2}k_B T</m>
+  </p>
+<image width="20%" xml:id="eq_part-1">
+  
+  <latex-image >
+ \begin{tikzpicture}
+     \filldraw (0,0)  circle (1pt);
+    \draw [-latex,dashed] (0,0,0) -- (0,1,0) node [above] {$z$} ; 
+     \draw [-latex,dashed] (0,0,0) -- (1,0,0) node [above] {$y$}; 
+      \draw [-latex,dashed] (0,0,0) -- (0,0,1) node [above] {$x$}; 
+     \end{tikzpicture}
+
+  </latex-image>
+    </image>
+  
+    <p>
+      For a diatomic particle  <m>(H2,\, O_2)</m>, degrees of freeedom <m>f=6-1=5</m>, The K.E. for this particle is <m>\frac{5}{2}k_B T</m>
+    </p>
+    <image width="20%" xml:id="eq_part-2">
+  
+  <latex-image >
+ \begin{tikzpicture}
+    \filldraw  (0,0)  circle (1pt);
+      \filldraw  (1,0)  circle (1pt);
+     % \draw (0,0) -- (1,0);
+    \draw [-latex,dashed] (0,0,0) -- (0,1,0) node [above] {$z$} ; 
+     \draw [-latex,dashed] (1,0,0) -- (1,1,0)  ; 
+     \draw [dashed] (0,0,0) -- (1,0,0) node at (0.5,0.1,0) {$y$}; 
+      \draw [-latex,dashed] (0,0,0) -- (0,0,1) node [above] {$x$}; 
+        \draw [-latex,dashed] (1,0,0) -- (1,0,1) ; 
+     \end{tikzpicture}
+
+  </latex-image>
+    </image>
+    <p>
+      The independent mode of motion is called <em>degree of freedom.</em>
+    </p>
+     <p>
+      For a triatomic particle  <m>(O_3,\, -- )</m>, degrees of freeedom <m>f=9-2=7</m>, in linear arrangement. 
+    </p>
+   <image width="20%" xml:id="eq_part-3">
+  
+  <latex-image >
+ \begin{tikzpicture}
+    \filldraw  (0,0)  circle (1pt)    (1,0)  circle (1pt)  (2,0)  circle (1pt) ;
+     
+ \draw [dashed] (0,0) -- (2,0);  
+ 
+     \end{tikzpicture}
+
+  </latex-image>
+    </image>
+
+     <p>
+      For a triatomic particle  <m>(O_3,\, -- )</m>, in triangular arrangement the degrees of freeedom <m>f=9-3=6</m>.  
+    </p>
+   
+     <image width="20%" xml:id="eq_part-4">
+  
+  <latex-image >
+ \begin{tikzpicture}
+     \filldraw  (0,-1)  circle (1pt)    (-1,-2)  circle (1pt)  (1,-2)  circle (1pt) ;
+   \draw [dashed] (0,-1) -- (-1,-2) -- (1,-2) -- cycle;  
+     \end{tikzpicture}
+
+  </latex-image>
+    </image>
+ <p>
+      The other mode of motion is a contribution of rational and vibrational motion.
+    </p>
+</subsection>
+
+
+</section>

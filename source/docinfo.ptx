@@ -40,6 +40,6 @@
 
   <!-- Specify the default type of cross reference: -->
   <!-- <cross-references text="type-global" /> -->
-
+ <directories external="../assets" generated="../generated-assets" />
 
 </docinfo>

@@ -10,7 +10,7 @@
     it is fundamentally blind to directionality and quality. It tells us that energy cannot be 
     created or destroyed, but it permits countless physical phenomena that never actually happen in the real world. 
     The First Law states that the change in internal energy of a closed system is equal to the heat added minus the work done:
-    <me>dU = \delta Q - \delta W</me> 
+    <md>dU = \delta Q - \delta W</md> 
     This is a strict conservation law. However, it treats heat (<m>\delta Q</m>) and work (<m>\delta W</m>) 
     as algebraic equivalents in a balancing ledger. It creates several major physical paradoxes that it cannot solve on its own: </p>
     <p>
@@ -75,7 +75,7 @@
          second kind a device that runs at 100% thermal efficiency by extracting heat from a single reservoir (like the ocean) 
          and converting it entirely into work. The Second Law sets the absolute thermodynamic ceiling for performance via 
          the Clausius inequality and the Carnot limit: 
-         <me>\eta \le 1 - \frac{T_C}{T_H}</me>
+         <md>\eta \le 1 - \frac{T_C}{T_H}</md>
           The Second Law of Thermodynamics establishes the direction of physical processes and asserts that macroscopic 
           thermal energy exchanges are inherently irreversible. 
        </p>
@@ -115,22 +115,22 @@
                   <p>
                     Clausius theorem states that for any closed cyclic process, the cyclic integral of the heat 
               transfer divided by the temperature at the boundary is less than or equal to zero: 
-                   <me>\oint \frac{\delta Q}{T} \le 0</me> 
+                   <md>\oint \frac{\delta Q}{T} \le 0</md> 
                   </p>
                 </li>
                 <li>
                   <p>
                     For a reversible cycle, this inequality becomes an equality 
-                    <me>\oint \frac{\delta Q_{\text{rev}}}{T} = 0</me>
+                    <md>\oint \frac{\delta Q_{\text{rev}}}{T} = 0</md>
                      implying that the integrand is an exact differential of a state function, Entropy (S): 
-                          <me>dS = \frac{\delta Q_{\text{rev}}}{T}</me>
+                          <md>dS = \frac{\delta Q_{\text{rev}}}{T}</md>
                   </p>
                   <p>
                     For an irreversible process in an isolated system, the entropy must increase. 
                     This leads to the overarching differential statement of the Second Law: 
-                    <me>dS \ge \frac{\delta Q}{T}</me> 
+                    <md>dS \ge \frac{\delta Q}{T}</md> 
                     For a completely isolated system (<m>\delta Q = 0</m>), the global entropy change satisfies: 
-                    <me>\Delta S_{\text{isolated}} \ge 0</me>
+                    <md>\Delta S_{\text{isolated}} \ge 0</md>
                   </p>
                 </li>
               </ul>
@@ -141,7 +141,7 @@
               <term>Statistical Formulation (Boltzmann Perspective)</term> 
               In statistical mechanics, entropy quantifies the number of accessible microstates (<m>\Omega</m>) 
               corresponding to a given macroscopic thermodynamic state (macrostate): 
-             <me>S = k \ln \Omega</me> 
+             <md>S = k \ln \Omega</md> 
              Where <m>k</m> is the Boltzmann constant (<m>1.38 \times 10^{-23} \text{ J/K}</m>). 
              The Second Law Statistically: An isolated system will spontaneously evolve toward the macrostate with 
              the largest multiplicity (<m>\Omega</m>). Because <m>\Omega</m> scales exponentially with particle 
@@ -157,14 +157,14 @@
              <p>
               By combining the First Law (<m>dU = \delta Q - \delta W</m>) with the reversible definitions 
           <m> \delta Q = TdS</m>  and  <m>\delta W = PdV</m>, we obtain the fundamental relation for a simple compressible system: 
-          <me>dU = TdS - PdV</me> 
+          <md>dU = TdS - PdV</md> 
            This explicitly shows that entropy <m>S</m> and volume <m>V</m> are the natural variables of the internal energy <m>U(S, V)</m>. 
               </p>
               <p>
                  Carnot Efficiency Limit: 
                  No heat engine operating between two thermal reservoirs (<m>T_H</m> and <m>T_C</m>) 
                  can be more efficient than a reversible Carnot engine operating between those same reservoirs: 
-                     <me>\eta_{\text{max}} = 1 - \frac{T_C}{T_H}</me>
+                     <md>\eta_{\text{max}} = 1 - \frac{T_C}{T_H}</md>
               </p>
 
   </introduction>
@@ -181,7 +181,7 @@
                   <term>The Statistical Reality: Boltzmann's Perspective</term> 
                   Every macroscopic system (a macrostate defined by pressure, volume, and temperature) has a specific number of 
                   unique quantum and positional arrangements its individual atoms can take (microstates, denoted by <m>\Omega</m>). 
-                 <me>  S = k_B \ln \Omega </me> 
+                 <md>  S = k_B \ln \Omega </md> 
                   <em>Low Entropy:</em> Energy is concentrated, localized, or highly organized. There are relatively few ways 
                   (small  <m>\Omega</m>) to arrange particles to keep energy trapped in one small spot. 
                   <em>High Entropy:</em> Energy is widely distributed and shared among as many particles and spatial locations as possible. 
@@ -229,7 +229,7 @@
                             <em>The Black Hole Era:</em> The only macro-structures left will be supermassive black holes. Over incomprehensibly 
                             long timescales (<m>10^{60}</m> to <m>10^{100}</m> years), even these will slowly leak mass-energy back into 
                             the universe via Hawking Radiation.
-                            <me>T_H = \frac{\hbar c^3}{8\pi G M k}</me>
+                            <md>T_H = \frac{\hbar c^3}{8\pi G M k}</md>
                           </p>
                         </li>
                        </ul>

@@ -5,8 +5,14 @@
 
   <introduction>
     <p>
-      The branch of physics that deals with heat and temperature and transportation of heat is called thermodynamics. 
-      It describes the macroscopic variables of matter and radiation, hence also known as physics of average.
+      The branch of physics that deals with heat and temperature called thermodynamics. 
+      It describes the average behavior of matter 
+      and transformation between different forms of energy on a macroscopic scale. 
+      It does not give description of matter at molecular level, 
+      it only describes the system of interest in terms of its bulk properties. 
+      For example, the material can be described using its volume, pressure, and temperature. 
+      On microscopic level statatistical mechanics is used to describe properties of matter.
+      
     </p>
     <p> <term>thermodynamic system:</term> It is a quantity of matter or a region of space that is under study. 
       The surroundings are everything outside the system. The boundary is the interface that separates the system from the surroundings. 
@@ -79,11 +85,11 @@
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-basics.ptx" />
-   <xi:include href="sec-heat.ptx" />
-   <xi:include href="sec-ktg.ptx" />
-    <xi:include href="sec-vander.ptx" />
-      <xi:include href="sec-mbvd.ptx" /> 
+  <xi:include href="sec-I_basics.ptx" />
+   <xi:include href="sec-I_heat.ptx" />
+   <xi:include href="sec-I_ktg.ptx" />
+    <xi:include href="sec-I_vander.ptx" />
+      <xi:include href="sec-I_mbvd.ptx" /> 
       <xi:include href="sec_i-example.ptx" />
       <xi:include href="ex_first.ptx" />
 </chapter>

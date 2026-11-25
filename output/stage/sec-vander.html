@@ -17,70 +17,29 @@
 <title>Van der Waals Equation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link rel="stylesheet" href="_static/pretext/fonts/material-symbols-outlined.css">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<style>
+@counter-style ptx-marker-1 { system: extends lower-alpha; prefix: ''; suffix: '. '; }
+</style>
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer data-pretext-mathjax="true" onerror="this.dataset.loadFailed = 'true';" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
-<meta property="book:title" content="Thermodynamics">
-<meta property="book:author" content="Sunil Karna">
-<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<meta name="twitter:title" content="Thermodynamics: of Equilibrium Systems">
+<meta property="og:title" content="Thermodynamics: of Equilibrium Systems">
+<meta property="book:title" content="Thermodynamics: of Equilibrium Systems">
+<meta name="twitter:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta property="og:description" content="A simple string (no markup is allowed) to describe your book.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.56"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.56"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -102,35 +61,61 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.6';
+eBookConfig.runestone_version = '8.4.3';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.86d8a68ed7481f7e.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
-<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.90336ab72cbb648f.bundle.js"></script><script src="_static/prefix-23.7d27cb317c36911a.bundle.js"></script><script src="_static/prefix-runestone.1f0ec0deacd7bb16.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-runestone.52ceae47a9e6e8ed.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="changeme" class="pretext book ignore-math">
-<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
-<h1 class="heading"><a href="thermodynamics.html"><span class="title">Thermodynamics</span> <span class="subtitle">of Equilibrium Systems</span></a></h1>
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="thermodynamics.html"><span class="title">Thermodynamics</span> <span class="subtitle">of Equilibrium Systems</span></a></div>
 <p class="byline">Sunil Karna</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
-<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<div class="search-results-controls">
-<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
-<h2 class="search-results-heading">Search Results: </h2>
-<div id="searchempty" class="searchempty"><span>No results.</span></div>
-<ol id="searchresults" class="searchresults"></ol>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
+<span class="nav-other-controls"><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
 </div>
-<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-ktg.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-I_tsv.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-mbvd.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec-ktg.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-I_tsv.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-mbvd.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} 
 \newcommand{\Z}{\mathbb Z} 
 \newcommand{\Q}{\mathbb Q} 
@@ -142,36 +127,44 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-I_tsv.html" class="internal"><span class="codenumber">1</span> <span class="title">Thermodynamics</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch-I_tsv">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-I_tsv-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-basics.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Basic Concepts (Zeroth Law)</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-basics" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-basics.html#subsec-them_equil" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Thermodynamic Equilibrium</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-basics.html#subsec-process" class="internal"><span class="codenumber">1.1.2</span> <span class="title">process and Cycles</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-heat.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Heat and Temperature</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-heat.html#subsec-laws_thermdynamics" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Laws of Thermodynamics</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec-heat" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-heat.html#subsec-laws_thermdynamics" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Laws of Thermodynamics</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-ktg.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The Gas Laws</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-ktg.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The Gas Laws</span></a></div>
+<ul id="ptx-toc-group-sec-ktg" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ktg.html#subsec-ktg" class="internal"><span class="codenumber">1.3.1</span> <span class="title">Kinetic Theory of Gases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-ktg.html#subsec-eqpt" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Equipartition Theorem</span></a></div></li>
+</ul>
+</li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-vander.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Van der Waals Equation</span></a></div>
-<ul class="structural toc-item-list active">
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec-vander">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vander.html#subsec-derv_vwg" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Derivation of van der Waals Equation</span></a></div></li>
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sec-vander.html#subsec-crit_point" class="internal"><span class="codenumber">1.4.1</span> <span class="title">Critical Point</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-vander.html#subsubsec-det_a_b" class="internal"><span class="codenumber">1.4.1.1</span> <span class="title">Determination of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span></span></a></div></li></ul>
+<div class="toc-title-box"><a href="sec-vander.html#subsec-crit_point" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Critical Point</span></a></div>
+<ul id="ptx-toc-group-subsec-crit_point" class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-vander.html#subsubsec-det_a_b" class="internal"><span class="codenumber">1.4.2.1</span> <span class="title">Determination of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span></span></a></div></li></ul>
 </li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vander.html#subsec-intermol_force" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Molecular (Intermolecular) Forces in Real Gases</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-vander.html#subsec-intermol_force" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Molecular (Intermolecular) Forces in Real Gases</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-mbvd.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Maxwell-Boltzmann Velocity Distribution</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-mbvd.html#subsec-msd" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Maxwell Speed Distribution</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec-mbvd" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-mbvd.html#subsec-msd" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Maxwell Speed Distribution</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_i-example.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Examples</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ex_first.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Exercise</span></a></div></li>
@@ -179,14 +172,15 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-II_lt.html" class="internal"><span class="codenumber">2</span> <span class="title">Laws of Thermodynamics</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-II_lt" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-II_lt-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-I_law.html" class="internal"><span class="codenumber">2.1</span> <span class="title">First Law</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec-I_law" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-I_law.html#subsec-sp_cap_rel" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Relation between <span class="process-math">\(C_{mp}\)</span> and <span class="process-math">\(C_{mv}\)</span></span></a></div></li>
 <li class="toc-item toc-subsection">
 <div class="toc-title-box"><a href="sec-I_law.html#subsec-adiab_proc" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Adiabatic Processes in Ideal Gas</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-subsec-adiab_proc" class="structural toc-item-list">
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-I_law.html#subsubsec-sound_prop" class="internal"><span class="codenumber">2.1.2.1</span> <span class="title">Sound Propagation</span></a></div></li>
 <li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec-I_law.html#subsec-hess_law" class="internal"><span class="codenumber">2.1.2.2</span> <span class="title">Hess’s law</span></a></div></li>
 </ul>
@@ -195,27 +189,31 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-II_law.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Second Law</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-II_law.html#subsec-entropy" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Entropy</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec-II_law" class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-II_law.html#subsec-entropy" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Entropy</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-III_law.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Third Law</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-III.html" class="internal"><span class="codenumber">3</span> <span class="title">Entropy</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-ch-III" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="ch-III-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-III.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Chapter III</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-IV.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Chapter IV</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-vander"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.4</span><span class="space"> </span><span class="title">Van der Waals Equation</span>
-</h2>
-<section class="introduction" id="sec-vander-2"><div class="para logical" id="sec-vander-2-1">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec-vander">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Van der Waals Equation</span>
+</h1>
+<section class="introduction" id="sec-vander-2">
+<div class="para logical" id="sec-vander-2-1">
 <div class="para">
 <em class="alert">Limitations of the Ideal Gas Law</em> The ideal gas law</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-vander-2-1-2">
 \begin{equation*}
 PV =nRT
 \end{equation*}
@@ -223,329 +221,409 @@ PV =nRT
 <div class="para">assumes:</div>
 <ul class="disc" id="sec-vander-2-1-3">
 <li id="sec-vander-2-1-3-1">
-<div class="para" id="sec-vander-2-1-3-1-1">Molecules have zero volume.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-vander-2-1-3-1-1">Molecules have zero volume.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-vander-2-1-3-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-vander-2-1-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="sec-vander-2-1-3-2">
-<div class="para" id="sec-vander-2-1-3-2-1">No intermolecular forces except during perfectly elastic collisions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-1-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-vander-2-1-3-2-1">No intermolecular forces except during perfectly elastic collisions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-vander-2-1-3-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec-vander-2-1-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/z_factor.png" class="contained"></div>
 <div class="para logical" id="sec-vander-2-3">
 <div class="para">Real gases deviate significantly at high pressure (molecules are close together) and low temperature (kinetic energy is low, attractions dominate). The compressibility factor</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-vander-2-3-1">
 \begin{equation*}
 Z= \frac{PV}{nRT} \quad \text{ deviates from 1.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-vander-2-4">
 <div class="para">Van der Waals equation is a thermodynamic equation of state that describes the behavior of real gases. It is an improvement over the ideal gas law by accounting for the finite size of gas molecules and the intermolecular forces between them. The equation is given by:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-vander-2-4-1">
 \begin{equation*}
 \left(P+\frac{an^2}{V^2}\right)\left(V-nb\right) = nRT
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(n, P, T, V, R \)</span> are number moles of gas, the observed pressure pressure, absolute temperature, total volume of the container, and universal gas constant, respectively. Also, <span class="process-math">\(a\)</span> is van der Waals constant for attractive forces (units: <span class="process-math">\(L^2\, atm \,mol^{-2} \)</span> or <span class="process-math">\(Pa \, m^6 \,mol^{-2}\)</span>) and <span class="process-math">\(b\)</span> is van der Waals constant for finite molecular volume (units: <span class="process-math">\(L\, mol^{-1}\)</span> or <span class="process-math">\(m^3\, mol^{-1}\)</span>)</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-vander-2-5">In kinetic theory of gases, we neglect the volume of the gas molecules and the intermolecular forces between them. As a result, the ideal gas law does not holds good for real gases, especially at high pressures and low temperatures. The van der Waals equation accounts for these factors by introducing two parameters, <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> which represent the strength of the intermolecular forces and the volume occupied by the gas molecules, respectively.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-vander-2-5">In kinetic theory of gases, we neglect the volume of the gas molecules and the intermolecular forces between them. As a result, the ideal gas law does not holds good for real gases, especially at high pressures and low temperatures. The van der Waals equation accounts for these factors by introducing two parameters, <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> which represent the strength of the intermolecular forces and the volume occupied by the gas molecules, respectively.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/vanderf_cor.png" class="contained"></div>
-<div class="para" id="sec-vander-2-7">Correction for finite size: The term <span class="process-math">\(nb\)</span> in the equation accounts for the finite size of gas molecules. It represents the volume occupied by the gas molecules themselves, which reduces the available volume for the gas to occupy. This correction is important at high pressures where the gas molecules are closely packed together.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-vander-2-7">Correction for finite size: The term <span class="process-math">\(nb\)</span> in the equation accounts for the finite size of gas molecules. It represents the volume occupied by the gas molecules themselves, which reduces the available volume for the gas to occupy. This correction is important at high pressures where the gas molecules are closely packed together.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-vander-2-8">Evaluation of V: Let r be the radius of a molecule, then the volume occupied by a molecule is <span class="process-math">\(\frac{4}{3}\pi r^3\text{.}\)</span> If there are n molecules, then the total volume occupied by the molecules is <span class="process-math">\(\frac{4}{3}\pi r^3 n\text{.}\)</span> Hence, the available volume for the gas to occupy is given by <span class="process-math">\(V - \frac{4}{3}\pi r^3 n\text{.}\)</span> The correction term <span class="process-math">\(nb\)</span> in the van der Waals equation accounts for this reduction in available volume and allows us to calculate the actual volume of the gas using the equation.  Here, <span class="process-math">\(b\)</span> is a constant that represents the effective volume occupied by each gas molecule (also called excluded volume or co-volume ), and it is determined experimentally for each gas.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-vander-2-8">Evaluation of V: Let r be the radius of a molecule, then the volume occupied by a molecule is <span class="process-math">\(\frac{4}{3}\pi r^3\text{.}\)</span> If there are n molecules, then the total volume occupied by the molecules is <span class="process-math">\(\frac{4}{3}\pi r^3 n\text{.}\)</span> Hence, the available volume for the gas to occupy is given by <span class="process-math">\(V - \frac{4}{3}\pi r^3 n\text{.}\)</span> The correction term <span class="process-math">\(nb\)</span> in the van der Waals equation accounts for this reduction in available volume and allows us to calculate the actual volume of the gas using the equation.  Here, <span class="process-math">\(b\)</span> is a constant that represents the effective volume occupied by each gas molecule (also called excluded volume or co-volume ), and it is determined experimentally for each gas.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-vander-2-9">Correction for intermolecular forces: The term <span class="process-math">\(an^2/V^2\)</span> in the equation accounts for the intermolecular forces between gas molecules. It represents the attractive forces between gas molecules, which reduce the pressure exerted by the gas on the walls of the container. This correction is important at low temperatures where the gas molecules are moving more slowly and are more likely to interact with each other.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-vander-2-9">Correction for intermolecular forces: The term <span class="process-math">\(an^2/V^2\)</span> in the equation accounts for the intermolecular forces between gas molecules. It represents the attractive forces between gas molecules, which reduce the pressure exerted by the gas on the walls of the container. This correction is important at low temperatures where the gas molecules are moving more slowly and are more likely to interact with each other.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/vanderp_cor.png" class="contained"></div>
 <div class="para logical" id="sec-vander-2-11">
 <div class="para">Evaluation of P: Inward pull reduces the momentum with which molecules strike the walls of the container, leading to a decrease in pressure compared to the ideal gas law. Hence,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="sec-vander-2-11-1">
 \begin{equation*}
 p_{ideal} - p_{inter}= P
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(p_{ideal}\)</span> is the pressure predicted by the ideal gas law and <span class="process-math">\(P\)</span> is the actual pressure of the gas. The correction term <span class="process-math">\(an^2/V^2\)</span> accounts for this difference and allows us to calculate the actual pressure of the gas using the van der Waals equation.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-11" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-vander-2-12">Force on a molecule is <span class="process-math">\(\propto\)</span> to the number of attracting molecules, and number of attracting molecules is <span class="process-math">\(\propto\)</span> number density. Hence, force on a molecule <span class="process-math">\(F  \propto \frac{n}{V}.\)</span> Molecules striking the unit surface area is <span class="process-math">\(\propto\)</span> to the number density of molecules, which is <span class="process-math">\(n/V\text{.}\)</span> Hence, pressure is <span class="process-math">\(\propto\)</span> to the product of the force on a molecule and the number of molecules striking the unit surface area, which is <span class="process-math">\(n^2/V^2\text{.}\)</span> The correction term <span class="process-math">\(an^2/V^2\)</span> in the van der Waals equation accounts for the attractive forces between gas molecules, which reduces the pressure exerted by the gas on the walls of the container.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-12" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-vander-2-12">Force on a molecule is <span class="process-math">\(\propto\)</span> to the number of attracting molecules, and number of attracting molecules is <span class="process-math">\(\propto\)</span> number density. Hence, force on a molecule <span class="process-math">\(F  \propto \frac{n}{V}.\)</span> Molecules striking the unit surface area is <span class="process-math">\(\propto\)</span> to the number density of molecules, which is <span class="process-math">\(n/V\text{.}\)</span> Hence, pressure is <span class="process-math">\(\propto\)</span> to the product of the force on a molecule and the number of molecules striking the unit surface area, which is <span class="process-math">\(n^2/V^2\text{.}\)</span> The correction term <span class="process-math">\(an^2/V^2\)</span> in the van der Waals equation accounts for the attractive forces between gas molecules, which reduces the pressure exerted by the gas on the walls of the container.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-vander-2-13">The van der Waals equation is a more accurate representation of the behavior of real gases compared to the ideal gas law. It is particularly useful for describing the behavior of gases at high pressures and low temperatures, where the ideal gas law fails to provide accurate predictions. However, it is important to note that the van der Waals equation is still an approximation and may not accurately describe the behavior of all real gases under all conditions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-vander-2-13" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="subsection" id="subsec-crit_point"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.1</span><span class="space"> </span><span class="title">Critical Point</span>
-</h3>
-<section class="introduction" id="subsec-crit_point-2"><div class="para logical" id="subsec-crit_point-2-1">
+<div class="para" id="sec-vander-2-13">The van der Waals equation is a more accurate representation of the behavior of real gases compared to the ideal gas law. It is particularly useful for describing the behavior of gases at high pressures and low temperatures, where the ideal gas law fails to provide accurate predictions. However, it is important to note that the van der Waals equation is still an approximation and may not accurately describe the behavior of all real gases under all conditions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec-vander-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="subsec-derv_vwg">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivation of van der Waals Equation</span>
+</h2>
+<div class="para logical" id="subsec-derv_vwg-2">
+<div class="para">From ideal gas law, we have <span class="process-math">\(PV=nRT\text{.}\)</span> The van der Waals equation is derived by making two corrections to the ideal gas law:</div>
+<ol class="decimal" id="subsec-derv_vwg-2-2">
+<li id="subsec-derv_vwg-2-2-1">
+<div class="para" id="subsec-derv_vwg-2-2-1-1">Correction for finite size of gas molecules: The volume available for the gas to occupy is reduced by the volume occupied by the gas molecules themselves. This correction is represented by the term <span class="process-math">\(nb\)</span> in the van der Waals equation, where <span class="process-math">\(b\)</span> is a constant that represents the effective volume occupied by each gas molecule. The available volume for the gas to occupy is given by <span class="process-math">\(V - nb\text{,}\)</span> where <span class="process-math">\(V\)</span> is the total volume of the container and <span class="process-math">\(n\)</span> is the number of moles of gas.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-derv_vwg-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#subsec-derv_vwg-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsec-derv_vwg-2-2-2">
+<div class="para" id="subsec-derv_vwg-2-2-2-1">Correction for intermolecular forces: The attractive forces between gas molecules reduce the pressure exerted by the gas on the walls of the container. This correction is represented by the term <span class="process-math">\(an^2/V^2\)</span> in the van der Waals equation, where <span class="process-math">\(a\)</span> is a constant that represents the strength of the intermolecular forces between gas molecules. The actual pressure of the gas is given by <span class="process-math">\(P = p_{ideal} - an^2/V^2\text{,}\)</span> where <span class="process-math">\(p_{ideal}\)</span> is the pressure predicted by the ideal gas law and <span class="process-math">\(P\)</span> is the actual pressure of the gas.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-derv_vwg-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#subsec-derv_vwg-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">By substituting these corrections into the ideal gas law, we obtain the van der Waals equation:</div>
+<div class="displaymath process-math" id="subsec-derv_vwg-2-3">
+\begin{equation*}
+\left(P+\frac{an^2}{V^2}\right)\left(V-nb\right) = nRT
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-derv_vwg-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-derv_vwg-3">Excluded volume: The term <span class="process-math">\(nb\)</span> in the van der Waals equation accounts for the finite size of gas molecules. It represents the volume occupied by the gas molecules themselves, which reduces the available volume for the gas to occupy. This correction is important at high pressures where the gas molecules are closely packed together. From:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-derv_vwg-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/vanderf_cor.png" class="contained"></div>
+<div class="para logical" id="subsec-derv_vwg-5">
+<div class="para">Excluded volume for these two molecules is <span class="process-math">\(\frac{4}{3}\pi (2r)^3 =V'\text{.}\)</span> Hence, excluded volume per molecule = <span class="process-math">\(V'/2 =  \frac{2}{3}\pi (2r)^3 =b\text{.}\)</span> Thus,</div>
+<div class="displaymath process-math" id="subsec-derv_vwg-5-3">
+\begin{equation*}
+PV = nRT \\
+P(V-nb)  = nRT \\
+P= \frac{nRT}{V-nb} 
+\end{equation*}
+</div>
+<div class="para">If we include the molecular attraction, then the pressure is reduced by <span class="process-math">\(an^2/V^2\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math" id="subsec-derv_vwg-5-5">
+\begin{equation*}
+P = \frac{nRT}{V-nb} - \frac{an^2}{V^2}`
+\end{equation*}
+</div>
+<div class="para">Where <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are the van der Waals constants. The molecule near the wall hits the wall with less momentum due to the inward pull of the other molecules.</div>
+<div class="displaymath process-math" id="subsec-derv_vwg-5-8">
+\begin{equation*}
+P=\frac{F}{A} = \frac{dp}{dt}\frac{1}{A}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-derv_vwg-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-derv_vwg-6">
+<div class="para">It is observed that the decrease in pressure is proportional to the product of the force on a molecule due to the inward pull of the other molecules and the number of molecules striking the unit surface area. The force on a molecule is proportional to the number of attracting molecules, which is proportional to the number density of molecules. Hence, the force on a molecule is proportional to <span class="process-math">\(n/V\text{.}\)</span> The number of molecules striking the unit surface area is also proportional to the number density of molecules, which is <span class="process-math">\(n/V\text{.}\)</span> Hence, the decrease in pressure is proportional to the product of the force on a molecule and the number of molecules striking the unit surface area, which is <span class="process-math">\(n^2/V^2\text{.}\)</span> Therefore, the correction term for intermolecular forces is</div>
+<div class="displaymath process-math" id="subsec-derv_vwg-6-4">
+\begin{equation*}
+an^2/V^2\text{,}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(a\)</span> is a constant that represents the strength of the intermolecular forces between gas molecules.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-derv_vwg-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 1.4.1: Derivation of van der Waals Equation"><a tabindex="-1" href="#subsec-derv_vwg" title="Copy heading and permalink for Subsection 1.4.1: Derivation of van der Waals Equation" aria-label="Copy heading and permalink for Subsection 1.4.1: Derivation of van der Waals Equation">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-crit_point">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Critical Point</span>
+</h2>
+<section class="introduction" id="subsec-crit_point-2">
+<div class="para logical" id="subsec-crit_point-2-1">
 <div class="para">Critical point is the point at which the liquid and gas phases of a substance become indistinguishable. At the critical point, the properties of the liquid and gas phases become identical, and the substance exists in a supercritical state. The critical point is characterized by a critical temperature (<span class="process-math">\(T_c\)</span>), critical pressure (<span class="process-math">\(P_c\)</span>), and critical volume (<span class="process-math">\(V_c\)</span>). At this point the system is in equilibrium between liquid and gaseous phases, i,e., density of liquid is equal to the density of gas. Van der Waals showed that this is a saddle point of his equation. For one mole of a real gas</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-1-4">
 \begin{equation*}
 \left(P+\frac{a}{V^2}\right)\left(V-b\right) = RT
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-crit_point-2-2">
 <div class="para">The critical point can be determined using the van der Waals equation by setting the first and second derivatives of pressure with respect to volume to zero. This leads to the following equations:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-2-1">
 \begin{equation*}
 \left(\frac{\partial P}{\partial V}\right)_T = 0, \quad \, \text{ maximum or minimum point}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-2-2">
 \begin{equation*}
 \left(\frac{\partial^2 P}{\partial V^2}\right)_T = 0, \quad  \, \text{ saddle (or, inflection) point}
 \end{equation*}
 </div>
 <div class="para">Solving these equations gives the critical temperature, critical pressure, and critical volume in terms of the van der Waals constants a and b.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/critic_point.png" class="contained"></div>
 <div class="para logical" id="subsec-crit_point-2-4">
 <div class="para">To plot the critical points for a van der Waals gas, we look for the point on a <span class="process-math">\(P-V\)</span> diagram where the liquid and gas phases become indistinguishable. Mathematically, this is the inflection point of the critical isotherm (<span class="process-math">\(T_c\)</span>), where both the first and second derivatives of pressure with respect to volume are zero.The van der Waals equation of state is:</div>
 <div class="displaymath process-math" id="subsec-crit_point-2-4-3">
-\begin{align*}
-P \amp =\frac{RT}{V-b}-\frac{a}{V^2}\\
-or, \, \frac{dP}{dV}  \amp =- RT\frac{1}{(V-b)^2}+\frac{2a}{V^3}
-\end{align*}
+\begin{equation*}
+P  =\frac{RT}{V-b}-\frac{a}{V^2} \\
+or, \, \frac{dP}{dV}   =- RT\frac{1}{(V-b)^2}+\frac{2a}{V^3}
+\end{equation*}
 </div>
 <div class="para">Setting this equal to zero to get the critical point.</div>
 <div class="displaymath process-math" id="subsec-crit_point-2-4-4">
-\begin{align}
-0 \amp = -RT_c \frac{1}{(V_c-b)^2}+2a \frac{1}{V_c^3}\tag{1.4.1}\\
-RT_c \amp = 2a \left[\frac{(V_c-b)^2}{V_c^3} \right]\tag{1.4.2}
-\end{align}
+\begin{equation}
+0  = -RT_c \frac{1}{(V_c-b)^2}+2a \frac{1}{V_c^3} \\
+RT_c  = 2a \left[\frac{(V_c-b)^2}{V_c^3} \right]\tag{1.4.1}
+\end{equation}
 </div>
 <div class="para">Now,</div>
 <div class="displaymath process-math" id="subsec-crit_point-2-4-5">
-\begin{align}
-\left(\frac{\partial^2 P}{\partial V^2}\right)_T \amp =2RT\frac{1}{(V-b)^3}-\frac{6a}{V^4}\tag{1.4.3}\\
-or, \, 0 \amp =2RT_c\frac{1}{(V_c-b)^3}-\frac{6a}{V_c^4}\tag{1.4.4}\\
-or, \, 0 \amp =4a \frac{(V_c-b)^2}{(V_c)^3}\frac{1}{(V_c-b)^3}-\frac{6a}{V_c^4}\tag{1.4.5}\\
-or, \, 0 \amp =4a \frac{1}{(V_c)^3(V_c-b)}-\frac{6a}{V_c^4}\tag{1.4.6}\\
-or, \, \frac{6a}{V_c^4} \amp =4a \frac{1}{(V_c)^3(V_c-b)}\tag{1.4.7}\\
-or, \, \frac{6}{V_c} \amp = \frac{4}{(V_c-b)}\tag{1.4.8}\\
-or, \, V_c \amp = 3b \tag{1.4.9}
-\end{align}
+\begin{equation*}
+\left(\frac{\partial^2 P}{\partial V^2}\right)_T  =2RT\frac{1}{(V-b)^3}-\frac{6a}{V^4} \\
+or, \, 0  =2RT_c\frac{1}{(V_c-b)^3}-\frac{6a}{V_c^4} \\
+or, \, 0  =4a \frac{(V_c-b)^2}{(V_c)^3}\frac{1}{(V_c-b)^3}-\frac{6a}{V_c^4} \\
+or, \, 0  =4a \frac{1}{(V_c)^3(V_c-b)}-\frac{6a}{V_c^4} \\
+or, \, \frac{6a}{V_c^4}  =4a \frac{1}{(V_c)^3(V_c-b)} \\
+or, \, \frac{6}{V_c}  = \frac{4}{(V_c-b)} \\
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="subsec-crit_point-2-4-6">
+\begin{equation*}
+or, \, V_c  = 3b 
+\end{equation*}
 </div>
 <div class="para">Now from equation</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-4-7">
 \begin{equation*}
 RT_c = 2a \left[\frac{(V_c-b)^2}{V_c^3} \right]
 \end{equation*}
 </div>
 <div class="para">we have -</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-4-8">
 \begin{equation*}
 RT_c = 2a \frac{(2b)^2}{(3b)^3} = \frac{8a}{27b}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-4-9">
 \begin{equation*}
 \therefore \, T_c = \frac{8a}{27bR}
 \end{equation*}
 </div>
 <div class="para">Again from Van der Waal’s equation,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-4-10">
 \begin{equation*}
 \left[ P_c + \frac{a}{(3b)^2}\right] (3b-b) = R\cdot \frac{8a}{27bR}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-4-11">
 \begin{equation*}
 \therefore \, P_c = \frac{4a}{27b^2} - \frac{a}{9b^2} = \frac{a}{27b^2}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-4-12">
 \begin{equation*}
 \therefore \, \frac{P_c V_c}{T_c} = \frac{a}{27b^2} \cdot \frac{3b}{\frac{8a}{27bR}} = \frac{3}{8}R
 \end{equation*}
 </div>
 <div class="para">This theoretical isotherm values of the points and constants do not actually agree completely with experimental values (Andrew’s curve).</div>
-<ol class="decimal" id="subsec-crit_point-2-4-12">
-<li id="subsec-crit_point-2-4-12-1">
-<div class="para logical" id="subsec-crit_point-2-4-12-1-1">
+<ol class="decimal" id="subsec-crit_point-2-4-13">
+<li id="subsec-crit_point-2-4-13-1">
+<div class="para logical" id="subsec-crit_point-2-4-13-1-1">
 <div class="para">Characteristics of the Plot: The critical point is represented by a specific point on the <span class="process-math">\(P-V\)</span> diagram where the isotherm corresponding to the critical temperature (<span class="process-math">\(T_c\)</span>) exhibits an inflection point. At this point, the curve changes from being concave to convex, indicating that the liquid and gas phases are indistinguishable. The critical point is marked on the diagram with a dot to highlight its significance.</div>
-<ul class="disc" id="subsec-crit_point-2-4-12-1-1-3">
-<li id="subsec-crit_point-2-4-12-1-1-3-1">
-<div class="para" id="subsec-crit_point-2-4-12-1-1-3-1-1">Below Critical Temperature (<span class="process-math">\(T \lt T_c\)</span>): The isotherms show a "dip" and "hump" known as the van der Waals loops. In a real system, these are replaced by a horizontal line (the tie-line) representing the phase transition where gas and liquid coexist.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-4-12-1-1-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="subsec-crit_point-2-4-13-1-1-3">
+<li id="subsec-crit_point-2-4-13-1-1-3-1">
+<div class="para" id="subsec-crit_point-2-4-13-1-1-3-1-1">Below Critical Temperature (<span class="process-math">\(T \lt T_c\)</span>): The isotherms show a "dip" and "hump" known as the van der Waals loops. In a real system, these are replaced by a horizontal line (the tie-line) representing the phase transition where gas and liquid coexist.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-4-13-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-crit_point-2-4-12-1-1-3-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-crit_point-2-4-13-1-1-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="subsec-crit_point-2-4-12-1-1-3-2">
-<div class="para" id="subsec-crit_point-2-4-12-1-1-3-2-1">At Critical Temperature (<span class="process-math">\(T = T_c\)</span>): The isotherm has an inflection point, and the liquid and gas phases become indistinguishable. The curve does not show a distinct phase transition, and the properties of the substance are the same in both phases.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-4-12-1-1-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-crit_point-2-4-13-1-1-3-2">
+<div class="para" id="subsec-crit_point-2-4-13-1-1-3-2-1">At Critical Temperature (<span class="process-math">\(T = T_c\)</span>): The isotherm has an inflection point, and the liquid and gas phases become indistinguishable. The curve does not show a distinct phase transition, and the properties of the substance are the same in both phases.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-4-13-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-crit_point-2-4-12-1-1-3-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-crit_point-2-4-13-1-1-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="subsec-crit_point-2-4-12-1-1-3-3">
-<div class="para" id="subsec-crit_point-2-4-12-1-1-3-3-1">Above Critical Temperature (<span class="process-math">\(T \gt T_c\)</span>): The isotherms are smooth and do not show any phase transition. The substance exists in a supercritical state where it exhibits properties of both liquids and gases.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-4-12-1-1-3-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="subsec-crit_point-2-4-13-1-1-3-3">
+<div class="para" id="subsec-crit_point-2-4-13-1-1-3-3-1">Above Critical Temperature (<span class="process-math">\(T \gt T_c\)</span>): The isotherms are smooth and do not show any phase transition. The substance exists in a supercritical state where it exhibits properties of both liquids and gases.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-4-13-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-crit_point-2-4-12-1-1-3-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-crit_point-2-4-13-1-1-3-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-4-12-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-4-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#subsec-crit_point-2-4-12-1" title="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#subsec-crit_point-2-4-13-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="subsec-crit_point-2-4-12-2">
-<div class="para logical" id="subsec-crit_point-2-4-12-2-1">
+<li id="subsec-crit_point-2-4-13-2">
+<div class="para logical" id="subsec-crit_point-2-4-13-2-1">
 <div class="para">The Compressibility Factor (<span class="process-math">\(Z_c\)</span>): The compressibility factor at the critical point is defined as:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-4-13-2-1-2">
 \begin{equation*}
 Z_c = \frac{P_c V_c}{nR T_c}
 \end{equation*}
 </div>
 <div class="para">Note: For an ideal gas, the compressibility factor is always equal to 1. However, for a van der Waals gas at the critical point, the compressibility factor is less than 1, indicating that the gas is more compressible than an ideal gas at the critical point.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-4-12-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-4-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#subsec-crit_point-2-4-12-2" title="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#subsec-crit_point-2-4-13-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-crit_point-2-5">
 <div class="para">Solving van der Waals equation at critical points yields:</div>
 <ul class="disc" id="subsec-crit_point-2-5-1">
 <li id="subsec-crit_point-2-5-1-1">
-<div class="para" id="subsec-crit_point-2-5-1-1-1">Critical volume: <span class="process-math">\(V_c= 3nb\)</span> or <span class="process-math">\(V_{m,c}= 3b\)</span>( for 1 mole)<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-5-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-crit_point-2-5-1-1-1">Critical volume: <span class="process-math">\(V_c= 3nb\)</span> or <span class="process-math">\(V_{m,c}= 3b\)</span>( for 1 mole)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-crit_point-2-5-1-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-crit_point-2-5-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-crit_point-2-5-1-2">
-<div class="para" id="subsec-crit_point-2-5-1-2-1">Critical temperature: <span class="process-math">\(T_c= \frac{8a}{27Rb}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-5-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-crit_point-2-5-1-2-1">Critical temperature: <span class="process-math">\(T_c= \frac{8a}{27Rb}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-crit_point-2-5-1-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-crit_point-2-5-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-crit_point-2-5-1-3">
-<div class="para" id="subsec-crit_point-2-5-1-3-1">Critical pressure: <span class="process-math">\(P_c = \frac{a}{27b^2}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-5-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-crit_point-2-5-1-3-1">Critical pressure: <span class="process-math">\(P_c = \frac{a}{27b^2}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-5-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-crit_point-2-5-1-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-crit_point-2-5-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">The Compressibility Factor (<span class="process-math">\(Z_c\)</span>):</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-5-3">
 \begin{equation*}
 Z_c = \frac{P_c V_c}{nR T_c} = \frac{3}{8} =0.375
 \end{equation*}
 </div>
 <div class="para">(same for all van der Waals gases; real gases vary slightly around 0.27-0.3).</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-crit_point-2-6">Above <span class="process-math">\(T_c\text{,}\)</span> no amount of pressure can liquefy the gas (supercritical fluid).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-crit_point-2-6">Above <span class="process-math">\(T_c\text{,}\)</span> no amount of pressure can liquefy the gas (supercritical fluid).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsec-crit_point-2-7">Reduced Equation of State (Law of Corresponding States) Define reduced variables: <span class="process-math">\(P_r= \frac{P}{P_c}\text{,}\)</span>  <span class="process-math">\(V_r= \frac{V}{V_c}\text{,}\)</span>  <span class="process-math">\(T_r= \frac{T}{T_c}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-crit_point-2-7">Reduced Equation of State (Law of Corresponding States) Define reduced variables: <span class="process-math">\(P_r= \frac{P}{P_c}\text{,}\)</span>  <span class="process-math">\(V_r= \frac{V}{V_c}\text{,}\)</span>  <span class="process-math">\(T_r= \frac{T}{T_c}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-crit_point-2-8">
 <div class="para">The van der Waals equation becomes universal (independent of specific <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span>):</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-crit_point-2-8-3">
 \begin{equation*}
 \left(P_r + \frac{3}{V^2_r}\right) (3V_r -1) = 8T_r
 \end{equation*}
 </div>
 <div class="para">Gases at the same reduced conditions behave similarly (useful for scaling properties across different substances).</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-crit_point-2-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="subsubsection" id="subsubsec-det_a_b"><h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space"> </span><span class="codenumber">1.4.1.1</span><span class="space"> </span><span class="title">Determination of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span></span>
-</h4>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-crit_point-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsubsection" id="subsubsec-det_a_b">
+<h3 class="heading hide-type">
+<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determination of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span></span>
+</h3>
 <div class="para logical" id="subsubsec-det_a_b-2">
 <div class="para">
 <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> can be determined in terms of critical constants <span class="process-math">\(P_c, V_c, T_c\)</span> as follows:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsubsec-det_a_b-2-4">
 \begin{equation*}
 \frac{T_c^2}{P_c} = \frac{64a^2\times 27b^2}{(27)^2 b^2R^2\times a} = \frac{64 a}{27R^2}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsubsec-det_a_b-2-5">
 \begin{equation*}
 \therefore \, a = \frac{27R^2}{64}\cdot \frac{T_c^2}{P_c}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsubsec-det_a_b-2-6">
 \begin{equation*}
 \text{ also} \, \frac{T_c}{P_c} = \frac{8a}{27Rb}\times \frac{27b^2}{a} = \frac{8b}{R}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsubsec-det_a_b-2-7">
 \begin{equation*}
 \therefore \, b = \frac{R T_c}{8 P_c}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsubsec-det_a_b-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsubsec-det_a_b-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsubsection 1.4.1.1: Determination of a and b"><a href="#subsubsec-det_a_b" title="Copy heading and permalink for Subsubsection 1.4.1.1: Determination of a and b">🔗</a></div></section><div class="autopermalink" data-description="Subsection 1.4.1: Critical Point"><a href="#subsec-crit_point" title="Copy heading and permalink for Subsection 1.4.1: Critical Point">🔗</a></div></section><section class="subsection" id="subsec-intermol_force"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.4.2</span><span class="space"> </span><span class="title">Molecular (Intermolecular) Forces in Real Gases</span>
-</h3>
-<div class="para" id="subsec-intermol_force-2">Real gases consist of molecules that occupy finite volume and exert attractive and repulsive forces on each other. These forces, collectively called van der Waals forces, become significant at high pressure (molecules close together) or low temperature (low kinetic energy).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intermol_force-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsubsection 1.4.2.1: Determination of a and b"><a tabindex="-1" href="#subsubsec-det_a_b" title="Copy heading and permalink for Subsubsection 1.4.2.1: Determination of a and b" aria-label="Copy heading and permalink for Subsubsection 1.4.2.1: Determination of a and b">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Subsection 1.4.2: Critical Point"><a tabindex="-1" href="#subsec-crit_point" title="Copy heading and permalink for Subsection 1.4.2: Critical Point" aria-label="Copy heading and permalink for Subsection 1.4.2: Critical Point">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-intermol_force">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Molecular (Intermolecular) Forces in Real Gases</span>
+</h2>
+<div class="para" id="subsec-intermol_force-2">Real gases consist of molecules that occupy finite volume and exert attractive and repulsive forces on each other. These forces, collectively called van der Waals forces, become significant at high pressure (molecules close together) or low temperature (low kinetic energy).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-intermol_force-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsec-intermol_force-3">
 <div class="para"><dfn class="terminology">Types of Intermolecular Forces</dfn></div>
 <ul class="disc" id="subsec-intermol_force-3-2">
 <li id="subsec-intermol_force-3-2-1">
-<div class="para" id="subsec-intermol_force-3-2-1-1">London Dispersion Forces (Induced Dipole-Induced Dipole): Present in all molecules. Arise from temporary fluctuations in electron distribution creating instantaneous dipoles, which induce dipoles in neighboring molecules. Strength increases with molecular size/polarizability (larger electron clouds).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intermol_force-3-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-intermol_force-3-2-1-1">London Dispersion Forces (Induced Dipole-Induced Dipole): Present in all molecules. Arise from temporary fluctuations in electron distribution creating instantaneous dipoles, which induce dipoles in neighboring molecules. Strength increases with molecular size/polarizability (larger electron clouds).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-intermol_force-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-intermol_force-3-2-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-intermol_force-3-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-intermol_force-3-2-2">
-<div class="para" id="subsec-intermol_force-3-2-2-1">Dipole-Dipole Forces: Between polar molecules with permanent dipoles.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intermol_force-3-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-intermol_force-3-2-2-1">Dipole-Dipole Forces: Between polar molecules with permanent dipoles.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-intermol_force-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-intermol_force-3-2-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-intermol_force-3-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-intermol_force-3-2-3">
-<div class="para" id="subsec-intermol_force-3-2-3-1">Dipole-Induced Dipole Forces: A permanent dipole induces a dipole in a nonpolar molecule.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intermol_force-3-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-intermol_force-3-2-3-1">Dipole-Induced Dipole Forces: A permanent dipole induces a dipole in a nonpolar molecule.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-intermol_force-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-intermol_force-3-2-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-intermol_force-3-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-intermol_force-3-2-4">
-<div class="para" id="subsec-intermol_force-3-2-4-1">Hydrogen Bonding: A strong type of dipole-dipole interaction (e.g., in H₂O, NH₃), though less dominant in simple gases.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intermol_force-3-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-intermol_force-3-2-4-1">Hydrogen Bonding: A strong type of dipole-dipole interaction (e.g., in H₂O, NH₃), though less dominant in simple gases.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-intermol_force-3-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-intermol_force-3-2-4" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-intermol_force-3-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">At very short distances, repulsive forces (due to electron cloud overlap and Pauli exclusion principle) dominate, preventing molecules from collapsing.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intermol_force-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-intermol_force-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/intermol_force.png" class="contained"></div>
 <div class="para logical" id="subsec-intermol_force-5">
 <div class="para">
 <dfn class="terminology">Lennard-Jones Potential</dfn> The net interaction is described by the Lennard-Jones potential:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsec-intermol_force-5-2">
 \begin{equation*}
 U(r) = \left[4\epsilon \left(\frac{\sigma}{r} \right)^{12} - \left(\frac{\sigma}{r}\right)^6\right]
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(\epsilon : \)</span> Depth of the potential well (measure of attractive strength), <span class="process-math">\(\sigma : \)</span> Finite distance at which <span class="process-math">\(U(r)=0\)</span>(related to molecular diameter), Repulsive term (<span class="process-math">\(r^{-12}\)</span>): Steep at short range, Attractive term (<span class="process-math">\(r^{-6}\)</span>): Longer range (London dispersion).</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intermol_force-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-intermol_force-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/lj_pot.png" class="contained"></div>
 <div class="para logical" id="subsec-intermol_force-7">
 <div class="para">The minimum of the curve occurs at equilibrium separation <span class="process-math">\(r_o \approx 1.12\sigma \text{,}\)</span> with potential energy <span class="process-math">\(-\epsilon\text{.}\)</span> These forces explain the corrections in the van der Waals equation:</div>
 <ul class="disc" id="subsec-intermol_force-7-3">
 <li id="subsec-intermol_force-7-3-1">
-<div class="para" id="subsec-intermol_force-7-3-1-1">Parameter <span class="process-math">\(a\text{:}\)</span> Accounts for attractive forces (reduces observed pressure).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intermol_force-7-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-intermol_force-7-3-1-1">Parameter <span class="process-math">\(a\text{:}\)</span> Accounts for attractive forces (reduces observed pressure).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-intermol_force-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-intermol_force-7-3-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-intermol_force-7-3-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 <li id="subsec-intermol_force-7-3-2">
-<div class="para" id="subsec-intermol_force-7-3-2-1">Parameter <span class="process-math">\(b\text{:}\)</span> Accounts for repulsive forces / finite molecular volume (reduces available volume).<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intermol_force-7-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsec-intermol_force-7-3-2-1">Parameter <span class="process-math">\(b\text{:}\)</span> Accounts for repulsive forces / finite molecular volume (reduces available volume).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-intermol_force-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#subsec-intermol_force-7-3-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#subsec-intermol_force-7-3-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#subsec-intermol_force-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#subsec-intermol_force-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/wall_effect.png" class="contained"></div>
-<div class="autopermalink" data-description="Subsection 1.4.2: Molecular (Intermolecular) Forces in Real Gases"><a href="#subsec-intermol_force" title="Copy heading and permalink for Subsection 1.4.2: Molecular (Intermolecular) Forces in Real Gases">🔗</a></div></section><div class="autopermalink" data-description="Section 1.4: Van der Waals Equation"><a href="#sec-vander" title="Copy heading and permalink for Section 1.4: Van der Waals Equation">🔗</a></div></section></div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection 1.4.3: Molecular (Intermolecular) Forces in Real Gases"><a tabindex="-1" href="#subsec-intermol_force" title="Copy heading and permalink for Subsection 1.4.3: Molecular (Intermolecular) Forces in Real Gases" aria-label="Copy heading and permalink for Subsection 1.4.3: Molecular (Intermolecular) Forces in Real Gases">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 1.4: Van der Waals Equation"><a tabindex="-1" href="#sec-vander" title="Copy heading and permalink for Section 1.4: Van der Waals Equation" aria-label="Copy heading and permalink for Section 1.4: Van der Waals Equation">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-ktg.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-mbvd.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" alt="Runestone Academy logo" src="data:image/png;base64,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"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" alt="MathJax logo" src="data:image/png;base64,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"></a>
 </div>
 </body>
 </html>

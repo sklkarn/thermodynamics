@@ -2,7 +2,9 @@
     "xml.fileAssociations": [
         {
             "pattern": "**/source/**.ptx",
-            "systemId": "/home/sk/.vscode/extensions/oscarlevin.pretext-tools-1.3.0/assets/schema/pretext.rng"
+            "systemId": "/home/sk/.vscode/extensions/oscarlevin.pretext-tools-1.5.3/assets/schema/pretext.rng"
         }
-    ]
+    ],
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda"
 }

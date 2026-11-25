@@ -14,48 +14,54 @@
       In another way, in every cyclic process, the net heat absorbed by the system is equal to the net work done by the system. 
       Therefore, the internal energy of the system remains unchanged after a cyclic process, 
       i.e., 
-      <men xml:id="I_law_eq1">
+      <md number="yes">
+        <mrow xml:id="I_law_eq1"> 
         \oint \,dU = 0
-      </men>. 
+         </mrow>
+      </md>
      </p>
      <p>
       For any system if value of <m>U</m> at initial state, O is <m>U_o</m>, the <m>U</m> is a fuction of the state, X as 
-      <me>U=U(T, V,N_k) +U_o</me>
+      <md>U=U(T, V,N_k) +U_o</md>
         For an open system 
-     <men xml:id="heat_eq2" >
+     <md number ="yes">
+      <mrow xml:id="heat_eq2"> 
       \,dU =  \,dQ+ \,dW + \,dU_{matter}
-     </men>
+       </mrow>
+     </md>
      here <m>\,dU_{matter}</m> is additional flow of matter. 
      The total change in internal energy of a system can be expressed as the sum of the changes 
       in internal energy due to heat transfer, work done, and matter flow. 
      </p>
      <p>
       If the system is open and going from state A to state B, the change in internal energy can be expressed as 
-      <me>
+      <md>
        \int \,dU = U_B - U_A 
-      </me>
+      </md>
       Since <m>U</m> is a state function, the change in internal energy depends only on the initial and final states of the system,
       and not on the path taken to get from one state to the other. In general, the change in total internal 
       energy can be written as the sum of the changes in internal energy due to heat transfer, work done, and matter flow, 
-       <me>
+       <md>
        \,dU = \,dQ - P \,dV + \phi \, dq +E\,dP -B\,dM+ +\gamma \,dA + \cdots
-       </me>
+       </md>
       where <m>\phi \,dq</m> is the energy due to transfer of charge <m>\,dq</m>, and <m>E\,dP</m> 
       is the energy due to transfer of polarization <m>dP</m>, <m>-B\,dM</m> is the change in energy due to 
       change in magnetic dipole moment, <m>\,dM</m>, and <m>\gamma \,dA</m> is the energy due to change in surface area <m>\,dA</m>. 
      </p>
      <p>
       For a system undergoing chemical transformations, the total energy <m>U=U(T,V, N_k)</m> can be expressed as
-      <men xml:id="heat_eq_3">
-       \,dU = \left( \frac{\partial U}{\partial T} \right)_{V, N_k} \,dT + \left( \frac{\partial U}{\partial V} \right)_{T, N_k} \,dV + \sum_k \left( \frac{\partial U}{\partial N_k} \right)_{T, V, N_{j\neq k}} \,dN_k   
-      </men>
+      <md number="yes">
+        <mrow xml:id="heat_eq_3"> 
+       \,dU = \left( \frac{\partial U}{\partial T} \right)_{V, N_k} \,dT + \left( \frac{\partial U}{\partial V} \right)_{T, N_k} \,dV + \sum_k \left( \frac{\partial U}{\partial N_k} \right)_{T, V, N_{j\neq k}} \,dN_k  
+       </mrow> 
+      </md>
       where <m>dN_k</m> is the change in the number of moles of the <m>k</m>-th component. 
       </p>
       <p>
         Since no work is done at constant volume, <m>\,dU=\,dQ</m>. Hence, 
-        <me>
+        <md>
           C_{mV} (T,V) = \left( \frac{\partial Q}{\partial T} \right)_{V} = \left( \frac{\partial U}{\partial T} \right)_{V,N=1}
-        </me>
+        </md>
       </p>
    <p>
    <alert> Mechanical Work due to Change in Volume: </alert>
@@ -68,9 +74,11 @@
    <p>
    <alert> Isothermal Volume Change:</alert>
     When a system undergoes an isothermal process, the temperature remains constant.  
-   <men xml:id="I_law_eq2">
+   <md number="yes">
+    <mrow xml:id="I_law_eq2"> 
     Work = \int_{V_i}^{V_f} - P \,dV = -NRT \ln \frac{V_f}{V_i}
-   </men>
+     </mrow>
+   </md>
    The negative sign indicates that an expanding gas transfers energy to the surroundings, 
    while a compressing gas absorbs energy from the surroundings. 
    </p>
@@ -82,38 +90,51 @@
     <title>Relation between <m>C_{mp}</m> and <m>C_{mv}</m> </title>
     <p>
       The change in internal energy for one-component substance <xref ref="sp_eq3"/>: 
-      <men xml:id="sp_eq1">
-          \,dU = \,dQ-p\,dV = \left( \frac{\partial U}{\partial T} \right)_{V} \,dT + \left( \frac{\partial U}{\partial V} \right)_{T} \,dV 
-      </men>
-      <men xml:id="sp_eq2">
+      <md number="yes">
+        <mrow xml:id="sp_eq1"> 
+          \,dU = \,dQ-p\,dV = \left( \frac{\partial U}{\partial T} \right)_{V} \,dT + \left( \frac{\partial U}{\partial V} \right)_{T} \,dV
+          </mrow> 
+      </md>
+      <md number="yes">
+        <mrow xml:id="sp_eq2"> 
         or, \quad \,dQ = \left( \frac{\partial U}{\partial T} \right)_{V} \,dT +\left[p+ \left( \frac{\partial U}{\partial V} \right)_{T} \right] \,dV
-      </men>
+         </mrow>
+      </md>
     </p>
     <p>
       If the gas is heated at constant volume, then no work is done and the change in energy is due to heat supplied to the gas.
-      <men xml:id="sp_eq3">
+      <md number="yes">
+        <mrow xml:id="sp_eq3">
         C_{V} = \left( \frac{\partial Q}{\partial T} \right)_{V} = \left( \frac{\partial U}{\partial T} \right)_{V}
-      </men>
+         </mrow>
+      </md>
       However, if the gas is heated at constant pressure, then 
-       <men xml:id="sp_eq4">
+       <md number="yes">
+        <mrow xml:id="sp_eq4"> 
         C_{P} = \left( \frac{\partial Q}{\partial T} \right)_{p} = \left( \frac{\partial U}{\partial T} \right)_{V} + \left[p+ \left( \frac{\partial U}{\partial V} \right)_{T} \right] \left(\frac{\partial V}{\partial T}\right)_p
-      </men>
-      Hence, <men xml:id="sp_eq5">
+        </mrow>
+      </md>
+      Hence, 
+      <md number="yes">
+        <mrow xml:id="sp_eq5"> 
         C_p-C_V = \left[p+ \left( \frac{\partial U}{\partial V} \right)_{T} \right] \left(\frac{\partial V}{\partial T}\right)_p
-      </men>
+        </mrow>
+      </md>
       The right hand term is due to additional heat needed to raise the temperature of a 
       gas at constant pressure to compentsate energy due to volume expansion.
     </p>
     <p>
       For and ideal gas where <m>U</m> is only a function of temperature and is independent of the volume, hence, 
       <m>\left(\frac{\partial U}{\partial V} \right)_{T} = 0</m> and for 1 mole of a gas, <m>pV=RT</m>, we have 
-      <me>
+      <md>
         p\left(\frac{\partial V}{\partial T}\right)_p = R.
-      </me>
+      </md>
       Therefore, molar heat capacities reduces to 
-     <men xml:id="sp_eq6">
+     <md number="yes">
+      <mrow xml:id="sp_eq6">
        C_{mp} - C_{mv} = R
-     </men>
+         </mrow>
+     </md>
          </p>
    </subsection>
 
@@ -124,41 +145,49 @@
      
     <p>
        In adiabatic process, the state of a system changes wihout any exchange of heat. Hence from <xref ref="sp_eq1"/>, 
-       <me>
+       <md>
          \,dQ = \, dU +p\,dV 
-      </me>
+      </md>
       or, 
-      <men xml:id="sp_eq7">
+      <md number="yes">
+        <mrow xml:id="sp_eq7"> 
       0  = \left( \frac{\partial U}{\partial T} \right)_{V} \,dT +\left( \frac{\partial U}{\partial V} \right)_{T} \,dV +p\, dV 
-      </men>
+     </mrow>
+      </md>
       
       For an ideal gas, since <m>U</m> is a function of temperature only at constant volume, we have 
-      <me>
+      <md>
          nC_{mv} \,dT + p\,dV = 0 
-      </me>
+      </md>
      If volume changes in ideal gas equation during the process of change, then we have 
-     <me>
-      PV = nRT \Rightarrow \,  nC_{mv} \,dT + \frac{nRT}{V}\,dV =0
-     </me>
      <md>
-      <mrow>  C_{mv} \,dT + \frac{RT}{V}\,dV  \amp =0 </mrow>
-       <mrow> or, \,    \frac{\,dT}{T} + \frac{R}{C_{mv} V}\,dV   \amp =0 </mrow>
-       <mrow> or, \, \frac{\,dT}{T} + \frac{C_{mp}-C_{mv}}{C_{mv} V}\,dV \amp  =0 </mrow>
-       <mrow>or, \, \frac{\,dT}{T} + \left(\frac{C_{mp}}{C_{mv}}-1\right)\frac{\,dV}{V} \amp =0</mrow>
-       <mrow>or, \, \frac{\,dT}{T} + \left(\gamma - 1\right)\frac{\,dV}{V} \amp =0 \, \quad \left[\text { define} \frac{C_{mp}}{C_{mv}} =\gamma \right] </mrow>
-       <mrow>or, \,  \frac{\,dT}{T}  \amp = - \left(\gamma - 1\right)\frac{\,dV}{V}</mrow>
-       <mrow> or, \, \ln T \amp =-\left(\gamma -1\right)\ln V + \text{ constant} </mrow>
+      PV = nRT \Rightarrow \,  nC_{mv} \,dT + \frac{nRT}{V}\,dV =0
+     </md>
+     <md>
+       C_{mv} \,dT + \frac{RT}{V}\,dV  =0 \\
+      or, \,    \frac{\,dT}{T} + \frac{R}{C_{mv} V}\,dV    = 0 \\
+       or, \, \frac{\,dT}{T} + \frac{C_{mp}-C_{mv}}{C_{mv} V}\,dV   =0 \\
+      or, \, \frac{\,dT}{T} + \left(\frac{C_{mp}}{C_{mv}}-1\right)\frac{\,dV}{V}  =0  \\
+       or, \, \frac{\,dT}{T} + \left(\gamma - 1\right)\frac{\,dV}{V}  =0 \, \quad \left[\text { let } \, \frac{C_{mp}}{C_{mv}} =\gamma \right] \\
+       or, \,  \frac{\,dT}{T}   = - \left(\gamma - 1\right)\frac{\,dV}{V} \\
+       or, \, \ln T  =-\left(\gamma -1\right)\ln V + \text{ constant} 
      </md>   
-      <men xml:id="sp_eq8">
+      <md number="yes">
+        <mrow xml:id="sp_eq8"> 
          \therefore \, TV^{(\gamma-1)}  = \text{ constant} 
-      </men>
+          </mrow>
+      </md>
       Also, 
-       <men xml:id="sp_eq9">
+       <md number="yes">
+        <mrow xml:id="sp_eq9"> 
          or, \, pV^{\gamma}  = \text{ constant} 
-      </men>
-        <men xml:id="sp_eq10">
+          </mrow>
+      </md>
+        <md number="yes">
+          <mrow xml:id="sp_eq10">
         or, \, T^\gamma p^{1-\gamma}  = \text{ constant} 
-      </men>
+         </mrow>
+      </md>
       can be derived from <m>pV=nRT</m>
          </p>
 
@@ -171,37 +200,39 @@
             The propagation of sound in nature is also an adiabatic process because sound is 
             pressure wave and propagate in the medium without generating heat. 
             The loudness or internsity level of sound is given by <url href="https://sklkarn.github.io/calphysii/sec_fourth-sound.html" />
-            <me>
+            <md>
               \beta = 10 \log_{10} \left(\frac{I}{I_o}\right) =  10 \log_{10} \left(\frac{p^2_{rms}}{p^2_o}\right)
-            </me>
+            </md>
             where <m>p_o= 2\times 10^{-8} </m> kPa, <m>p_{rms} = \sqrt{(p-p_{atm})^2}</m>
           </p>
           <p>
             The velocity of sound is given by 
-            <me>
+            <md>
               v_s = \sqrt{\frac{B}{\rho}}
-            </me>
+            </md>
             where <m>\rho </m> is density of the medium and <m>B=\frac{stress}{\text{ vol. strain}} = -\frac{dp}{dV/V}</m>. 
             Negative sign indicates volume is decreasing with the increase of pressure. 
-            <me>
-              \therefore \, B= -V\frac{dp}{dV} = \gamma p
-            </me>
             <md>
-              <mrow> pV^\gamma \amp = constant </mrow>
-               <mrow> p\gamma V^{\gamma-1}\, dV  +V^\gamma \, dp \amp = 0 </mrow>
-                <mrow> \frac{dp}{dV}   \amp = -\frac{p\gamma V^{\gamma -1}}{v^\gamma} = -\frac{\gamma p}{V} </mrow>
+              \therefore \, B= -V\frac{dp}{dV} = \gamma p
+            </md>
+            <md>
+               pV^\gamma  = constant 
+                p\gamma V^{\gamma-1}\, dV  +V^\gamma \, dp = 0
+                 \frac{dp}{dV} = -\frac{p\gamma V^{\gamma -1}}{v^\gamma} = -\frac{\gamma p}{V} 
             </md>
             Now from, 
-            <me>
+            <md>
               p=\frac{nRT}{V} = \frac{mRT}{MV} = \frac{\rho RT}{M}
-            </me>
-            <me>
+            </md>
+            <md>
               \therefore \, B =\frac{ \gamma \rho RT}{M}
-            </me>
+            </md>
             and 
-            <men xml:id="sp_eq11">
+            <md number="yes">
+              <mrow xml:id="sp_eq11">
               v_s = \sqrt{\frac{ \gamma RT}{M}}
-            </men>
+              </mrow>
+            </md>
           </p>
          </subsubsection>
 
@@ -221,29 +252,29 @@
               to work <m>W = -\int_{V_1}^{V_2} p \, dV</m> , if there is a change in volume from <m>V_1</m> to <m>V_2</m>. 
               Using the basic equation of the First Law, <m>dU = dQ - V\, dp</m>, the heat evolved <m>\Delta Q_p</m> 
               during a chemical transformation at a constant pressure can be written as 
-              <me>
+              <md>
                 \Delta Q_p = \int_{U_1}^{U_2} \, dU + \int_{V_1}^{V_2} p \, dV = \left(U_2-U_1\right)+p\left(V_2-V_1\right)
-              </me>
-               <me>
+              </md>
+               <md>
                \therefore \, \Delta Q_p =  \left(U_2-pV_1\right) - \left(U_1+ pV_1\right)
-              </me>
+              </md>
               Since <m>U,p,V</m> are specified by the state of the system not by the path, we can say <m>U+pV</m> is a state function.
               Hence, the state function, <m>U+pV</m> is called the <term>Enthalpy, <m>H</m></term>. 
               The heat released by a chemical reaction at constant pressure
-               <me>
+               <md>
                 \Delta Q_p =  H_f - H_i 
-              </me>
-              and <me>H \equiv U+pV</me>
+              </md>
+              and <md>H \equiv U+pV</md>
             </p>
             <p>
-              Since <me>
+              Since <md>
                 dQ_p =\,dp+p\,dV =dH_p
-              </me>
+              </md>
               If the system consists of one mole of a substance, and if the change in temperature due to the exchange of heat is <m>dT</m>, 
               then it follows that  
-              <me>
+              <md>
                \left(\frac{dQ}{dT}\right)_p = C_{mp} = \left(\frac{dH_m}{dT}\right)_p
-              </me>
+              </md>
             </p>
           </subsubsection>
    </subsection>

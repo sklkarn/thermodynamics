@@ -16,21 +16,21 @@
         <p>
            To estimate the total internal energy of 1.00 L of <m>N_2</m> gas at <m>298 \,K</m> and <m>2 \,atm</m> , 
            we can use the ideal gas law to find the number of moles of nitrogen gas.   we then calculate the internal energy by
-          <me>
+          <md>
             dU = n\frac{5}{2} R(T_2-T_1) 
-          </me>
+          </md>
           From Ideal gas equation, we can find the number of moles of nitrogen gas: 
-          <me>
+          <md>
             n= \frac{PV}{RT} = \frac{(2 \, \text{atm})(1.00 \, \text{L})}{(0.0821 \, \text{L atm/mol K})(298 \, \text{K})} \approx 0.0816 \, \text{mol} 
-          </me>
+          </md>
           or, 
-            <me>
+            <md>
             \Delta U = 0.0816 \, \text{mol} \times \frac{5}{2} (8.314 \, \text{J/mol K}) (10.0 \, \text{K}) \approx 17.0 \, \text{J} 
-          </me>  
+          </md>  
           The energy required to heat 1.00 mol of nitrogen gas from 0 K to 298 K at constant pressure can be calculated using the same formula:
-          <me>
+          <md>
             \Delta U = 1.00 \, \text{mol} \times \frac{5}{2} (8.314 \, \text{J/mol K}) (298 \, \text{K} - 0 \, \text{K}) \approx 6200 \, \text{J} 
-          </me>  
+          </md>  
         </p>
       </solution>
      </example>
@@ -50,16 +50,16 @@
           Amount of gas <m>n = 1.00 \, mol</m>; Temperature <m>T = 300 K</m>, Volume <m>V = 1.50 L</m>, 
           Ideal gas constant <m>R = 0.08206 L\cdot atm \cdot mol^{-1}\cdot K^{-1}</m>, van der Waals constant <m>a = 3.59 L^2\cdot atm\cdot mol^{-2} </m>, and
           van der Waals constant <m>b = 0.0427 L\cdot mol^{-1}</m>. Ideal gas equation:
-          <me>
-            p_{ideal} = \frac{nRT}{V} = \frac{1\cdot 0.08206 \cdot 300}{1.5} =  16.41 \, atm
-          </me>
-          van der Waal's equations 
-          <me>
-            \left(p_{vdw}+\frac{an^2}{V^2}\right) \left(V-nb\right) = nRT
-          </me>
           <md>
-            <mrow>  or, \, p_{vdw}  \amp  =  \left(\frac{nRT}{V-nb}\right) -\left( \frac{an^2}{V^2}\right) </mrow>
-            <mrow>  \amp =  \left(\frac{1\cdot 0.08206 \cdot 300}{1.5-1\cdot 0.0427}\right)-\left(\frac{3.59 \cdot 1^2}{1.5^2}\right) =15.3 atm.</mrow>
+            p_{ideal} = \frac{nRT}{V} = \frac{1\cdot 0.08206 \cdot 300}{1.5} =  16.41 \, atm
+          </md>
+          van der Waal's equations 
+          <md>
+            \left(p_{vdw}+\frac{an^2}{V^2}\right) \left(V-nb\right) = nRT
+          </md>
+          <md>
+            or, \, p_{vdw}    =  \left(\frac{nRT}{V-nb}\right) -\left( \frac{an^2}{V^2}\right) \\
+             =  \left(\frac{1\cdot 0.08206 \cdot 300}{1.5-1\cdot 0.0427}\right)-\left(\frac{3.59 \cdot 1^2}{1.5^2}\right) =15.3 atm.
           </md>
         
         </p>
@@ -82,37 +82,45 @@
           Molar Mass of <m>O_2 \, (M_{O_2}) = 0.031999 \, kg \cdot\, mol^{-1} </m> Gas Constant <m>R = 8.314  J\cdot mol^{-1}\cdot K^{-1}</m>
         </p>
         <p>
-          From ideal gas equation, <me>
-            n_{total} =\frac{pV}{RT} =  \frac{1.0 \times 10^5 \times 1}{8.314 \cdot 300} =40.091 \,mol.
-          </me>
-           Total mass of the sample is simply: <me>
-            m_{total} = \rho\times V = 1.161 \times 1 = 1.161\, kg.
-           </me>
+          From ideal gas equation, <md>
+            n_{\text{total }} =\frac{pV}{RT} =  \frac{1.0 \times 10^5 \times 1}{8.314 \cdot 300} =40.091 \,mol.
+          </md>
+           Total mass of the sample is simply: 
+           <md>
+            m_{\text{total }} = \rho\times V = 1.161 \times 1 = 1.161\, kg.
+           </md>
            The mole fraction is the ratio of the number of moles of a specific component to the total number of moles:
-           <men xml:id="molefr_eq1">
+           <md number="yes">
+            <mrow xml:id="molefr_eq1"> 
             x_a = \frac{n_a}{n_a+n_b} 
-           </men>
+            </mrow>
+           </md>
           
-           <me>
-            m_{total} = M_{N_2}\cdot n_{N_2} + M_{O_2}\cdot n_{O_2} \qquad [\because n=\frac{\text{ mass of substance} }{\text{ Molar Mass}}]
-           </me>
-           <men xml:id="molefr_eq2">
+           <md>
+            m_{\text{total }} = M_{N_2}\cdot n_{N_2} + M_{O_2}\cdot n_{O_2} \\ 
+            [\because n=\frac{\text{ mass of substance} }{\text{ Molar Mass}}]
+           </md>
+           <md number="yes">
+            <mrow xml:id="molefr_eq2">
             1.161  = 0.028013 \times n_{N_2} + 0.031999\times n_{O_2} 
-           </men>
-            <men xml:id="molefr_eq3">
-             n_{total} =40.091 = n_{N_2} +  n_{O_2} 
-           </men>
+            </mrow>
+           </md>
+            <md number="yes">
+              <mrow xml:id="molefr_eq3">
+             n_{\text{total }} = 40.091 = n_{N_2} +  n_{O_2} 
+             </mrow>
+           </md>
            on solving <xref ref="molefr_eq2"/> and <xref ref="molefr_eq3"/>, we get 
            <m>n_{N_2} = 30.583\, mol </m> and <m> n_{O_2} = 9.508 \, mol</m>
         </p>
         <p>
-          <me>
+          <md>
             \therefore \, x_{N_2}= \frac{n_{N_2}}{n_{total}} =  \frac{30.583}{40.091} = 0.763
-          </me>
+          </md>
           and 
-            <me>
+            <md>
             \therefore \, x_{O_2}= \frac{n_{O_2}}{n_{total}} =  \frac{9.508}{40.091} = 0.237
-          </me>
+          </md>
         </p>
        
       </solution>
@@ -130,16 +138,16 @@
       <solution>
         <p>
           The number density of cloud is 
-          <me>
+          <md>
             \frac{N}{V} = \frac{10^4 \, molecules}{1\, ml}  \frac{10^4 \, molecules}{10^{-6}\, m^3} = 10^{10} \, molecule/m^3
-          </me>
+          </md>
           From ideal gas equation: 
-          <me>
+          <md>
             pV = nRT \, \Rightarrow \, pV = NkT \qquad [\because nR=Nk]
-          </me>
-           <me>
+          </md>
+           <md>
             or, \, p = \frac{N}{V} kT = 10^{10}\times 1.3806 \times 10^{-23} \times 10 = 1.386\times 10^{-12} \, Pa.
-          </me>
+          </md>
         </p>
       </solution>
      </example>
@@ -174,9 +182,9 @@
             <li>
               <p>
                From ideal gas euqtion: 
-                <me>
+                <md>
                   \frac{n}{V} =\frac{p}{RT} = \frac{1.013\times 10^{5}}{8.314 \times 298} = 40.90 mol/m^3.
-                </me>
+                </md>
               </p>
             </li>
             <li>
@@ -184,18 +192,18 @@
                 Since volume fraction equals mole fraction for ideal gases, 
                 mole fraction of <m>CO_2</m>, <m>x_{CO_2} = 360 \, ppm \, \text{ (by volume)} = 360 mol/(10^{-6} m^3) = 3.6\times 10^{-4}</m>
                 Now, the volume of atmosphere, 
-                <me>
+                <md>
                   V=4\pi \times r^2 \times h =  4\pi \times (6.37\times 10^6)^2 \times 10\times 10^3 = 5.10\times 10^{18}
-                </me>
+                </md>
                  </p>
                  <p>
                   Also, total moles of the air in this layer, 
-                  <me>
-                    n_{total} =  \frac{n}{V}\times V = 40.90\times 5.10\times 10^{18} = 2.086 \times 10^{20} \, \text{ moles of air}.
-                  </me>
+                  <md>
+                    n_{\text{total }} =  \frac{n}{V}\times V = 40.90\times 5.10\times 10^{18} = 2.086 \times 10^{20} \, \text{ moles of air}.
+                  </md>
                  </p>
                  <p>
-                  Moles of <m>n_{CO_2} = x_{CO_2} \times  n_{total} = 3.6\times 10^{-4}\times 2.086 \times 10^{20} = 7.21\times 10^{16}</m>. 
+                  Moles of <m>n_{CO_2} = x_{CO_2} \times  n_{\text{total }} = 3.6\times 10^{-4}\times 2.086 \times 10^{20} = 7.21\times 10^{16}</m>. 
                  </p>
             </li>
               </ol>
